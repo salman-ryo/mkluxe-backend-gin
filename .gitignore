@@ -1,0 +1,50 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Built binary (your app)
+main
+app
+server
+
+# Go build output
+bin/
+dist/
+
+# Temporary test files
+*.out
+coverage.out
+
+# Go workspace / modules cache
+vendor/
+go.work
+go.work.sum
+
+# Logs
+*.log
+
+# Environment variables (VERY important for Gin apps)
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Air (hot reload tool used in Gin projects)
+tmp/
+.air.toml
+
+# Docker (if used locally)
+docker-compose.override.yml

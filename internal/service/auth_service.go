@@ -8,6 +8,8 @@ import (
 	"mkluxe-backend/internal/dto"
 	"mkluxe-backend/internal/repository"
 	"mkluxe-backend/internal/utils"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 type AuthService struct {
@@ -52,5 +54,44 @@ func (s *AuthService) Login(ctx context.Context, req *dto.LoginRequest) (*dto.Au
 			Role:     user.Role,
 			IsActive: user.IsActive,
 		},
+	}, nil
+}
+
+// RefreshToken issues a new token pair if the provided refresh token is valid
+func (s *AuthService) RefreshToken(ctx context.Context, req *dto.RefreshRequest) (*dto.AuthResponse, error) {
+	claims, err := utils.ValidateToken(req.RefreshToken)
+	if err != nil {
+		return nil, errors.New("invalid or expired refresh token")
+	}
+
+	accessToken, refreshToken, err := utils.GenerateTokens(claims.UserID, claims.Role)
+	if err != nil {
+		return nil, err
+	}
+
+	return &dto.AuthResponse{
+		AccessToken:  accessToken,
+		RefreshToken: refreshToken,
+	}, nil
+}
+
+// GetCurrentUser fetches the authenticated user's profile data
+func (s *AuthService) GetCurrentUser(ctx context.Context, userIDStr string) (*dto.UserResponse, error) {
+	userID, err := primitive.ObjectIDFromHex(userIDStr)
+	if err != nil {
+		return nil, errors.New("invalid user ID format")
+	}
+
+	user, err := s.userRepo.GetByID(ctx, userID)
+	if err != nil || user == nil {
+		return nil, errors.New("user not found")
+	}
+
+	return &dto.UserResponse{
+		ID:       user.ID.Hex(),
+		Email:    user.Email,
+		Name:     user.Name,
+		Role:     user.Role,
+		IsActive: user.IsActive,
 	}, nil
 }

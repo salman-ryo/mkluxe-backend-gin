@@ -31,3 +31,35 @@ func (h *AuthHandler) Login(c *gin.Context) {
 
 	response.OK(c, "Login successful", authRes)
 }
+
+func (h *AuthHandler) Refresh(c *gin.Context) {
+	var req dto.RefreshRequest
+	if err := c.ShouldBindJSON(&req); err != nil {
+		response.BadRequest(c, "Invalid request payload", nil)
+		return
+	}
+
+	authRes, err := h.authService.RefreshToken(c.Request.Context(), &req)
+	if err != nil {
+		response.Unauthorized(c, err.Error())
+		return
+	}
+
+	response.OK(c, "Token refreshed successfully", authRes)
+}
+
+func (h *AuthHandler) CurrentUser(c *gin.Context) {
+	userID, exists := c.Get("userID")
+	if !exists {
+		response.Unauthorized(c, "Unauthorized request")
+		return
+	}
+
+	userRes, err := h.authService.GetCurrentUser(c.Request.Context(), userID.(string))
+	if err != nil {
+		response.NotFound(c, err.Error())
+		return
+	}
+
+	response.OK(c, "Current user fetched successfully", userRes)
+}

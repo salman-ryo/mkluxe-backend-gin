@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "MKLuxe-Gin",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

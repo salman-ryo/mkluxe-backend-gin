@@ -3,6 +3,7 @@ package service
 import (
 	"context"
 	"errors"
+	"log"
 	"time"
 
 	"mkluxe-backend/internal/dto"
@@ -23,15 +24,22 @@ func NewAuthService(userRepo *repository.UserRepository) *AuthService {
 // this method belongs to AuthService, s stands for 'self'
 func (s *AuthService) Login(ctx context.Context, req *dto.LoginRequest) (*dto.AuthResponse, error) {
 	user, err := s.userRepo.GetByEmail(ctx, req.Email)
-	if err != nil || user == nil {
+	if err != nil {
+		log.Printf("Debug - Login failed: GetByEmail error: %v", err)
+		return nil, errors.New("invalid credentials")
+	}
+	if user == nil {
+		log.Printf("Debug - Login failed: User not found for email: %s", req.Email)
 		return nil, errors.New("invalid credentials")
 	}
 
 	if !user.IsActive {
+		log.Printf("Debug - Login failed: User account is disabled")
 		return nil, errors.New("account is disabled")
 	}
 
 	if !utils.VerifyPassword(req.Password, user.PasswordHash) {
+		log.Printf("Debug - Login failed: Password verification failed for %s = %s", req.Email, req.Password)
 		return nil, errors.New("invalid credentials")
 	}
 

@@ -1,0 +1,34 @@
+meta {
+  name: Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BACKEND_URI}}/api/v1/auth/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "email": "admin@mkluxe.com",
+    "password": "admin12345"
+  }
+  
+}
+
+script:post-response {
+  const data = res.getBody().data;
+  bru.setEnvVar("ACCESS_TOKEN", data.access_token);
+  bru.setEnvVar("REFRESH_TOKEN", data.refresh_token);
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

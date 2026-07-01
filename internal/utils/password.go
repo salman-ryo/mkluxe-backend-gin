@@ -17,7 +17,7 @@ func HashPassword(password string) (string, error) {
 }
 
 // short hand property, string on right side is applied to the hash type too, hence its a string
-func VerifyPassword(hash, password string) bool {
+func VerifyPassword(password, hash string) bool {
 	err := bcrypt.CompareHashAndPassword([]byte(hash), []byte(password))
 	return err == nil
 }

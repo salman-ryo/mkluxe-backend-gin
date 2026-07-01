@@ -2,24 +2,54 @@ package routes
 
 import (
 	"mkluxe-backend/internal/handler"
+	"mkluxe-backend/internal/middleware"
 
 	"github.com/gin-gonic/gin"
 )
 
-// SetupRouter will initialize the Gin engine and mount all route groups
-func SetupRouter() *gin.Engine {
-	router := gin.Default() //includes default logging and recovery middleware
+type AppHandlers struct {
+	Auth     *handler.AuthHandler
+	Category *handler.CategoryHandler
+	Product  *handler.ProductHandler
+	Inquiry  *handler.InquiryHandler
+}
 
-	// Space for global middleware (CORS, Requst ID, etc.)
+// SetupRouter initializes Gin and mounts all routes
+func SetupRouter(handlers AppHandlers) *gin.Engine {
+	router := gin.Default()
+	router.Use(middleware.CORS())
 
-	// Register health check route
+	// Health check
 	router.GET("/health", handler.Health)
 
-	// Route groups to be expanded later
-	// public := router.Group("/api/v1")
-	// auth := router.Group("/api/v1/auth")
-	// admin := router.Group("/api/v1/admin")
+	api := router.Group("/api/v1")
+
+	// Mount Public Routes (No Auth Required)
+	api.GET("/categories", handlers.Category.List)
+	api.GET("/products", handlers.Product.List)
+	api.POST("/inquiries", handlers.Inquiry.Create)
+
+	// Mount Auth Routes
+	authGroup := api.Group("/auth")
+	{
+		authGroup.POST("/login", handlers.Auth.Login)
+		authGroup.POST("/refresh", handlers.Auth.Refresh)
+		authGroup.GET("/me", middleware.AuthMiddleware(), handlers.Auth.CurrentUser)
+	}
+
+	// Mount Protected Admin Routes
+	adminGroup := api.Group("/admin")
+	adminGroup.Use(middleware.AuthMiddleware()) // Everything here requires a JWT
+	{
+		// Categories (Requires Auth)
+		adminGroup.POST("/categories", handlers.Category.Create)
+
+		// Products (Requires Auth)
+		adminGroup.POST("/products", handlers.Product.Create)
+
+		// Inquiries Admin (Requires Auth)
+		adminGroup.PATCH("/inquiries/:id/status", handlers.Inquiry.UpdateStatus)
+	}
 
 	return router
-
 }

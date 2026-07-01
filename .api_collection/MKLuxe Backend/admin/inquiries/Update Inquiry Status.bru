@@ -1,0 +1,27 @@
+meta {
+  name: Update Inquiry Status
+  type: http
+  seq: 1
+}
+
+patch {
+  url: {{BACKEND_URI}}/api/v1/admin/inquiries/:id/status
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+  Authorization: Bearer {{ACCESS_TOKEN}}
+}
+
+body:json {
+  {
+    "status": "reviewed"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

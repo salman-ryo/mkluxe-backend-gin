@@ -12,7 +12,6 @@ post {
 
 headers {
   Content-Type: application/json
-  Authorization: Bearer {{ACCESS_TOKEN}}
 }
 
 body:json {
@@ -26,4 +25,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

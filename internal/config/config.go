@@ -1,0 +1,80 @@
+package config
+
+import (
+	"os"
+	"strings"
+
+	"mkluxe-backend/internal/utils"
+)
+
+type Config struct {
+	GinMode          string
+	Port             string
+	JWTAccessSecret  string
+	JWTRefreshSecret string
+	FrontendURLs     []string // 👈 List of allowed frontend origins
+	IsProduction     bool
+}
+
+// CookieConfig holds individual configuration flags for SetCookie
+type CookieConfig struct {
+	Name     string
+	MaxAge   int
+	Path     string
+	Domain   string
+	Secure   bool
+	HttpOnly bool
+}
+
+// Load reads values from the environment into the Config struct
+func Load() *Config {
+	mode := os.Getenv("GIN_MODE")
+	if mode == "" {
+		mode = "debug"
+	}
+
+	// Read comma-separated frontend URLs
+	urlsStr := os.Getenv("FRONTEND_URLS")
+	if urlsStr == "" {
+		urlsStr = "http://localhost:3000,http://localhost:3001" // Defaults for local dev
+	}
+
+	// Split and trim the URLs into a slice
+	var frontendURLs []string
+	for _, u := range strings.Split(urlsStr, ",") {
+		frontendURLs = append(frontendURLs, strings.TrimSpace(u))
+	}
+
+	return &Config{
+		GinMode:          mode,
+		Port:             utils.GetEnv("PORT", "8080"),
+		JWTAccessSecret:  utils.GetEnv("JWT_ACCESS_SECRET", "default_access_secret_change_me"),
+		JWTRefreshSecret: utils.GetEnv("JWT_REFRESH_SECRET", "default_refresh_secret_change_me"),
+		FrontendURLs:     frontendURLs,
+		IsProduction:     mode == "release",
+	}
+}
+
+// GetAccessCookieConfig returns standard secure configurations for short-lived access tokens
+func (c *Config) GetAccessCookieConfig() *CookieConfig {
+	return &CookieConfig{
+		Name:     "access_token",
+		MaxAge:   900,
+		Path:     "/",
+		Domain:   "", // 💡 Always empty. Let the browser bind it to the API domain automatically.
+		Secure:   c.IsProduction,
+		HttpOnly: true,
+	}
+}
+
+// GetRefreshCookieConfig returns standard secure configurations for long-lived refresh tokens
+func (c *Config) GetRefreshCookieConfig() *CookieConfig {
+	return &CookieConfig{
+		Name:     "refresh_token",
+		MaxAge:   604800,
+		Path:     "/api/v1/auth/refresh",
+		Domain:   "", // 💡 Always empty.
+		Secure:   c.IsProduction,
+		HttpOnly: true,
+	}
+}

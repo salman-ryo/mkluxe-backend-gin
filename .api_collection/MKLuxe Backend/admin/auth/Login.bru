@@ -16,16 +16,16 @@ headers {
 
 body:json {
   {
-    "email": "admin@mkluxe.com",
-    "password": "admin12345"
+    "email": "{{ADMIN_EMAIL}}",
+    "password": "{{ADMIN_PASSWORD}}"
   }
   
 }
 
 script:post-response {
-  const data = res.getBody().data;
-  bru.setEnvVar("ACCESS_TOKEN", data.access_token);
-  bru.setEnvVar("REFRESH_TOKEN", data.refresh_token);
+  // const data = res.getBody().data;
+  // bru.setEnvVar("ACCESS_TOKEN", data.access_token);
+  // bru.setEnvVar("REFRESH_TOKEN", data.refresh_token);
 }
 
 settings {

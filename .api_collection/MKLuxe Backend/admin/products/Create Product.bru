@@ -17,13 +17,15 @@ headers {
 
 body:json {
   {
-    "name": "Diamond Solitaire Ring",
+    "name": "Gold Solitaire Ring",
     "description": "A beautiful 1-carat diamond ring.",
-    "primary_category_id": "PASTE_CATEGORY_ID_HERE",
+    "primary_category_id": "6a4132416c1054bf592fb294",
     "status": "published",
+    "is_featured":true,
+    "is_most_sold":false,
     "variants": [
       {
-        "sku": "RING-001",
+        "sku": "RING-003",
         "price": 999.99,
         "stock": 5,
         "is_default": true
@@ -32,7 +34,7 @@ body:json {
     "media": [
       {
         "url": "https://example.com/ring.jpg",
-        "alt_text": "Diamond Ring Front",
+        "alt_text": "Gold Ring Front",
         "is_primary": true
       }
     ]
@@ -42,4 +44,5 @@ body:json {
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

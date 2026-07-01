@@ -68,6 +68,15 @@ func (r *ProductRepository) List(ctx context.Context, filter dto.FilterRequest, 
 	if filter.Status != "" {
 		query["status"] = filter.Status
 	}
+
+	// New Discovery Flag Filters
+	if filter.IsFeatured != nil {
+		query["is_featured"] = *filter.IsFeatured
+	}
+	if filter.IsMostSold != nil {
+		query["is_most_sold"] = *filter.IsMostSold
+	}
+
 	if filter.CategoryID != "" {
 		if catID, err := primitive.ObjectIDFromHex(filter.CategoryID); err == nil {
 			query["$or"] = bson.A{

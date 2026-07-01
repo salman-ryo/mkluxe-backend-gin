@@ -6,8 +6,11 @@ type PaginationRequest struct {
 	Sort  string `form:"sort"`
 }
 
+// FilterRequest is used for querying products with dynamic filters.
 type FilterRequest struct {
-	Search     string `form:"search"`
-	CategoryID string `form:"category_id"`
-	Status     string `form:"status"`
+	Status     string `json:"status"`
+	CategoryID string `json:"category_id"`
+	Search     string `json:"search"`
+	IsFeatured *bool  `json:"is_featured"`
+	IsMostSold *bool  `json:"is_most_sold"`
 }

@@ -1,32 +1,23 @@
 package middleware
 
 import (
-	"strings"
-
 	"mkluxe-backend/internal/response"
 	"mkluxe-backend/internal/utils"
 
 	"github.com/gin-gonic/gin"
 )
 
-// AuthMiddleware validates JWTs and extracts claims into the request context
+// AuthMiddleware validates JWTs from the access_token cookie and extracts claims
 func AuthMiddleware() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		authHeader := c.GetHeader("Authorization")
-		if authHeader == "" {
-			response.Unauthorized(c, "Authorization header is required")
+		// 💡 Read the token from the secure cookie instead of the Authorization header
+		tokenString, err := c.Cookie("access_token")
+		if err != nil || tokenString == "" {
+			response.Unauthorized(c, "Authentication cookie is missing or expired")
 			c.Abort()
 			return
 		}
 
-		parts := strings.Split(authHeader, " ")
-		if len(parts) != 2 || parts[0] != "Bearer" {
-			response.Unauthorized(c, "Authorization header must be formatted as: Bearer {token}")
-			c.Abort()
-			return
-		}
-
-		tokenString := parts[1]
 		claims, err := utils.ValidateToken(tokenString)
 		if err != nil {
 			response.Unauthorized(c, "Invalid or expired token")

@@ -17,6 +17,10 @@ type Product struct {
 
 	Status string `bson:"status" json:"status"` // draft, published, archived
 
+	// New Discovery Flags
+	IsFeatured bool `bson:"is_featured" json:"is_featured"`
+	IsMostSold bool `bson:"is_most_sold" json:"is_most_sold"`
+
 	Variants []Variant `bson:"variants" json:"variants"`
 	Media    []Media   `bson:"media" json:"media"`
 	FAQs     []FAQ     `bson:"faqs,omitempty" json:"faqs,omitempty"`

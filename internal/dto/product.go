@@ -10,6 +10,8 @@ type CreateProductRequest struct {
 	PrimaryCategoryID   string           `json:"primary_category_id" binding:"required"`
 	SecondaryCategories []string         `json:"secondary_categories"`
 	Status              string           `json:"status" binding:"required,oneof=draft published archived"`
+	IsFeatured          bool             `json:"is_featured"`
+	IsMostSold          bool             `json:"is_most_sold"`
 	Variants            []domain.Variant `json:"variants" binding:"required,dive"`
 	Media               []domain.Media   `json:"media" binding:"required,dive"`
 	FAQs                []domain.FAQ     `json:"faqs"`
@@ -25,6 +27,8 @@ type UpdateProductRequest struct {
 	PrimaryCategoryID   string           `json:"primary_category_id"`
 	SecondaryCategories []string         `json:"secondary_categories"`
 	Status              string           `json:"status" binding:"omitempty,oneof=draft published archived"`
+	IsFeatured          *bool            `json:"is_featured"`
+	IsMostSold          *bool            `json:"is_most_sold"`
 	Variants            []domain.Variant `json:"variants"`
 	Media               []domain.Media   `json:"media"`
 	FAQs                []domain.FAQ     `json:"faqs"`

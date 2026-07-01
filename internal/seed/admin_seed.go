@@ -2,7 +2,9 @@ package seed
 
 import (
 	"context"
+	"errors"
 	"log"
+	"os" // 👈 Added to read environment variables
 
 	"mkluxe-backend/internal/constants"
 	"mkluxe-backend/internal/domain"
@@ -17,20 +19,39 @@ func SeedSuperAdmin(db *mongo.Database) error {
 	userRepo := repository.NewUserRepository(db)
 	ctx := context.Background()
 
-	// Check if admin already exists
-	existing, _ := userRepo.GetByEmail(ctx, "admin@mkluxe.com")
+	// 1. Load admin credentials from environment variables with fallbacks
+	adminEmail := os.Getenv("ADMIN_EMAIL")
+	if adminEmail == "" {
+		adminEmail = "admin@mkluxe.com"
+	}
+
+	adminPassword := os.Getenv("ADMIN_PASSWORD")
+	if adminPassword == "" {
+		adminPassword = "admin12345"
+	}
+
+	// 2. Fetch the user checking the dynamic email
+	existing, err := userRepo.GetByEmail(ctx, adminEmail)
+
+	// If there's an error, check if it's just telling us the user doesn't exist.
+	if err != nil && !errors.Is(err, mongo.ErrNoDocuments) {
+		return err
+	}
+
+	// 3. If the user was actually found, skip the seeding process safely
 	if existing != nil {
 		log.Println("Super Admin already exists, skipping seed.")
 		return nil
 	}
 
-	hash, err := utils.HashPassword("admin12345")
+	// 4. Admin doesn't exist, hash the dynamic password and proceed to create it
+	hash, err := utils.HashPassword(adminPassword)
 	if err != nil {
 		return err
 	}
 
 	admin := &domain.User{
-		Email:        "admin@mkluxe.com",
+		Email:        adminEmail,
 		PasswordHash: hash,
 		Name:         "System Admin",
 		Role:         constants.RoleSuperAdmin,
@@ -41,6 +62,6 @@ func SeedSuperAdmin(db *mongo.Database) error {
 		return err
 	}
 
-	log.Println("Super Admin seeded successfully! (admin@mkluxe.com / admin12345)")
+	log.Printf("Super Admin seeded successfully! (%s / %s)", adminEmail, adminPassword)
 	return nil
 }

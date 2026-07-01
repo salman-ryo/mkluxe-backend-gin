@@ -1,6 +1,7 @@
 package routes
 
 import (
+	"mkluxe-backend/internal/config" // 👈 Added config import
 	"mkluxe-backend/internal/handler"
 	"mkluxe-backend/internal/middleware"
 
@@ -15,9 +16,11 @@ type AppHandlers struct {
 }
 
 // SetupRouter initializes Gin and mounts all routes
-func SetupRouter(handlers AppHandlers) *gin.Engine {
+func SetupRouter(handlers AppHandlers, cfg *config.Config) *gin.Engine {
 	router := gin.Default()
-	router.Use(middleware.CORS())
+
+	// 💡 Pass the dynamically loaded Frontend URLs to the middleware
+	router.Use(middleware.CORS(cfg.FrontendURLs))
 
 	// Health check
 	router.GET("/health", handler.Health)
@@ -34,12 +37,13 @@ func SetupRouter(handlers AppHandlers) *gin.Engine {
 	{
 		authGroup.POST("/login", handlers.Auth.Login)
 		authGroup.POST("/refresh", handlers.Auth.Refresh)
+		authGroup.POST("/logout", handlers.Auth.Logout) // 💡 Added your new Logout route!
 		authGroup.GET("/me", middleware.AuthMiddleware(), handlers.Auth.CurrentUser)
 	}
 
 	// Mount Protected Admin Routes
 	adminGroup := api.Group("/admin")
-	adminGroup.Use(middleware.AuthMiddleware()) // Everything here requires a JWT
+	adminGroup.Use(middleware.AuthMiddleware()) // Everything here requires a JWT cookie
 	{
 		// Categories (Requires Auth)
 		adminGroup.POST("/categories", handlers.Category.Create)

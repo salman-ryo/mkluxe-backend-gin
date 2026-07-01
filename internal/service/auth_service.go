@@ -21,7 +21,7 @@ func NewAuthService(userRepo *repository.UserRepository) *AuthService {
 	return &AuthService{userRepo: userRepo}
 }
 
-// this method belongs to AuthService, s stands for 'self'
+// Login authenticates credentials and drops a clean AuthResponse with fresh tokens
 func (s *AuthService) Login(ctx context.Context, req *dto.LoginRequest) (*dto.AuthResponse, error) {
 	user, err := s.userRepo.GetByEmail(ctx, req.Email)
 	if err != nil {
@@ -39,7 +39,7 @@ func (s *AuthService) Login(ctx context.Context, req *dto.LoginRequest) (*dto.Au
 	}
 
 	if !utils.VerifyPassword(req.Password, user.PasswordHash) {
-		log.Printf("Debug - Login failed: Password verification failed for %s = %s", req.Email, req.Password)
+		log.Printf("Debug - Login failed: Password verification failed for %s", req.Email)
 		return nil, errors.New("invalid credentials")
 	}
 
@@ -48,7 +48,7 @@ func (s *AuthService) Login(ctx context.Context, req *dto.LoginRequest) (*dto.Au
 		return nil, err
 	}
 
-	// Update last login
+	// Update last login timestamp asynchronously or cleanly
 	user.LastLogin = time.Now()
 	_ = s.userRepo.Update(ctx, user)
 
@@ -65,9 +65,9 @@ func (s *AuthService) Login(ctx context.Context, req *dto.LoginRequest) (*dto.Au
 	}, nil
 }
 
-// RefreshToken issues a new token pair if the provided refresh token is valid
-func (s *AuthService) RefreshToken(ctx context.Context, req *dto.RefreshRequest) (*dto.AuthResponse, error) {
-	claims, err := utils.ValidateToken(req.RefreshToken)
+// RefreshToken issues a new token pair using a validated string token
+func (s *AuthService) RefreshToken(ctx context.Context, tokenStr string) (*dto.AuthResponse, error) {
+	claims, err := utils.ValidateToken(tokenStr)
 	if err != nil {
 		return nil, errors.New("invalid or expired refresh token")
 	}

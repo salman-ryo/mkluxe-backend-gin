@@ -14,21 +14,15 @@ headers {
   Content-Type: application/json
 }
 
-body:json {
-  {
-    "refresh_token":"{{REFRESH_TOKEN}}"
-  }
-}
-
 script:post-response {
-  const body = res.getBody();
+  // const body = res.getBody();
   
-  // Update the stored tokens
-  bru.setEnvVar("ACCESS_TOKEN", body.data.access_token);
-  bru.setEnvVar("REFRESH_TOKEN", body.data.refresh_token);
+  // // Update the stored tokens
+  // bru.setEnvVar("ACCESS_TOKEN", body.data.access_token);
+  // bru.setEnvVar("REFRESH_TOKEN", body.data.refresh_token);
   
-  console.log("Access token updated");
-  console.log("Refresh token updated");
+  // console.log("Access token updated");
+  // console.log("Refresh token updated");
 }
 
 settings {

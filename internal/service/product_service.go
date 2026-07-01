@@ -62,11 +62,16 @@ func (s *ProductService) CreateProduct(ctx context.Context, req *dto.CreateProdu
 		PrimaryCategoryID:   primaryCatID,
 		SecondaryCategories: secCatIDs,
 		Status:              req.Status,
-		Variants:            req.Variants,
-		Media:               req.Media,
-		FAQs:                req.FAQs,
-		MetaTitle:           req.MetaTitle,
-		MetaDescription:     req.MetaDescription,
+
+		// Mapping the new flag values
+		IsFeatured: req.IsFeatured,
+		IsMostSold: req.IsMostSold,
+
+		Variants:        req.Variants,
+		Media:           req.Media,
+		FAQs:            req.FAQs,
+		MetaTitle:       req.MetaTitle,
+		MetaDescription: req.MetaDescription,
 	}
 
 	if err := s.productRepo.Create(ctx, product); err != nil {

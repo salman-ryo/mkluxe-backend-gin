@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{BACKEND_URI}}/api/v1/admin/products
+  url: {{BACKEND_URI}}/api/v1/admin/categories/earrings/products
   body: json
   auth: inherit
 }
@@ -16,7 +16,7 @@ headers {
 
 body:json {
   {
-    "name": "Gold Solitaire Ring",
+    "name": "Wooden Solitaire Ring",
     "description": "A beautiful 1-carat diamond ring.",
     "primary_category_id": "6a4132416c1054bf592fb294",
     "status": "published",
@@ -24,7 +24,7 @@ body:json {
     "is_most_sold":false,
     "variants": [
       {
-        "sku": "RING-003",
+        "sku": "RING-004",
         "price": 999.99,
         "stock": 5,
         "is_default": true

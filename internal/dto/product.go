@@ -2,12 +2,12 @@ package dto
 
 import "mkluxe-backend/internal/domain"
 
-// CreateProductRequest is used for creating new products. All fields are required except for Slug, which can be auto-generated if omitted.
+// CreateProductRequest is used for creating new products.
 type CreateProductRequest struct {
 	Name                string           `json:"name" binding:"required"`
 	Slug                string           `json:"slug"` // Auto-generated if omitted
 	Description         string           `json:"description" binding:"required"`
-	PrimaryCategoryID   string           `json:"primary_category_id" binding:"required"`
+	PrimaryCategoryID   string           `json:"primary_category_id"` // 💡 Removed required binding, handled by URL now
 	SecondaryCategories []string         `json:"secondary_categories"`
 	Status              string           `json:"status" binding:"required,oneof=draft published archived"`
 	IsFeatured          bool             `json:"is_featured"`
@@ -19,7 +19,7 @@ type CreateProductRequest struct {
 	MetaDescription     string           `json:"meta_description"`
 }
 
-// UpdateProductRequest is used for updating existing products. All fields are optional, allowing partial updates.
+// UpdateProductRequest remains unchanged
 type UpdateProductRequest struct {
 	Name                string           `json:"name"`
 	Slug                string           `json:"slug"`
@@ -36,7 +36,6 @@ type UpdateProductRequest struct {
 	MetaDescription     string           `json:"meta_description"`
 }
 
-// ProductImportPayload is used for bulk importing products via a JSON payload.
 type ProductImportPayload struct {
 	Products []CreateProductRequest `json:"products" binding:"required,dive"`
 }

@@ -20,13 +20,21 @@ func NewProductHandler(svc *service.ProductService) *ProductHandler {
 }
 
 func (h *ProductHandler) Create(c *gin.Context) {
+	// 1. Extract the identifier (slug or ID) from the URL
+	categoryIdentifier := c.Param("identifier")
+	if categoryIdentifier == "" {
+		response.BadRequest(c, "Category identifier is required in the URL", nil)
+		return
+	}
+
 	var req dto.CreateProductRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
 		response.BadRequest(c, "Invalid request payload", nil)
 		return
 	}
 
-	prod, err := h.productService.CreateProduct(c.Request.Context(), &req)
+	// 2. Pass the identifier to the service layer
+	prod, err := h.productService.CreateProduct(c.Request.Context(), categoryIdentifier, &req)
 	if err != nil {
 		response.BadRequest(c, err.Error(), nil)
 		return
@@ -50,7 +58,7 @@ func (h *ProductHandler) List(c *gin.Context) {
 
 	products, total, err := h.productService.ListProducts(c.Request.Context(), filter, page, limit)
 	if err != nil {
-		response.InternalServerError(c, "Failed to fetch products")
+		response.InternalServerError(c, "Failed to fetch products") // Ensure your InternalServerError matches this signature
 		return
 	}
 

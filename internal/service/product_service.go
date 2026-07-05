@@ -22,19 +22,31 @@ func NewProductService(pRepo *repository.ProductRepository, cRepo *repository.Ca
 	return &ProductService{productRepo: pRepo, categoryRepo: cRepo}
 }
 
-func (s *ProductService) CreateProduct(ctx context.Context, req *dto.CreateProductRequest) (*domain.Product, error) {
+// 💡 Added categoryIdentifier as an argument
+func (s *ProductService) CreateProduct(ctx context.Context, categoryIdentifier string, req *dto.CreateProductRequest) (*domain.Product, error) {
 	if err := validation.ValidateProductPayload(req); err != nil {
 		return nil, err
 	}
 
-	// Verify Primary Category exists
-	primaryCatID, _ := primitive.ObjectIDFromHex(req.PrimaryCategoryID)
-	_, err := s.categoryRepo.GetByID(ctx, primaryCatID)
-	if err != nil {
-		return nil, errors.New("provided primary category does not exist")
+	var primaryCatID primitive.ObjectID
+
+	// 1. Check if the identifier is a standard MongoDB ID
+	if id, err := primitive.ObjectIDFromHex(categoryIdentifier); err == nil {
+		cat, getErr := s.categoryRepo.GetByID(ctx, id)
+		if getErr != nil || cat == nil {
+			return nil, errors.New("provided primary category ID does not exist")
+		}
+		primaryCatID = cat.ID
+	} else {
+		// 2. If it's not a Mongo ID, treat it as a Slug
+		cat, getErr := s.categoryRepo.GetBySlug(ctx, categoryIdentifier) // ⚠️ Make sure GetBySlug exists in your CategoryRepo!
+		if getErr != nil || cat == nil {
+			return nil, errors.New("provided primary category slug does not exist")
+		}
+		primaryCatID = cat.ID
 	}
 
-	// Normalize Slug
+	// Normalize Slug for the Product
 	slug := req.Slug
 	if slug == "" {
 		slug = utils.GenerateSlug(req.Name)
@@ -59,19 +71,16 @@ func (s *ProductService) CreateProduct(ctx context.Context, req *dto.CreateProdu
 		Name:                utils.CleanString(req.Name),
 		Slug:                slug,
 		Description:         utils.CleanString(req.Description),
-		PrimaryCategoryID:   primaryCatID,
+		PrimaryCategoryID:   primaryCatID, // 💡 Assigned dynamically from the URL check
 		SecondaryCategories: secCatIDs,
 		Status:              req.Status,
-
-		// Mapping the new flag values
-		IsFeatured: req.IsFeatured,
-		IsMostSold: req.IsMostSold,
-
-		Variants:        req.Variants,
-		Media:           req.Media,
-		FAQs:            req.FAQs,
-		MetaTitle:       req.MetaTitle,
-		MetaDescription: req.MetaDescription,
+		IsFeatured:          req.IsFeatured,
+		IsMostSold:          req.IsMostSold,
+		Variants:            req.Variants,
+		Media:               req.Media,
+		FAQs:                req.FAQs,
+		MetaTitle:           req.MetaTitle,
+		MetaDescription:     req.MetaDescription,
 	}
 
 	if err := s.productRepo.Create(ctx, product); err != nil {

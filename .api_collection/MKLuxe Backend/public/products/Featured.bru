@@ -1,0 +1,21 @@
+meta {
+  name: Featured
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{BACKEND_URI}}/api/v1/products?is_featured=true&limit=8
+  body: none
+  auth: inherit
+}
+
+params:query {
+  is_featured: true
+  limit: 8
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

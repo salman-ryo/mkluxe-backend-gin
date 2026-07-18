@@ -1,0 +1,27 @@
+meta {
+  name: Update Category
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{BACKEND_URI}}/api/v1/admin/categories/6a4a41dff14bd4b4bb656953
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Updated bgs",
+    "is_active": false
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

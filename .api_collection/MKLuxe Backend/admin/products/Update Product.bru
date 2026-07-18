@@ -1,0 +1,28 @@
+meta {
+  name: Update Product
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{BACKEND_URI}}/api/v1/admin/products/6a4132416c1054bf592fb294
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "description": "An updated description for this product.",
+    "status": "archived",
+    "is_featured": false
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

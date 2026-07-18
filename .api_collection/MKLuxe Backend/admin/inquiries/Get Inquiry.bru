@@ -1,0 +1,16 @@
+meta {
+  name: Get Inquiry
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BACKEND_URI}}/api/v1/admin/inquiries/6a4524bd9e59e9b471931ec2
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

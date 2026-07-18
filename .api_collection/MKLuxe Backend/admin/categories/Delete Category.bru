@@ -1,0 +1,16 @@
+meta {
+  name: Delete Category
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{BACKEND_URI}}/api/v1/admin/categories/6a4a41dff14bd4b4bb656953
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -132,43 +132,25 @@ func (r *CategoryRepository) Delete(ctx context.Context, id primitive.ObjectID) 
 }
 
 // ListAll returns every category sorted by sort_order.
-func (r *CategoryRepository) ListAll(ctx context.Context) ([]domain.Category, error) {
-
-	// Configure query options.
-	//
-	// Sort ascending:
-	//
-	// 1
-	// 2
-	// 3
+// ListAll returns categories sorted by sort_order. Supports optional filtering by isFeatured.
+func (r *CategoryRepository) ListAll(ctx context.Context, isFeatured *bool) ([]domain.Category, error) {
 	opts := options.Find().
-		SetSort(bson.D{
-			{Key: "sort_order", Value: 1},
-		})
+		SetSort(bson.D{{Key: "sort_order", Value: 1}})
 
-	// Empty filter {} means:
-	//
-	// "Return every document."
-	cursor, err := r.collection.Find(
-		ctx,
-		bson.M{},
-		opts,
-	)
+	filter := bson.M{}
 
+	// 💡 If a filter is provided, add it to the MongoDB query
+	if isFeatured != nil {
+		filter["is_featured"] = *isFeatured
+	}
+
+	cursor, err := r.collection.Find(ctx, filter, opts)
 	if err != nil {
 		return nil, err
 	}
-
-	// Cursor is similar to an iterator.
-	//
-	// Close it when we're finished to release
-	// resources on both the client and MongoDB server.
 	defer cursor.Close(ctx)
 
 	var categories []domain.Category
-
-	// Read every document from the cursor
-	// and decode them into the slice.
 	if err := cursor.All(ctx, &categories); err != nil {
 		return nil, err
 	}

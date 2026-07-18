@@ -1,0 +1,21 @@
+meta {
+  name: list-by-categoryId
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{BACKEND_URI}}/api/v1/products?category_id=6a4524bd9e59e9b471931ec3&status=published
+  body: none
+  auth: inherit
+}
+
+params:query {
+  category_id: 6a4524bd9e59e9b471931ec3
+  status: published
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

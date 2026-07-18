@@ -1,0 +1,20 @@
+meta {
+  name: Search
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BACKEND_URI}}/api/v1/products?search=gold+ring
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: gold+ring
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

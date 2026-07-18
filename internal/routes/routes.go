@@ -19,7 +19,7 @@ type AppHandlers struct {
 func SetupRouter(handlers AppHandlers, cfg *config.Config) *gin.Engine {
 	router := gin.Default()
 
-	// Pass the dynamically loaded Frontend URLs to the middleware
+	// CORS Middleware
 	router.Use(middleware.CORS(cfg.FrontendURLs))
 
 	// Health check
@@ -27,12 +27,22 @@ func SetupRouter(handlers AppHandlers, cfg *config.Config) *gin.Engine {
 
 	api := router.Group("/api/v1")
 
-	// Mount Public Routes
+	// ==========================================
+	// PUBLIC ROUTES (No Auth Required)
+	// ==========================================
+
+	// Categories
 	api.GET("/categories", handlers.Category.List)
+	api.GET("/categories/:identifier", handlers.Category.Get) // identifier can be ID or slug
+
+	// Products
 	api.GET("/products", handlers.Product.List)
+	api.GET("/products/:identifier", handlers.Product.Get)
+
+	// Inquiries
 	api.POST("/inquiries", handlers.Inquiry.Create)
 
-	// Mount Auth Routes
+	// Auth
 	authGroup := api.Group("/auth")
 	{
 		authGroup.POST("/login", handlers.Auth.Login)
@@ -41,18 +51,27 @@ func SetupRouter(handlers AppHandlers, cfg *config.Config) *gin.Engine {
 		authGroup.GET("/me", middleware.AuthMiddleware(), handlers.Auth.CurrentUser)
 	}
 
-	// Mount Protected Admin Routes
+	// ==========================================
+	// ADMIN ROUTES (Requires JWT Cookie)
+	// ==========================================
 	adminGroup := api.Group("/admin")
-	adminGroup.Use(middleware.AuthMiddleware()) // Requires JWT cookie
+	adminGroup.Use(middleware.AuthMiddleware())
 	{
 		// Categories
 		adminGroup.POST("/categories", handlers.Category.Create)
+		adminGroup.PUT("/categories/:id", handlers.Category.Update)
+		adminGroup.DELETE("/categories/:id", handlers.Category.Delete)
 
-		// 💡 Products nested under categories (Identifier can be ID or Slug)
+		// Products
 		adminGroup.POST("/categories/:identifier/products", handlers.Product.Create)
+		adminGroup.PUT("/products/:id", handlers.Product.Update)
+		adminGroup.DELETE("/products/:id", handlers.Product.Delete)
 
 		// Inquiries
+		// adminGroup.GET("/inquiries", handlers.Inquiry.List)
+		// adminGroup.GET("/inquiries/:id", handlers.Inquiry.Get)
 		adminGroup.PATCH("/inquiries/:id/status", handlers.Inquiry.UpdateStatus)
+		// adminGroup.DELETE("/inquiries/:id", handlers.Inquiry.Delete)
 	}
 
 	return router

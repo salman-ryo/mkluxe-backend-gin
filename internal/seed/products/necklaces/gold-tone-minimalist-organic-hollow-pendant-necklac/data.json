@@ -1,0 +1,32 @@
+{
+"category_slug": "necklaces",
+"name": "Gold Tone Minimalist Organic Hollow Pendant Necklace",
+"slug": "gold-tone-minimalist-organic-hollow-pendant-necklace",
+"description": "Add a touch of modern minimalism to your look with this elegant gold-tone necklace. Featuring a unique, organically shaped hollow pendant suspended on a delicate chain, this anti-tarnish piece offers a sleek and contemporary design perfect for everyday wear.",
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "NECK-ORG-001",
+"price": 699.00,
+"stock": 20,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-18_19-00-18.jpg",
+"alt_text": "Gold tone minimalist necklace featuring an organic hollow open pendant on a delicate chain",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is this necklace suitable for daily wear?",
+"answer": "Yes, this necklace features a durable anti-tarnish finish, making it perfect for everyday use while retaining its beautiful golden shine."
+}
+],
+"meta_title": "Gold Tone Organic Pendant Necklace | Anti-Tarnish Jewelry",
+"meta_description": "Shop the Gold Tone Organic Pendant Necklace. Featuring a minimalist hollow design and a premium anti-tarnish finish, it is the perfect everyday accessory."
+}

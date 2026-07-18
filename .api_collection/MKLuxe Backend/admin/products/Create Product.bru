@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: {{BACKEND_URI}}/api/v1/admin/categories/earrings/products
+  url: {{BACKEND_URI}}/api/v1/admin/products
   body: json
   auth: inherit
 }
@@ -16,29 +16,42 @@ headers {
 
 body:json {
   {
-    "name": "Wooden Solitaire Ring",
-    "description": "A beautiful 1-carat diamond ring.",
-    "primary_category_id": "6a4132416c1054bf592fb294",
-    "status": "published",
-    "is_featured":true,
-    "is_most_sold":false,
-    "variants": [
-      {
-        "sku": "RING-004",
-        "price": 999.99,
-        "stock": 5,
-        "is_default": true
-      }
-    ],
-    "media": [
-      {
-        "url": "https://example.com/ring.jpg",
-        "alt_text": "Gold Ring Front",
-        "is_primary": true
-      }
-    ]
+  "category_slug": "earrings",
+  "name": "Gold Tone Minimalist Bow Stud Earrings",
+  "slug": "gold-tone-minimalist-bow-stud-earrings",
+  "description": "Add a delicate touch of femininity to your style with these gold-tone bow stud earrings. Featuring a sleek, minimalist wire design crafted in the shape of a tied ribbon, this anti-tarnish jewelry piece ensures long-lasting shine and comfortable everyday wear.",
+  "secondary_categories": [],
+  "status": "published",
+  "is_featured": false,
+  "is_most_sold": false,
+  "variants": [
+  {
+  "sku": "EARR-BOW-001",
+  "price": 449.00,
+  "stock": 25,
+  "is_default": true
   }
-  
+  ],
+  "media": [
+  {
+  "url": "photo_2026-07-18_20-03-23.jpg",
+  "alt_text": "Model wearing gold tone minimalist wire bow stud earrings",
+  "is_primary": true
+  }
+  ],
+  "faqs": [
+  {
+  "question": "Are these earrings heavy?",
+  "answer": "No, these earrings feature a lightweight hollow wire design, making them incredibly comfortable for all-day wear."
+  },
+  {
+  "question": "Will these earrings tarnish?",
+  "answer": "They are crafted with a premium anti-tarnish finish to ensure they maintain their bright gold tone and resist fading over time."
+  }
+  ],
+  "meta_title": "Gold Tone Minimalist Bow Stud Earrings | Anti-Tarnish",
+  "meta_description": "Shop our elegant Gold Tone Minimalist Bow Stud Earrings. Designed with a delicate wire ribbon shape and an anti-tarnish finish for enduring everyday style."
+  }
 }
 
 settings {

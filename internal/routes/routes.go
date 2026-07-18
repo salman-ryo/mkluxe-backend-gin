@@ -63,7 +63,7 @@ func SetupRouter(handlers AppHandlers, cfg *config.Config) *gin.Engine {
 		adminGroup.DELETE("/categories/:id", handlers.Category.Delete)
 
 		// Products
-		adminGroup.POST("/categories/:identifier/products", handlers.Product.Create)
+		adminGroup.POST("/products", handlers.Product.Create) // 💡 Updated to /products
 		adminGroup.PUT("/products/:id", handlers.Product.Update)
 		adminGroup.DELETE("/products/:id", handlers.Product.Delete)
 

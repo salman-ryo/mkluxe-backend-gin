@@ -9,19 +9,18 @@ import (
 )
 
 func ValidateProductPayload(req *dto.CreateProductRequest) error {
-	// 1. Check Primary Category ID format
-	if _, err := primitive.ObjectIDFromHex(req.PrimaryCategoryID); err != nil {
-		return errors.New("invalid primary_category_id format")
-	}
+	// 💡 REMOVED the Primary Category ID format check.
+	// Since you are passing the category_slug now, req.PrimaryCategoryID is
+	// empty at this stage. The Service layer will populate it later.
 
-	// 2. Check Secondary Category IDs
+	// 1. Check Secondary Category IDs (if any are provided)
 	for _, catID := range req.SecondaryCategories {
 		if _, err := primitive.ObjectIDFromHex(catID); err != nil {
 			return fmt.Errorf("invalid secondary category ID format: %s", catID)
 		}
 	}
 
-	// 3. Variant business logic
+	// 2. Variant business logic
 	if len(req.Variants) == 0 {
 		return errors.New("product must include at least one variant")
 	}
@@ -53,7 +52,7 @@ func ValidateProductPayload(req *dto.CreateProductRequest) error {
 		return errors.New("multiple variants marked as default; only one allowed")
 	}
 
-	// 4. Media primary image check
+	// 3. Media primary image check
 	if len(req.Media) > 0 {
 		primaryCount := 0
 		for _, m := range req.Media {

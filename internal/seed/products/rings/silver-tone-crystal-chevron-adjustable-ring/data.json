@@ -1,0 +1,37 @@
+{
+"category_slug": "rings",
+"name": "Silver Tone Crystal Chevron Adjustable Ring",
+"slug": "silver-tone-crystal-chevron-adjustable-ring",
+"description": "Enhance your jewelry collection with this elegant silver-tone chevron ring. Featuring a gentle V-shaped curve lined with sparkling clear crystals and an adjustable open band for a perfect fit. Crafted with a premium anti-tarnish finish for enduring shine and everyday wear.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "RING-CHEV-001",
+"price": 599.00,
+"stock": 20,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-18_19-42-55.jpg",
+"alt_text": "Silver tone adjustable chevron ring with clear crystal accents on a white background",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is this ring adjustable?",
+"answer": "Yes, it features an open band design at the back, allowing you to gently adjust the size for a comfortable fit."
+},
+{
+"question": "Is the jewelry anti-tarnish?",
+"answer": "Yes, this ring is crafted with an anti-tarnish finish to ensure it keeps its brilliant silver-tone shine with regular wear."
+}
+],
+"meta_title": "Silver Tone Crystal Chevron Ring | Adjustable Anti-Tarnish",
+"meta_description": "Shop the Silver Tone Crystal Chevron Ring. Featuring a sparkling V-shaped design, an adjustable band, and an anti-tarnish finish for lasting elegance."
+}

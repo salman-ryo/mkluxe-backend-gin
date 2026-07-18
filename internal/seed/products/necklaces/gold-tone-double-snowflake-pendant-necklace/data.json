@@ -1,0 +1,32 @@
+{
+"category_slug": "necklaces",
+"name": "Gold Tone Double Snowflake Pendant Necklace",
+"slug": "gold-tone-double-snowflake-pendant-necklace",
+"description": "Add a delicate touch of winter whimsy to your look with this gold-tone double snowflake necklace. Featuring a fine chain adorned with a prominent primary snowflake pendant and a smaller accompanying snowflake charm, this anti-tarnish piece provides a brilliant, long-lasting shine perfect for everyday wear.",
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "NECK-SNOW-001",
+"price": 699.00,
+"stock": 15,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-18_19-09-39.jpg",
+"alt_text": "Gold tone necklace featuring a delicate chain with a large and small snowflake pendant",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Will the gold finish fade over time?",
+"answer": "No, this necklace is crafted with a high-quality anti-tarnish finish designed to resist fading and maintain its radiant golden shine with regular use."
+}
+],
+"meta_title": "Gold Tone Double Snowflake Necklace | Anti-Tarnish Jewelry",
+"meta_description": "Shop our Gold Tone Double Snowflake Necklace. Featuring two delicate winter-inspired pendants and an anti-tarnish finish, it's the perfect everyday accessory."
+}

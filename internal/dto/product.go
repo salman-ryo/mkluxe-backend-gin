@@ -4,10 +4,11 @@ import "mkluxe-backend/internal/domain"
 
 // CreateProductRequest is used for creating new products.
 type CreateProductRequest struct {
+	CategorySlug        string           `json:"category_slug" binding:"required"` // 💡 Added this to read from body
 	Name                string           `json:"name" binding:"required"`
 	Slug                string           `json:"slug"` // Auto-generated if omitted
 	Description         string           `json:"description" binding:"required"`
-	PrimaryCategoryID   string           `json:"primary_category_id"` // 💡 Removed required binding, handled by URL now
+	PrimaryCategoryID   string           `json:"primary_category_id"`
 	SecondaryCategories []string         `json:"secondary_categories"`
 	Status              string           `json:"status" binding:"required,oneof=draft published archived"`
 	IsFeatured          bool             `json:"is_featured"`

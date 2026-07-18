@@ -1,0 +1,41 @@
+{
+"category_slug": "necklaces",
+"name": "Gold Tone Multi-Heart Lariat Y-Necklace",
+"slug": "gold-tone-multi-heart-lariat-y-necklace",
+"description": "Add a romantic and modern touch to your neckline with this elegant gold-tone Y-necklace. Featuring a delicate chain accented with multiple polished, puffed heart charms and a graceful 4.5cm drop, this anti-tarnish piece offers a stunning, long-lasting shine perfect for layering or wearing solo.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "NECK-Y-HRT-001",
+"price": 799.00,
+"stock": 15,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-18_20-06-32.jpg",
+"alt_text": "Gold tone lariat Y-necklace featuring polished puffed heart charms and dimensional sizing details",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "What is the length of this necklace?",
+"answer": "The necklace features a 42cm chain with a 6cm adjustable extender, allowing for a comfortable and customizable fit. The central drop measures 4.5cm."
+},
+{
+"question": "Are the heart charms large?",
+"answer": "No, the heart charms are delicately sized at 1cm wide, offering a subtle and elegant look."
+},
+{
+"question": "Will this necklace lose its gold tone?",
+"answer": "This necklace is crafted with a high-quality anti-tarnish finish designed to resist fading and maintain its radiant golden shine with regular use."
+}
+],
+"meta_title": "Gold Tone Multi-Heart Y-Necklace | Anti-Tarnish",
+"meta_description": "Shop the elegant Gold Tone Multi-Heart Lariat Y-Necklace. Featuring delicate puffed heart charms, an adjustable chain, and an anti-tarnish finish."
+}

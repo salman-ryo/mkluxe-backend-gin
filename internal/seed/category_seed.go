@@ -34,6 +34,10 @@ func SeedCategories(db *mongo.Database) error {
 			Description: "Shop perfectly matched jewelry sets, including beautiful necklace and earring combos designed for effortless elegance, parties, and special events.",
 		},
 		{
+			Name:        "Rings",
+			Description: "Browse elegant rings for every occasion, including solitaire, adjustable, cocktail, statement, and everyday fashion rings.",
+		},
+		{
 			Name:        "Bracelets & Bangles",
 			Description: "Adorn your wrists with our premium collection of wristwear, featuring delicate bracelets, traditional kadas, and beautifully crafted bangles.",
 		},
@@ -59,7 +63,7 @@ func SeedCategories(db *mongo.Database) error {
 		},
 		{
 			Name:        "Men's Jewelry",
-			Description: "Browse our exclusive men's jewelry collection, featuring bold chains, sophisticated bracelets, and classic rings designed for the modern man.",
+			Description: "Browse our exclusive men's jewelry collection, featuring bold chains, sophisticated bracelets, rings, and accessories designed for the modern man.",
 		},
 		{
 			Name:        "Pendants",
@@ -68,6 +72,26 @@ func SeedCategories(db *mongo.Database) error {
 		{
 			Name:        "Mangalsutra",
 			Description: "Honor your sacred bond with our beautifully crafted mangalsutras, blending traditional significance with contemporary, everyday wearable designs.",
+		},
+		{
+			Name:        "Brooches",
+			Description: "Enhance your attire with elegant brooches and decorative pins featuring floral, vintage, festive, and contemporary designs.",
+		},
+		{
+			Name:        "Toe Rings",
+			Description: "Discover stylish toe rings crafted for everyday wear, traditional ceremonies, and modern fashion.",
+		},
+		{
+			Name:        "Waist Chains",
+			Description: "Explore elegant waist chains and kamarband designs perfect for weddings, festive occasions, and ethnic outfits.",
+		},
+		{
+			Name:        "Body Jewelry",
+			Description: "Shop fashionable body jewelry including belly rings, body chains, and decorative accessories.",
+		},
+		{
+			Name:        "Charms",
+			Description: "Personalize your jewelry with beautiful charms featuring meaningful symbols, initials, and decorative motifs.",
 		},
 	}
 

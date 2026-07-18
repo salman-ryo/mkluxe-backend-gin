@@ -20,15 +20,19 @@ func NewProductHandler(svc *service.ProductService) *ProductHandler {
 }
 
 func (h *ProductHandler) Create(c *gin.Context) {
-	categoryIdentifier := c.Param("identifier")
-	if categoryIdentifier == "" {
-		response.BadRequest(c, "Category identifier is required", nil)
+	var req dto.CreateProductRequest
+
+	// 💡 Bind JSON first to get the category slug from the body
+	if err := c.ShouldBindJSON(&req); err != nil {
+		// 💡 Appended err.Error() to easily debug validation failures
+		response.BadRequest(c, "Invalid request payload: "+err.Error(), nil)
 		return
 	}
 
-	var req dto.CreateProductRequest
-	if err := c.ShouldBindJSON(&req); err != nil {
-		response.BadRequest(c, "Invalid request payload", nil)
+	// 💡 Extract from the struct rather than c.Param
+	categoryIdentifier := req.CategorySlug
+	if categoryIdentifier == "" {
+		response.BadRequest(c, "Category identifier is required", nil)
 		return
 	}
 
@@ -63,8 +67,8 @@ func (h *ProductHandler) List(c *gin.Context) {
 		Search:     c.Query("search"),
 		CategoryID: c.Query("category_id"),
 		Status:     c.Query("status"),
-		IsFeatured: isFeatured, // 💡 Now correctly extracted from URL!
-		IsMostSold: isMostSold, // 💡 Now correctly extracted from URL!
+		IsFeatured: isFeatured,
+		IsMostSold: isMostSold,
 	}
 
 	products, total, err := h.productService.ListProducts(c.Request.Context(), filter, page, limit)
@@ -75,6 +79,7 @@ func (h *ProductHandler) List(c *gin.Context) {
 
 	response.Paginated(c, "Products fetched successfully", products, total, page, limit)
 }
+
 func (h *ProductHandler) Get(c *gin.Context) {
 	identifier := c.Param("identifier")
 

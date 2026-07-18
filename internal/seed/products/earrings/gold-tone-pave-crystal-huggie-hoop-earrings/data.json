@@ -1,0 +1,36 @@
+{
+"category_slug": "earrings",
+"name": "Gold Tone Pave Crystal Huggie Hoop Earrings",
+"slug": "gold-tone-pave-crystal-huggie-hoop-earrings",
+"description": "Elevate your everyday style with these elegant gold-tone huggie hoop earrings. Measuring 1.2cm in height, these delicate hoops feature sparkling crystal detailing on the front. Crafted with an anti-tarnish finish for long-lasting wear and enduring shine.",
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "EARR-HUG-001",
+"price": 499.00,
+"stock": 30,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-18_19-32-59.jpg",
+"alt_text": "Gold tone 1.2cm huggie hoop earrings with pave crystal detailing on a white background",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "What is the size of these hoop earrings?",
+"answer": "These huggie hoop earrings have a height of 1.2cm, making them perfect for a subtle, everyday look."
+},
+{
+"question": "Are these earrings resistant to tarnishing?",
+"answer": "Yes, they are designed with a premium anti-tarnish finish to maintain their gold tone with regular use."
+}
+],
+"meta_title": "Gold Tone Crystal Huggie Hoop Earrings | Anti-Tarnish",
+"meta_description": "Shop our 1.2cm Gold Tone Crystal Huggie Hoop Earrings. Featuring sparkling stones and an anti-tarnish finish, these small hoops are perfect for everyday wear."
+}

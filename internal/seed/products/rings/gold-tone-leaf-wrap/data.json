@@ -1,0 +1,37 @@
+{
+"category_slug": "rings",
+"name": "Gold Tone Leaf Wrap Adjustable Ring",
+"slug": "gold-tone-leaf-wrap-adjustable-ring",
+"description": "Embrace nature-inspired elegance with this gold-tone leaf wrap ring. Featuring a beautifully detailed, adjustable double-branch design, this anti-tarnish piece offers a comfortable fit and a brilliant, enduring shine perfect for any occasion.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "RING-LEAF-001",
+"price": 599.00,
+"stock": 25,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "egring1.jpg",
+"alt_text": "Gold tone leaf wrap adjustable ring featuring a botanical branch design on a white background",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is this ring adjustable?",
+"answer": "Yes, the open wrap design allows you to gently adjust the ring to comfortably fit most finger sizes."
+},
+{
+"question": "Will this ring tarnish over time?",
+"answer": "No, it is crafted with a high-quality anti-tarnish finish to ensure it maintains its radiant gold tone with regular wear."
+}
+],
+"meta_title": "Gold Tone Leaf Wrap Ring | Anti-Tarnish Jewelry",
+"meta_description": "Shop our beautiful Gold Tone Leaf Wrap Ring. Featuring an adjustable branch design and an anti-tarnish finish, it is the perfect nature-inspired accessory."
+}

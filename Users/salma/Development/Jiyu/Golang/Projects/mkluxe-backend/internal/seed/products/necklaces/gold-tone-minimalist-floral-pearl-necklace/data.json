@@ -1,0 +1,37 @@
+{
+    "category_slug": "necklaces",
+    "name": "Gold Tone Minimalist Floral Pearl Necklace",
+    "slug": "gold-tone-minimalist-floral-pearl-necklace",
+    "description": "Add delicate sophistication to your neckline with this gold-tone necklace. Featuring a minimalist four-petal floral charm alongside a petite faux pearl on a fine chain. Crafted with a premium anti-tarnish finish.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "NECK-FLOR-PRL-001",
+            "price": 599.00,
+            "stock": 35,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_14-20-06.jpg",
+            "alt_text": "Gold tone fine chain necklace with a small floral charm and a faux pearl",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Is the pearl real?",
+            "answer": "The necklace features a high-quality faux pearl designed to offer an elegant look with everyday durability."
+        },
+        {
+            "question": "Can I wear this everyday?",
+            "answer": "Yes, it features a durable anti-tarnish finish, making it a beautiful and reliable accessory for daily wear."
+        }
+    ],
+    "meta_title": "Gold Tone Floral Pearl Necklace | Anti-Tarnish",
+    "meta_description": "Shop our Gold Tone Minimalist Floral Pearl Necklace. Featuring a delicate flower charm, a faux pearl, and a lasting anti-tarnish finish."
+}

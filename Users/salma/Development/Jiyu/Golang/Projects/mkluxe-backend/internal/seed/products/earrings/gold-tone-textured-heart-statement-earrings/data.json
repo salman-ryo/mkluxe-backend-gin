@@ -1,0 +1,37 @@
+{
+    "category_slug": "earrings",
+    "name": "Gold Tone Textured Heart Statement Earrings",
+    "slug": "gold-tone-textured-heart-statement-earrings",
+    "description": "Elevate your evening look with these bold gold-tone statement earrings. Featuring a large heart shape with intricate, crumpled metal texturing and a premium anti-tarnish finish for a striking, vintage-inspired aesthetic.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": true,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "EARR-HRT-TXT-001",
+            "price": 799.00,
+            "stock": 20,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_14-17-36.jpg",
+            "alt_text": "Model wearing large gold tone textured heart statement earrings",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Are these statement earrings heavy on the earlobes?",
+            "answer": "While they provide a bold oversized look, they are crafted to be hollowed or lightweight enough for comfortable evening wear."
+        },
+        {
+            "question": "Is the jewelry anti-tarnish?",
+            "answer": "Yes, these earrings are protected by a high-quality anti-tarnish finish to preserve their textured golden shine."
+        }
+    ],
+    "meta_title": "Gold Tone Textured Heart Statement Earrings | Anti-Tarnish",
+    "meta_description": "Make a statement with our Gold Tone Textured Heart Earrings. Featuring a vintage-inspired crumpled metal design and a premium anti-tarnish finish."
+}

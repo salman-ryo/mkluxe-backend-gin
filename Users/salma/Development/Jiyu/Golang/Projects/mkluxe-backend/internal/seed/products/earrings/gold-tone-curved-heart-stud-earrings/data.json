@@ -1,0 +1,33 @@
+{
+    "category_slug": "earrings",
+    "name": "Gold Tone Curved Heart Stud Earrings",
+    "slug": "gold-tone-curved-heart-stud-earrings",
+    "description": "Embrace modern romance with these gold-tone heart stud earrings. Featuring a unique curved, elongated heart design with a high-polish finish. Protected by an anti-tarnish coating for lasting shine.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": true,
+    "variants": [
+        {
+            "sku": "EARR-HRT-004",
+            "price": 499.00,
+            "stock": 40,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_14-20-37.jpg",
+            "alt_text": "Model wearing gold tone curved elongated heart stud earrings",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Are these suitable for sensitive ears?",
+            "answer": "Yes, they are crafted with high-quality, skin-friendly materials and an anti-tarnish finish."
+        }
+    ],
+    "meta_title": "Gold Tone Curved Heart Stud Earrings | Anti-Tarnish",
+    "meta_description": "Discover our Gold Tone Curved Heart Stud Earrings. A modern, elongated heart design finished with a premium anti-tarnish coating for everyday wear."
+}

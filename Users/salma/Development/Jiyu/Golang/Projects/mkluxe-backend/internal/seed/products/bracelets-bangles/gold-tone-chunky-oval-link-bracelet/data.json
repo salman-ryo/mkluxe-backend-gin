@@ -1,0 +1,37 @@
+{
+    "category_slug": "bracelets-bangles",
+    "name": "Gold Tone Chunky Oval Link Bracelet",
+    "slug": "gold-tone-chunky-oval-link-bracelet",
+    "description": "Add a touch of classic elegance to your wrist with this gold-tone chunky oval link bracelet. Featuring a polished, interlocking chain design and an anti-tarnish finish for enduring, everyday wear.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "BRAC-OVAL-001",
+            "price": 699.00,
+            "stock": 30,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_14-20-52.jpg",
+            "alt_text": "Model wearing a gold tone chunky oval link chain bracelet",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Is this bracelet heavy?",
+            "answer": "Despite its chunky look, the links are designed to be comfortably lightweight for all-day wear."
+        },
+        {
+            "question": "Will the gold finish tarnish?",
+            "answer": "No, it is protected with a premium anti-tarnish finish to ensure it maintains its radiant shine."
+        }
+    ],
+    "meta_title": "Gold Tone Chunky Oval Link Bracelet | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Chunky Oval Link Bracelet. Featuring a polished interlocking chain design and a lasting anti-tarnish finish for everyday elegance."
+}

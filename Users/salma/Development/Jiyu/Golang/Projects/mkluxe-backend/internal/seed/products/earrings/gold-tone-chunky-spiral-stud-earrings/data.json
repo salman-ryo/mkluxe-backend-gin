@@ -1,0 +1,33 @@
+{
+    "category_slug": "earrings",
+    "name": "Gold Tone Chunky Spiral Stud Earrings",
+    "slug": "gold-tone-chunky-spiral-stud-earrings",
+    "description": "Make a bold statement with these gold-tone chunky spiral stud earrings. Crafted with a thick, rounded wire design swirling into a perfect spiral, complete with an anti-tarnish finish for long-lasting brilliance.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "EARR-SPIR-001",
+            "price": 549.00,
+            "stock": 25,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_14-20-24.jpg",
+            "alt_text": "Gold tone chunky rounded wire spiral stud earrings",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Will these earrings fade easily?",
+            "answer": "No, they are treated with a durable anti-tarnish coating to resist fading and maintain their gold-tone brilliance."
+        }
+    ],
+    "meta_title": "Gold Tone Chunky Spiral Stud Earrings | Anti-Tarnish",
+    "meta_description": "Shop the bold Gold Tone Chunky Spiral Stud Earrings. Featuring a thick wire swirl design and a premium anti-tarnish finish."
+}

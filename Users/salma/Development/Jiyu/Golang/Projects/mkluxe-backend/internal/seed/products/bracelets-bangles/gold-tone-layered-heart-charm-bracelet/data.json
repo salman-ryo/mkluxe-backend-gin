@@ -1,0 +1,37 @@
+{
+    "category_slug": "bracelets-bangles",
+    "name": "Gold Tone Layered Heart Charm Bracelet",
+    "slug": "gold-tone-layered-heart-charm-bracelet",
+    "description": "Achieve a perfectly styled wrist stack with this gold-tone double-layered bracelet. Combining a trendy paperclip link chain with a delicate chain featuring spherical bead drops and a central polished puffed heart charm. Designed with an anti-tarnish finish.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "BRAC-LAY-HRT-002",
+            "price": 699.00,
+            "stock": 35,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-13-40.jpg",
+            "alt_text": "Model wearing a gold tone layered bracelet featuring a paperclip chain and a heart charm chain",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Is this a single piece of jewelry?",
+            "answer": "Yes, this is a single bracelet designed with two integrated chains for an effortless layered look."
+        },
+        {
+            "question": "Can I wear this everyday?",
+            "answer": "Yes, it features a premium anti-tarnish finish making it highly durable for daily wear."
+        }
+    ],
+    "meta_title": "Gold Tone Layered Heart Charm Bracelet | Anti-Tarnish",
+    "meta_description": "Shop our Gold Tone Layered Heart Charm Bracelet. Featuring a trendy paperclip chain paired with a delicate heart charm chain and an anti-tarnish finish."
+}

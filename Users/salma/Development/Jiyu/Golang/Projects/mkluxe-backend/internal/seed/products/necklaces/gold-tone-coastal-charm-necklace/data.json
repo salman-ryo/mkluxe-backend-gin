@@ -1,0 +1,33 @@
+{
+    "category_slug": "necklaces",
+    "name": "Gold Tone Coastal Charm Necklace",
+    "slug": "gold-tone-coastal-charm-necklace",
+    "description": "Embrace beach-inspired elegance with this gold-tone coastal charm necklace. Featuring a delicate link chain embellished with a seashell, a faux pearl, a textured starfish, and a blue stone charm. Finished with an anti-tarnish coating for endless summer style.",
+    "secondary_categories": ["charms"],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "NECK-CSTL-001",
+            "price": 799.00,
+            "stock": 25,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-15-09.jpg",
+            "alt_text": "Model wearing a gold tone necklace with seashell, pearl, starfish, and blue stone charms",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Are the charms heavy?",
+            "answer": "No, the charms are designed to be lightweight and comfortable for everyday wear."
+        }
+    ],
+    "meta_title": "Gold Tone Coastal Charm Necklace | Anti-Tarnish",
+    "meta_description": "Discover the Gold Tone Coastal Charm Necklace. Featuring beach-inspired shell, pearl, and starfish charms with a premium anti-tarnish finish."
+}

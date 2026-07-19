@@ -1,0 +1,37 @@
+{
+    "category_slug": "earrings",
+    "name": "Gold Tone Textured Starfish Drop Earrings",
+    "slug": "gold-tone-textured-starfish-drop-earrings",
+    "description": "Channel coastal vibes with these elegant gold-tone drop earrings. Featuring detailed, textured starfish charms suspended from classic ball studs. Crafted with a high-quality anti-tarnish finish to ensure they maintain their brilliant shine.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "EARR-STAR-002",
+            "price": 549.00,
+            "stock": 30,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-13-05.jpg",
+            "alt_text": "Gold tone drop earrings featuring textured starfish charms on ball studs",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "What type of closure do these earrings have?",
+            "answer": "They feature a secure push-back closure on a ball stud design."
+        },
+        {
+            "question": "Will these tarnish if worn near the beach?",
+            "answer": "While they feature a durable anti-tarnish finish, we recommend removing them before swimming in saltwater to prolong their lifespan."
+        }
+    ],
+    "meta_title": "Gold Tone Textured Starfish Drop Earrings | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Textured Starfish Drop Earrings. Coastal-inspired statement pieces featuring detailed charms and a lasting anti-tarnish finish."
+}

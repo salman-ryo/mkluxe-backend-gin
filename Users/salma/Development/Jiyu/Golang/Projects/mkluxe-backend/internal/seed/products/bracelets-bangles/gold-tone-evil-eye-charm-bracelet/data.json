@@ -1,0 +1,37 @@
+{
+    "category_slug": "bracelets-bangles",
+    "name": "Gold Tone Evil Eye Charm Bracelet",
+    "slug": "gold-tone-evil-eye-charm-bracelet",
+    "description": "Protect your energy with this stunning gold-tone bracelet. Featuring a sleek snake chain adorned with textured bead spacers, striking blue crystal teardrops, and intricate evil eye charms. Crafted with a premium anti-tarnish finish.",
+    "secondary_categories": ["charms"],
+    "status": "published",
+    "is_featured": true,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "BRAC-EYE-001",
+            "price": 649.00,
+            "stock": 30,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-15-21.jpg",
+            "alt_text": "Gold tone snake chain bracelet featuring evil eye charms and blue crystal teardrops",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Is the size adjustable?",
+            "answer": "Yes, it features an extender chain with a secure lobster clasp for a customizable fit."
+        },
+        {
+            "question": "Will this bracelet tarnish?",
+            "answer": "No, it is treated with a high-quality anti-tarnish finish to ensure long-lasting wear and shine."
+        }
+    ],
+    "meta_title": "Gold Tone Evil Eye Charm Bracelet | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Evil Eye Charm Bracelet. Featuring blue crystal teardrops, detailed charms, and a lasting anti-tarnish finish."
+}

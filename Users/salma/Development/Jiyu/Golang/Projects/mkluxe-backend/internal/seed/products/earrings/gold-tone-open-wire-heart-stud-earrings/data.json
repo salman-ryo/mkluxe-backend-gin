@@ -1,0 +1,33 @@
+{
+    "category_slug": "earrings",
+    "name": "Gold Tone Open Wire Heart Stud Earrings",
+    "slug": "gold-tone-open-wire-heart-stud-earrings",
+    "description": "Add a delicate touch of romance to your style with these gold-tone open wire heart stud earrings. Featuring a sleek, minimalist hollow heart silhouette and a premium anti-tarnish finish for enduring, everyday wear.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "EARR-WIRE-HRT-001",
+            "price": 449.00,
+            "stock": 50,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-13-10.jpg",
+            "alt_text": "Model wearing minimalist gold tone open wire heart stud earrings",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Are these earrings comfortable for daily use?",
+            "answer": "Yes, the open wire design makes them incredibly lightweight and perfect for all-day comfort."
+        }
+    ],
+    "meta_title": "Gold Tone Open Wire Heart Stud Earrings | Anti-Tarnish",
+    "meta_description": "Discover our Gold Tone Open Wire Heart Stud Earrings. A minimalist, lightweight design finished with a durable anti-tarnish coating for everyday style."
+}

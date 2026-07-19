@@ -1,0 +1,37 @@
+{
+    "category_slug": "necklaces",
+    "name": "Gold Tone Minimalist Solitaire Necklace",
+    "slug": "gold-tone-minimalist-solitaire-necklace",
+    "description": "Add a touch of subtle brilliance to your look with this gold-tone minimalist necklace. Featuring a delicate chain and a single, sparkling round-cut clear crystal in a secure setting. Crafted with a premium anti-tarnish finish for enduring everyday elegance.",
+    "secondary_categories": ["pendants"],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": true,
+    "variants": [
+        {
+            "sku": "NECK-SOL-002",
+            "price": 499.00,
+            "stock": 40,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-14-54.jpg",
+            "alt_text": "Delicate gold tone chain necklace featuring a single round clear crystal pendant",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Is this necklace suitable for layering?",
+            "answer": "Yes, its delicate and minimalist design makes it the perfect piece to layer with other necklaces."
+        },
+        {
+            "question": "Will the gold tone fade quickly?",
+            "answer": "No, it is protected by a durable anti-tarnish coating to maintain its radiant shine."
+        }
+    ],
+    "meta_title": "Gold Tone Minimalist Solitaire Necklace | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Minimalist Solitaire Necklace. Featuring a delicate chain, a brilliant clear crystal pendant, and a lasting anti-tarnish finish."
+}

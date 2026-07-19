@@ -20,122 +20,241 @@ func main() {
 
 	seeds := []ProductSeed{
 		{
-			CategorySlug: "earrings",
-			ProductSlug:  "gold-tone-textured-square-hoop-earrings",
+			CategorySlug: "bracelets-bangles",
+			ProductSlug:  "gold-tone-evil-eye-charm-bracelet",
 			JSONData: `{
-    "category_slug": "earrings",
-    "name": "Gold Tone Textured Square Hoop Earrings",
-    "slug": "gold-tone-textured-square-hoop-earrings",
-    "description": "Make a sophisticated statement with these gold-tone square hoop earrings. Featuring a unique geometric shape with a hammered texture and a premium anti-tarnish finish for an elegant, everyday look.",
-    "secondary_categories": [],
+    "category_slug": "bracelets-bangles",
+    "name": "Gold Tone Evil Eye Charm Bracelet",
+    "slug": "gold-tone-evil-eye-charm-bracelet",
+    "description": "Protect your energy with this stunning gold-tone bracelet. Featuring a sleek snake chain adorned with textured bead spacers, striking blue crystal teardrops, and intricate evil eye charms. Crafted with a premium anti-tarnish finish.",
+    "secondary_categories": ["charms"],
+    "status": "published",
+    "is_featured": true,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "BRAC-EYE-001",
+            "price": 649.00,
+            "stock": 30,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-15-21.jpg",
+            "alt_text": "Gold tone snake chain bracelet featuring evil eye charms and blue crystal teardrops",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Is the size adjustable?",
+            "answer": "Yes, it features an extender chain with a secure lobster clasp for a customizable fit."
+        },
+        {
+            "question": "Will this bracelet tarnish?",
+            "answer": "No, it is treated with a high-quality anti-tarnish finish to ensure long-lasting wear and shine."
+        }
+    ],
+    "meta_title": "Gold Tone Evil Eye Charm Bracelet | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Evil Eye Charm Bracelet. Featuring blue crystal teardrops, detailed charms, and a lasting anti-tarnish finish."
+}`,
+		},
+		{
+			CategorySlug: "necklaces",
+			ProductSlug:  "gold-tone-coastal-charm-necklace",
+			JSONData: `{
+    "category_slug": "necklaces",
+    "name": "Gold Tone Coastal Charm Necklace",
+    "slug": "gold-tone-coastal-charm-necklace",
+    "description": "Embrace beach-inspired elegance with this gold-tone coastal charm necklace. Featuring a delicate link chain embellished with a seashell, a faux pearl, a textured starfish, and a blue stone charm. Finished with an anti-tarnish coating for endless summer style.",
+    "secondary_categories": ["charms"],
     "status": "published",
     "is_featured": false,
     "is_most_sold": false,
     "variants": [
         {
-            "sku": "EARR-SQR-HOOP-001",
-            "price": 599.00,
+            "sku": "NECK-CSTL-001",
+            "price": 799.00,
             "stock": 25,
             "is_default": true
         }
     ],
     "media": [
         {
-            "url": "photo_2026-07-19_16-05-51.jpg",
-            "alt_text": "Model wearing gold tone textured square geometric hoop earrings",
+            "url": "photo_2026-07-19_16-15-09.jpg",
+            "alt_text": "Model wearing a gold tone necklace with seashell, pearl, starfish, and blue stone charms",
             "is_primary": true
         }
     ],
     "faqs": [
         {
-            "question": "Are these hoops heavy?",
-            "answer": "Despite their bold geometric design, these earrings are crafted to be comfortably lightweight for all-day wear."
-        },
-        {
-            "question": "Will the gold finish fade over time?",
-            "answer": "No, they are treated with a durable anti-tarnish finish to ensure they maintain their brilliant shine."
+            "question": "Are the charms heavy?",
+            "answer": "No, the charms are designed to be lightweight and comfortable for everyday wear."
         }
     ],
-    "meta_title": "Gold Tone Textured Square Hoop Earrings | Anti-Tarnish",
-    "meta_description": "Shop the Gold Tone Textured Square Hoop Earrings. Featuring a vintage-inspired hammered texture, geometric design, and a lasting anti-tarnish finish."
+    "meta_title": "Gold Tone Coastal Charm Necklace | Anti-Tarnish",
+    "meta_description": "Discover the Gold Tone Coastal Charm Necklace. Featuring beach-inspired shell, pearl, and starfish charms with a premium anti-tarnish finish."
 }`,
 		},
 		{
-			CategorySlug: "earrings",
-			ProductSlug:  "gold-tone-melting-heart-statement-earrings",
+			CategorySlug: "necklaces",
+			ProductSlug:  "gold-tone-minimalist-solitaire-necklace",
 			JSONData: `{
-    "category_slug": "earrings",
-    "name": "Gold Tone Melting Heart Statement Earrings",
-    "slug": "gold-tone-melting-heart-statement-earrings",
-    "description": "Embrace avant-garde style with these gold-tone melting heart earrings. Featuring a high-polish, contemporary drip design, these statement studs are finished with an anti-tarnish coating for lasting brilliance and modern flair.",
-    "secondary_categories": [],
-    "status": "published",
-    "is_featured": true,
-    "is_most_sold": false,
-    "variants": [
-        {
-            "sku": "EARR-MELT-HRT-001",
-            "price": 699.00,
-            "stock": 20,
-            "is_default": true
-        }
-    ],
-    "media": [
-        {
-            "url": "photo_2026-07-19_16-05-45.jpg",
-            "alt_text": "Model wearing bold gold tone melting heart drip statement earrings",
-            "is_primary": true
-        }
-    ],
-    "faqs": [
-        {
-            "question": "Are these statement earrings comfortable?",
-            "answer": "Yes, they are designed as stud earrings to provide a secure and comfortable fit while offering a bold, elongated look."
-        }
-    ],
-    "meta_title": "Gold Tone Melting Heart Statement Earrings | Anti-Tarnish",
-    "meta_description": "Discover our Gold Tone Melting Heart Statement Earrings. A bold, contemporary liquid metal design finished with a premium anti-tarnish coating."
-}`,
-		},
-		{
-			CategorySlug: "bracelets-bangles",
-			ProductSlug:  "gold-tone-layered-snake-chain-beaded-bracelet",
-			JSONData: `{
-    "category_slug": "bracelets-bangles",
-    "name": "Gold Tone Layered Snake Chain Beaded Bracelet",
-    "slug": "gold-tone-layered-snake-chain-beaded-bracelet",
-    "description": "Elevate your wrist stack effortlessly with this gold-tone layered bracelet. Showcasing a flat herringbone snake chain and a rounded snake chain accented with polished sphere beads. Crafted with a premium anti-tarnish finish for enduring, everyday elegance.",
-    "secondary_categories": [],
+    "category_slug": "necklaces",
+    "name": "Gold Tone Minimalist Solitaire Necklace",
+    "slug": "gold-tone-minimalist-solitaire-necklace",
+    "description": "Add a touch of subtle brilliance to your look with this gold-tone minimalist necklace. Featuring a delicate chain and a single, sparkling round-cut clear crystal in a secure setting. Crafted with a premium anti-tarnish finish for enduring everyday elegance.",
+    "secondary_categories": ["pendants"],
     "status": "published",
     "is_featured": false,
     "is_most_sold": true,
     "variants": [
         {
-            "sku": "BRAC-LAY-SNK-001",
-            "price": 749.00,
+            "sku": "NECK-SOL-002",
+            "price": 499.00,
+            "stock": 40,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-14-54.jpg",
+            "alt_text": "Delicate gold tone chain necklace featuring a single round clear crystal pendant",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Is this necklace suitable for layering?",
+            "answer": "Yes, its delicate and minimalist design makes it the perfect piece to layer with other necklaces."
+        },
+        {
+            "question": "Will the gold tone fade quickly?",
+            "answer": "No, it is protected by a durable anti-tarnish coating to maintain its radiant shine."
+        }
+    ],
+    "meta_title": "Gold Tone Minimalist Solitaire Necklace | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Minimalist Solitaire Necklace. Featuring a delicate chain, a brilliant clear crystal pendant, and a lasting anti-tarnish finish."
+}`,
+		},
+		{
+			CategorySlug: "bracelets-bangles",
+			ProductSlug:  "gold-tone-layered-heart-charm-bracelet",
+			JSONData: `{
+    "category_slug": "bracelets-bangles",
+    "name": "Gold Tone Layered Heart Charm Bracelet",
+    "slug": "gold-tone-layered-heart-charm-bracelet",
+    "description": "Achieve a perfectly styled wrist stack with this gold-tone double-layered bracelet. Combining a trendy paperclip link chain with a delicate chain featuring spherical bead drops and a central polished puffed heart charm. Designed with an anti-tarnish finish.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "BRAC-LAY-HRT-002",
+            "price": 699.00,
             "stock": 35,
             "is_default": true
         }
     ],
     "media": [
         {
-            "url": "photo_2026-07-19_16-05-37.jpg",
-            "alt_text": "Model wearing a gold tone layered snake chain and herringbone bracelet with spherical bead accents",
+            "url": "photo_2026-07-19_16-13-40.jpg",
+            "alt_text": "Model wearing a gold tone layered bracelet featuring a paperclip chain and a heart charm chain",
             "is_primary": true
         }
     ],
     "faqs": [
         {
-            "question": "Are these two separate bracelets?",
-            "answer": "No, this is a beautifully designed single bracelet featuring two attached chains for a perfect, tangle-free layered look."
+            "question": "Is this a single piece of jewelry?",
+            "answer": "Yes, this is a single bracelet designed with two integrated chains for an effortless layered look."
         },
         {
-            "question": "Is this bracelet anti-tarnish?",
-            "answer": "Yes, it is protected with a high-quality anti-tarnish finish to preserve its radiant golden shine."
+            "question": "Can I wear this everyday?",
+            "answer": "Yes, it features a premium anti-tarnish finish making it highly durable for daily wear."
         }
     ],
-    "meta_title": "Gold Tone Layered Snake Chain Bracelet | Anti-Tarnish",
-    "meta_description": "Shop the Gold Tone Layered Snake Chain Beaded Bracelet. Featuring a chic flat herringbone and rounded chain design with a lasting anti-tarnish finish."
+    "meta_title": "Gold Tone Layered Heart Charm Bracelet | Anti-Tarnish",
+    "meta_description": "Shop our Gold Tone Layered Heart Charm Bracelet. Featuring a trendy paperclip chain paired with a delicate heart charm chain and an anti-tarnish finish."
+}`,
+		},
+		{
+			CategorySlug: "earrings",
+			ProductSlug:  "gold-tone-open-wire-heart-stud-earrings",
+			JSONData: `{
+    "category_slug": "earrings",
+    "name": "Gold Tone Open Wire Heart Stud Earrings",
+    "slug": "gold-tone-open-wire-heart-stud-earrings",
+    "description": "Add a delicate touch of romance to your style with these gold-tone open wire heart stud earrings. Featuring a sleek, minimalist hollow heart silhouette and a premium anti-tarnish finish for enduring, everyday wear.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "EARR-WIRE-HRT-001",
+            "price": 449.00,
+            "stock": 50,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-13-10.jpg",
+            "alt_text": "Model wearing minimalist gold tone open wire heart stud earrings",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Are these earrings comfortable for daily use?",
+            "answer": "Yes, the open wire design makes them incredibly lightweight and perfect for all-day comfort."
+        }
+    ],
+    "meta_title": "Gold Tone Open Wire Heart Stud Earrings | Anti-Tarnish",
+    "meta_description": "Discover our Gold Tone Open Wire Heart Stud Earrings. A minimalist, lightweight design finished with a durable anti-tarnish coating for everyday style."
+}`,
+		},
+		{
+			CategorySlug: "earrings",
+			ProductSlug:  "gold-tone-textured-starfish-drop-earrings",
+			JSONData: `{
+    "category_slug": "earrings",
+    "name": "Gold Tone Textured Starfish Drop Earrings",
+    "slug": "gold-tone-textured-starfish-drop-earrings",
+    "description": "Channel coastal vibes with these elegant gold-tone drop earrings. Featuring detailed, textured starfish charms suspended from classic ball studs. Crafted with a high-quality anti-tarnish finish to ensure they maintain their brilliant shine.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "EARR-STAR-002",
+            "price": 549.00,
+            "stock": 30,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-13-05.jpg",
+            "alt_text": "Gold tone drop earrings featuring textured starfish charms on ball studs",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "What type of closure do these earrings have?",
+            "answer": "They feature a secure push-back closure on a ball stud design."
+        },
+        {
+            "question": "Will these tarnish if worn near the beach?",
+            "answer": "While they feature a durable anti-tarnish finish, we recommend removing them before swimming in saltwater to prolong their lifespan."
+        }
+    ],
+    "meta_title": "Gold Tone Textured Starfish Drop Earrings | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Textured Starfish Drop Earrings. Coastal-inspired statement pieces featuring detailed charms and a lasting anti-tarnish finish."
 }`,
 		},
 	}

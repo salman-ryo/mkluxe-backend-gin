@@ -1,0 +1,33 @@
+{
+    "category_slug": "earrings",
+    "name": "Gold Tone Melting Heart Statement Earrings",
+    "slug": "gold-tone-melting-heart-statement-earrings",
+    "description": "Embrace avant-garde style with these gold-tone melting heart earrings. Featuring a high-polish, contemporary drip design, these statement studs are finished with an anti-tarnish coating for lasting brilliance and modern flair.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": true,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "EARR-MELT-HRT-001",
+            "price": 699.00,
+            "stock": 20,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-05-45.jpg",
+            "alt_text": "Model wearing bold gold tone melting heart drip statement earrings",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Are these statement earrings comfortable?",
+            "answer": "Yes, they are designed as stud earrings to provide a secure and comfortable fit while offering a bold, elongated look."
+        }
+    ],
+    "meta_title": "Gold Tone Melting Heart Statement Earrings | Anti-Tarnish",
+    "meta_description": "Discover our Gold Tone Melting Heart Statement Earrings. A bold, contemporary liquid metal design finished with a premium anti-tarnish coating."
+}

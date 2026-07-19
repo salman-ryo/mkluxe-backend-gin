@@ -1,0 +1,37 @@
+{
+    "category_slug": "bracelets-bangles",
+    "name": "Gold Tone Layered Snake Chain Beaded Bracelet",
+    "slug": "gold-tone-layered-snake-chain-beaded-bracelet",
+    "description": "Elevate your wrist stack effortlessly with this gold-tone layered bracelet. Showcasing a flat herringbone snake chain and a rounded snake chain accented with polished sphere beads. Crafted with a premium anti-tarnish finish for enduring, everyday elegance.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": true,
+    "variants": [
+        {
+            "sku": "BRAC-LAY-SNK-001",
+            "price": 749.00,
+            "stock": 35,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-05-37.jpg",
+            "alt_text": "Model wearing a gold tone layered snake chain and herringbone bracelet with spherical bead accents",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Are these two separate bracelets?",
+            "answer": "No, this is a beautifully designed single bracelet featuring two attached chains for a perfect, tangle-free layered look."
+        },
+        {
+            "question": "Is this bracelet anti-tarnish?",
+            "answer": "Yes, it is protected with a high-quality anti-tarnish finish to preserve its radiant golden shine."
+        }
+    ],
+    "meta_title": "Gold Tone Layered Snake Chain Bracelet | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Layered Snake Chain Beaded Bracelet. Featuring a chic flat herringbone and rounded chain design with a lasting anti-tarnish finish."
+}

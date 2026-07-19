@@ -1,0 +1,37 @@
+{
+    "category_slug": "earrings",
+    "name": "Gold Tone Textured Square Hoop Earrings",
+    "slug": "gold-tone-textured-square-hoop-earrings",
+    "description": "Make a sophisticated statement with these gold-tone square hoop earrings. Featuring a unique geometric shape with a hammered texture and a premium anti-tarnish finish for an elegant, everyday look.",
+    "secondary_categories": [],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "EARR-SQR-HOOP-001",
+            "price": 599.00,
+            "stock": 25,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-05-51.jpg",
+            "alt_text": "Model wearing gold tone textured square geometric hoop earrings",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Are these hoops heavy?",
+            "answer": "Despite their bold geometric design, these earrings are crafted to be comfortably lightweight for all-day wear."
+        },
+        {
+            "question": "Will the gold finish fade over time?",
+            "answer": "No, they are treated with a durable anti-tarnish finish to ensure they maintain their brilliant shine."
+        }
+    ],
+    "meta_title": "Gold Tone Textured Square Hoop Earrings | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Textured Square Hoop Earrings. Featuring a vintage-inspired hammered texture, geometric design, and a lasting anti-tarnish finish."
+}

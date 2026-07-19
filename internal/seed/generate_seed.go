@@ -16,7 +16,7 @@ type ProductSeed struct {
 
 func main() {
 	// Base path provided in your prompt
-	basePath := filepath.Join("C:", "Users", "salma", "Development", "Jiyu", "Golang", "Projects", "mkluxe-backend", "internal", "seed", "products")
+	basePath := filepath.Join("internal", "seed", "products")
 
 	seeds := []ProductSeed{
 		{

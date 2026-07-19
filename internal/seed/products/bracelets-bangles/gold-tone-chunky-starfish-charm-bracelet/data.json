@@ -1,0 +1,39 @@
+{
+    "category_slug": "bracelets-bangles",
+    "name": "Gold Tone Chunky Starfish Charm Bracelet",
+    "slug": "gold-tone-chunky-starfish-charm-bracelet",
+    "description": "Make a splash with this statement gold-tone charm bracelet. Featuring a chunky, twisted chain adorned with beautifully detailed, textured starfish charms. Finished with a premium anti-tarnish coating for endless summer style.",
+    "secondary_categories": [
+        "charms"
+    ],
+    "status": "published",
+    "is_featured": false,
+    "is_most_sold": false,
+    "variants": [
+        {
+            "sku": "BRAC-STAR-001",
+            "price": 799.00,
+            "stock": 25,
+            "is_default": true
+        }
+    ],
+    "media": [
+        {
+            "url": "photo_2026-07-19_16-32-59.jpg",
+            "alt_text": "Model wearing a chunky gold tone twisted chain bracelet with textured starfish charms",
+            "is_primary": true
+        }
+    ],
+    "faqs": [
+        {
+            "question": "Is this bracelet heavy?",
+            "answer": "It has a bold, chunky statement look but is carefully crafted to remain comfortable for everyday wear."
+        },
+        {
+            "question": "Can I wear this to the beach?",
+            "answer": "Yes, it features a durable anti-tarnish finish! However, we recommend rinsing it with fresh water after exposure to salt water to maintain its optimal shine."
+        }
+    ],
+    "meta_title": "Gold Tone Chunky Starfish Charm Bracelet | Anti-Tarnish",
+    "meta_description": "Shop the Gold Tone Chunky Starfish Charm Bracelet. Featuring a bold twisted chain, textured coastal starfish charms, and a lasting anti-tarnish finish."
+}

@@ -1,0 +1,37 @@
+{
+"category_slug": "bracelets-bangles",
+"name": "Gold Tone Black Clover Motif Bracelet",
+"slug": "gold-tone-black-clover-motif-bracelet",
+"description": "Make a chic and lucky statement with this elegant gold-tone bracelet. Showcasing five iconic clover motifs with striking black centers connected by a delicate chain. Finished with a premium anti-tarnish coating, ensuring this sophisticated piece remains radiant through everyday wear.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": true,
+"variants": [
+{
+"sku": "BRAC-CLOV-BLK-001",
+"price": 799.00,
+"stock": 20,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-39-13.jpg",
+"alt_text": "Gold tone chain bracelet featuring five black clover motifs with textured borders",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "How many clover charms are on the bracelet?",
+"answer": "This elegant bracelet features five evenly spaced black clover motifs."
+},
+{
+"question": "Does the bracelet have an extender?",
+"answer": "Yes, it is designed with an adjustable extender chain to ensure a comfortable fit for various wrist sizes."
+}
+],
+"meta_title": "Gold Tone Black Clover Bracelet | Anti-Tarnish",
+"meta_description": "Shop the sophisticated Gold Tone Black Clover Motif Bracelet. Featuring five bold black clovers on a delicate chain with a premium anti-tarnish finish."
+}

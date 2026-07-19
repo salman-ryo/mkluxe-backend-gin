@@ -1,0 +1,36 @@
+{
+"category_slug": "jewelry-sets",
+"name": "Gold Tone Heart Lariat Necklace and Bracelet Set",
+"slug": "gold-tone-heart-lariat-necklace-and-bracelet-set",
+"description": "Add a romantic touch to your jewelry collection with this matching gold-tone set. Featuring a delicate multi-heart lariat Y-necklace and a coordinating heart charm bracelet, both pieces are crafted with an anti-tarnish finish for enduring elegance.",
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "SET-HEART-001",
+"price": 1299.00,
+"stock": 15,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_12-52-34.jpg",
+"alt_text": "Gold tone jewelry set featuring a multi-heart lariat necklace and matching heart charm bracelet",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Does this set include both the necklace and bracelet?",
+"answer": "Yes, this jewelry set includes both the heart lariat Y-necklace and the matching heart charm bracelet."
+},
+{
+"question": "Are these pieces resistant to tarnishing?",
+"answer": "Yes, both the necklace and bracelet feature a durable anti-tarnish finish to keep them looking pristine with regular wear."
+}
+],
+"meta_title": "Gold Tone Heart Necklace & Bracelet Set | Anti-Tarnish",
+"meta_description": "Shop our Gold Tone Heart Lariat Necklace and Bracelet Set. This beautiful matching jewelry set features delicate heart charms and a lasting anti-tarnish finish."
+}

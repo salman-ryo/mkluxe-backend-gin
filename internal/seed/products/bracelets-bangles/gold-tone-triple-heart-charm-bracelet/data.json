@@ -1,0 +1,37 @@
+{
+"category_slug": "bracelets-bangles",
+"name": "Gold Tone Triple Heart Charm Bracelet",
+"slug": "gold-tone-triple-heart-charm-bracelet",
+"description": "Add a delicate, romantic touch to your jewelry collection with this gold-tone heart charm bracelet. Featuring three polished, puffed heart motifs spaced evenly along a fine chain. Includes an adjustable extender and is finished with an anti-tarnish coating for enduring shine.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "BRAC-HRT-003",
+"price": 549.00,
+"stock": 35,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-39-25.jpg",
+"alt_text": "Gold tone delicate chain bracelet featuring three polished puffed heart charms",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is the size of this bracelet adjustable?",
+"answer": "Yes, it includes a built-in extender chain with a secure lobster clasp, allowing you to easily adjust the fit to your wrist size."
+},
+{
+"question": "Can I wear this everyday?",
+"answer": "Absolutely! It is crafted with a premium anti-tarnish finish, making it a beautiful and durable accessory for daily wear."
+}
+],
+"meta_title": "Gold Tone Triple Heart Bracelet | Anti-Tarnish Jewelry",
+"meta_description": "Discover our delicate Gold Tone Triple Heart Charm Bracelet. Featuring polished puffed hearts, an adjustable chain, and a durable anti-tarnish finish."
+}

@@ -1,0 +1,37 @@
+{
+"category_slug": "necklaces",
+"name": "Gold Tone Four Leaf Clover Necklace",
+"slug": "gold-tone-four-leaf-clover-necklace",
+"description": "Bring a touch of luck and delicate beauty to your everyday look with this gold-tone four-leaf clover necklace. Featuring a polished clover pendant and a sparkling crystal accent on a delicate beaded satellite chain, complete with an anti-tarnish finish.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "NECK-CLOV-001",
+"price": 549.00,
+"stock": 40,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-32-16.jpg",
+"alt_text": "Gold tone four-leaf clover pendant necklace with a crystal charm on a beaded chain",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "What type of chain does this necklace have?",
+"answer": "This necklace features a delicate and elegant beaded satellite chain that beautifully complements the clover pendant."
+},
+{
+"question": "Will the gold tone fade quickly?",
+"answer": "No, it is treated with a premium anti-tarnish coating to ensure long-lasting shine and durability for daily wear."
+}
+],
+"meta_title": "Gold Tone Four Leaf Clover Necklace | Anti-Tarnish",
+"meta_description": "Shop our Gold Tone Four Leaf Clover Necklace. Featuring a lucky clover pendant, a sparkling crystal charm, and an anti-tarnish finish on a beaded chain."
+}

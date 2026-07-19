@@ -1,0 +1,36 @@
+{
+"category_slug": "necklaces",
+"name": "Gold Tone Spiral Sunburst Pendant Necklace",
+"slug": "gold-tone-spiral-sunburst-pendant-necklace",
+"description": "Make a radiant statement with this bold gold-tone necklace. Featuring a large sunburst pendant with a unique spiral center on a sleek snake chain, this anti-tarnish piece ensures long-lasting shine and elevated everyday style.",
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "NECK-SUN-001",
+"price": 899.00,
+"stock": 20,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_12-53-10.jpg",
+"alt_text": "Model wearing a gold tone sunburst pendant necklace with a spiral center",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "What type of chain does this necklace have?",
+"answer": "This necklace features a smooth, flexible snake chain that complements the bold sun pendant perfectly."
+},
+{
+"question": "Is this necklace anti-tarnish?",
+"answer": "Yes, it is crafted with a high-quality anti-tarnish finish to maintain its radiant golden shine."
+}
+],
+"meta_title": "Gold Tone Spiral Sun Pendant Necklace | Anti-Tarnish",
+"meta_description": "Shop the Gold Tone Spiral Sunburst Pendant Necklace. Featuring a striking sun design on a sleek snake chain and a premium anti-tarnish finish."
+}

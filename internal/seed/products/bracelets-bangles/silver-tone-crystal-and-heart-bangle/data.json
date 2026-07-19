@@ -1,0 +1,37 @@
+{
+"category_slug": "bracelets-bangles",
+"name": "Silver Tone Crystal and Heart Bangle",
+"slug": "silver-tone-crystal-and-heart-bangle",
+"description": "Elevate your wristwear with this sleek silver-tone bangle bracelet. Featuring a polished finish adorned with alternating clear crystals and delicate hollow heart motifs. Designed with an anti-tarnish coating for enduring, everyday elegance.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "BANG-SLV-001",
+"price": 799.00,
+"stock": 25,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-56-42.jpg",
+"alt_text": "Sleek silver tone bangle bracelet featuring clear crystals and heart cutouts",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is this bangle easy to put on?",
+"answer": "Yes, it features a smooth, structured design that slides comfortably over the wrist."
+},
+{
+"question": "Will the silver finish fade or scratch easily?",
+"answer": "This bangle is treated with an anti-tarnish finish to resist fading and maintain its brilliant silver-tone polish with regular use."
+}
+],
+"meta_title": "Silver Tone Crystal & Heart Bangle | Anti-Tarnish",
+"meta_description": "Shop the elegant Silver Tone Crystal and Heart Bangle. Featuring alternating sparkling stones and heart cutouts with a lasting anti-tarnish finish."
+}

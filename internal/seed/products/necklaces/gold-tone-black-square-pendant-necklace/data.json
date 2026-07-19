@@ -1,0 +1,37 @@
+{
+"category_slug": "necklaces",
+"name": "Gold Tone Black Square Pendant Necklace",
+"slug": "gold-tone-black-square-pendant-necklace",
+"description": "Make a bold yet minimalist statement with this gold-tone necklace. Featuring a striking black square pendant with softly rounded edges suspended on a delicate beaded satellite chain. Designed with an anti-tarnish finish for enduring, everyday elegance.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "NECK-SQR-BLK-001",
+"price": 599.00,
+"stock": 30,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-32-10.jpg",
+"alt_text": "Gold tone necklace featuring a black square pendant on a beaded satellite chain",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is the pendant heavy?",
+"answer": "No, the pendant is lightweight and designed for comfortable, all-day wear."
+},
+{
+"question": "Can I wear this everyday without it tarnishing?",
+"answer": "Yes, this necklace features a durable anti-tarnish finish, making it highly resistant to fading and perfect for daily use."
+}
+],
+"meta_title": "Gold Tone Black Square Pendant Necklace | Anti-Tarnish",
+"meta_description": "Discover the Gold Tone Black Square Pendant Necklace. A minimalist design featuring a striking black pendant on a beaded chain with an anti-tarnish finish."
+}

@@ -1,0 +1,37 @@
+{
+"category_slug": "bracelets-bangles",
+"name": "Gold Tone Layered Chain Charm Bracelet",
+"slug": "gold-tone-layered-chain-charm-bracelet",
+"description": "Elevate your wrist stack effortlessly with this stylish gold-tone layered bracelet. Featuring two distinct chain styles—a classic link chain and a delicate figaro chain—accented with minimalist geometric cube and sphere charms. Crafted with a premium anti-tarnish finish for lasting everyday wear.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "BRAC-LAY-001",
+"price": 699.00,
+"stock": 25,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-40-54.jpg",
+"alt_text": "Model wearing a gold tone double layered chain bracelet with geometric charms",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is this one bracelet or two separate pieces?",
+"answer": "This is a single bracelet designed with two attached chains to give you a perfectly styled, layered look without the hassle of tangling."
+},
+{
+"question": "Will this bracelet tarnish easily?",
+"answer": "No, it features a durable anti-tarnish finish designed to keep its radiant golden shine through regular daily wear."
+}
+],
+"meta_title": "Gold Tone Layered Charm Bracelet | Anti-Tarnish",
+"meta_description": "Shop the Gold Tone Layered Chain Charm Bracelet. Featuring a stylish double chain design with geometric charms and a lasting anti-tarnish finish."
+}

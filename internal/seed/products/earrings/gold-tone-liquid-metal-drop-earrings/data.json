@@ -1,0 +1,37 @@
+{
+"category_slug": "earrings",
+"name": "Gold Tone Liquid Metal Drop Earrings",
+"slug": "gold-tone-liquid-metal-drop-earrings",
+"description": "Embrace contemporary art with these avant-garde gold-tone liquid metal drop earrings. Featuring a high-polish, abstract melting drip design, these statement earrings are finished with a premium anti-tarnish coating for lasting brilliance and modern flair.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": true,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "EARR-LIQ-001",
+"price": 899.00,
+"stock": 20,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-54-22.jpg",
+"alt_text": "Model wearing avant-garde gold tone liquid metal abstract drop earrings",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Are these statement earrings heavy?",
+"answer": "Despite their bold length and design, they are thoughtfully crafted to remain comfortable for extended wear."
+},
+{
+"question": "Is the jewelry anti-tarnish?",
+"answer": "Yes, these earrings are protected by a high-quality anti-tarnish finish to preserve their high-polish golden shine."
+}
+],
+"meta_title": "Gold Tone Liquid Metal Drop Earrings | Anti-Tarnish",
+"meta_description": "Make a bold statement with our Gold Tone Liquid Metal Drop Earrings. Featuring an abstract melting design and a premium anti-tarnish finish."
+}

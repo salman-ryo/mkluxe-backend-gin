@@ -1,0 +1,37 @@
+{
+"category_slug": "necklaces",
+"name": "Gold Tone Minimalist Lariat Necklace",
+"slug": "gold-tone-minimalist-lariat-necklace",
+"description": "Achieve effortless elegance with this gold-tone lariat necklace. Featuring a sleek snake chain that loops through an open irregular oval and finishes with a polished sphere drop, this anti-tarnish piece is perfect for modern, sophisticated styling.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "NECK-LAR-002",
+"price": 699.00,
+"stock": 25,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-32-33.jpg",
+"alt_text": "Model wearing a gold tone lariat necklace with an open oval loop and sphere drop",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "How do you wear this necklace?",
+"answer": "The necklace features a lariat design where the chain with the sphere drop is threaded through the open oval loop, allowing you to easily adjust the drop length to your preference."
+},
+{
+"question": "Is the jewelry anti-tarnish?",
+"answer": "Yes, this necklace is crafted with a high-quality anti-tarnish finish to ensure it maintains its radiant gold tone."
+}
+],
+"meta_title": "Gold Tone Minimalist Lariat Necklace | Anti-Tarnish",
+"meta_description": "Shop the Gold Tone Minimalist Lariat Necklace. Featuring a chic open loop and sphere drop on a sleek chain, crafted with an enduring anti-tarnish finish."
+}

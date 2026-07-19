@@ -1,0 +1,37 @@
+{
+"category_slug": "rings",
+"name": "Gold Tone Textured Starfish Ring",
+"slug": "gold-tone-textured-starfish-ring",
+"description": "Channel coastal elegance with this striking gold-tone starfish ring. Featuring intricate textured detailing and a bold, statement-making design, this piece is crafted with an anti-tarnish finish for long-lasting, radiant wear.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "RING-STAR-001",
+"price": 599.00,
+"stock": 15,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-57-13.jpg",
+"alt_text": "Gold tone statement ring featuring a textured starfish design",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is this ring adjustable?",
+"answer": "Please refer to our sizing guide to select the perfect fit, as this is a structured statement ring."
+},
+{
+"question": "Can I wear this near water?",
+"answer": "Yes, this ring features an anti-tarnish coating that helps protect its finish, though we recommend removing it before swimming for optimal longevity."
+}
+],
+"meta_title": "Gold Tone Textured Starfish Ring | Anti-Tarnish Jewelry",
+"meta_description": "Discover our Gold Tone Textured Starfish Ring. A bold, coastal-inspired statement piece crafted with a premium anti-tarnish finish for enduring style."
+}

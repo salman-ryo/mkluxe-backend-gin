@@ -1,0 +1,37 @@
+{
+"category_slug": "earrings",
+"name": "Gold Tone Ribbed Triangle Stud Earrings",
+"slug": "gold-tone-ribbed-triangle-stud-earrings",
+"description": "Make a bold statement with these gold-tone ribbed triangle stud earrings. Featuring a chunky, textured knot design and a premium anti-tarnish finish, they add a touch of vintage-inspired glamour to any outfit.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "EARR-TRI-001",
+"price": 699.00,
+"stock": 25,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-57-33.jpg",
+"alt_text": "Model wearing bold gold tone ribbed triangle stud earrings",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Are these earrings heavy?",
+"answer": "While they feature a bold, chunky design, they are crafted to be comfortably lightweight for all-day wear."
+},
+{
+"question": "Will the gold finish fade?",
+"answer": "No, these earrings are treated with a durable anti-tarnish finish to ensure they maintain their brilliant shine."
+}
+],
+"meta_title": "Gold Tone Ribbed Triangle Stud Earrings | Anti-Tarnish",
+"meta_description": "Shop the bold Gold Tone Ribbed Triangle Stud Earrings. Featuring a vintage-inspired textured design and a lasting anti-tarnish finish for everyday glamour."
+}

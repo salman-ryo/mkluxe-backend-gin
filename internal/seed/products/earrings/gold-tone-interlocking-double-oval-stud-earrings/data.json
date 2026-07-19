@@ -1,0 +1,37 @@
+{
+"category_slug": "earrings",
+"name": "Gold Tone Interlocking Double Oval Stud Earrings",
+"slug": "gold-tone-interlocking-double-oval-stud-earrings",
+"description": "Elevate your everyday style with these bold gold-tone stud earrings. Featuring a chic interlocking double oval design with a high-polish finish, these anti-tarnish earrings offer a modern statement look that ensures long-lasting wear and brilliant shine.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "EARR-OVAL-001",
+"price": 549.00,
+"stock": 25,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-18_20-11-06.jpg",
+"alt_text": "Gold tone interlocking double oval stud earrings with a high-polish finish on a sunlit surface",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Are these earrings heavy for everyday wear?",
+"answer": "Despite their bold appearance, these earrings are designed to be comfortable and lightweight for all-day wear."
+},
+{
+"question": "Will the gold finish fade over time?",
+"answer": "No, these earrings are crafted with a high-quality anti-tarnish finish designed to resist fading and maintain their radiant golden shine with regular use."
+}
+],
+"meta_title": "Gold Interlocking Oval Stud Earrings | Anti-Tarnish",
+"meta_description": "Shop our Gold Tone Interlocking Double Oval Stud Earrings. Featuring a chic, high-polish design and an anti-tarnish finish for enduring, everyday elegance."
+}

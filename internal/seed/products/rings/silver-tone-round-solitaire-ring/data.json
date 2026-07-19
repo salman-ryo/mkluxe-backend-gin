@@ -1,0 +1,36 @@
+{
+"category_slug": "rings",
+"name": "Silver Tone Round Solitaire Ring",
+"slug": "silver-tone-round-solitaire-ring",
+"description": "Timeless and elegant, this silver-tone ring features a dazzling round-cut clear crystal in a classic 6-prong setting. Crafted with a premium anti-tarnish finish, this piece offers enduring brilliance perfect for special occasions or everyday wear.",
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "RING-SOL-001",
+"price": 899.00,
+"stock": 25,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-10-01.jpg",
+"alt_text": "Silver tone classic 6-prong round solitaire ring with a brilliant clear stone",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is this ring suitable for daily wear?",
+"answer": "Yes, it is crafted with a high-quality anti-tarnish finish to ensure long-lasting shine even with daily use."
+},
+{
+"question": "What is the setting style?",
+"answer": "The center stone is securely held by a classic 6-prong setting designed to maximize light reflection and brilliance."
+}
+],
+"meta_title": "Silver Tone Round Solitaire Ring | Anti-Tarnish",
+"meta_description": "Shop the classic Silver Tone Round Solitaire Ring. Featuring a brilliant 6-prong clear stone and an anti-tarnish finish for lasting, everyday elegance."
+}

@@ -1,0 +1,37 @@
+{
+"category_slug": "rings",
+"name": "Silver Tone Heart Crystal Adjustable Ring",
+"slug": "silver-tone-heart-crystal-adjustable-ring",
+"description": "Add a romantic touch to your style with this silver-tone adjustable ring. Showcasing a sparkling heart-shaped central crystal accented by delicate side stones on an open band. Finished with an anti-tarnish coating for long-lasting, everyday beauty.",
+"secondary_categories": [],
+"status": "published",
+"is_featured": false,
+"is_most_sold": false,
+"variants": [
+{
+"sku": "RING-HRT-002",
+"price": 699.00,
+"stock": 30,
+"is_default": true
+}
+],
+"media": [
+{
+"url": "photo_2026-07-19_13-09-52.jpg",
+"alt_text": "Silver tone adjustable ring featuring a heart-shaped center crystal and small side stones",
+"is_primary": true
+}
+],
+"faqs": [
+{
+"question": "Is the ring size adjustable?",
+"answer": "Yes, the ring features an open back design that allows you to gently adjust it for a comfortable, custom fit."
+},
+{
+"question": "Will the silver tone fade?",
+"answer": "No, this ring is treated with a premium anti-tarnish finish to maintain its bright silver tone and resist fading over time."
+}
+],
+"meta_title": "Silver Tone Heart Crystal Ring | Adjustable Anti-Tarnish",
+"meta_description": "Discover the Silver Tone Heart Crystal Adjustable Ring. Featuring a sparkling heart stone, delicate side accents, and a lasting anti-tarnish finish."
+}

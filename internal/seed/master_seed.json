@@ -1,0 +1,1842 @@
+[
+    {
+        "category_slug": "bracelets-bangles",
+        "name": "Gold Tone Black Clover Motif Bracelet",
+        "slug": "gold-tone-black-clover-motif-bracelet",
+        "description": "Make a chic and lucky statement with this elegant gold-tone bracelet. Showcasing five iconic clover motifs with striking black centers connected by a delicate chain. Finished with a premium anti-tarnish coating, ensuring this sophisticated piece remains radiant through everyday wear.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": true,
+        "variants": [
+            {
+                "sku": "BRAC-CLOV-BLK-001",
+                "price": 799.0,
+                "stock": 20,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-black-clover-motif-bracelet/photo_2026-07-19_13-39-06.jpg",
+                "alt_text": "Gold Tone Black Clover Motif Bracelet image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-black-clover-motif-bracelet/photo_2026-07-19_13-39-09.jpg",
+                "alt_text": "Gold Tone Black Clover Motif Bracelet image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-black-clover-motif-bracelet/photo_2026-07-19_13-39-10.jpg",
+                "alt_text": "Gold Tone Black Clover Motif Bracelet image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-black-clover-motif-bracelet/photo_2026-07-19_13-39-13.jpg",
+                "alt_text": "Gold Tone Black Clover Motif Bracelet image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "How many clover charms are on the bracelet?",
+                "answer": "This elegant bracelet features five evenly spaced black clover motifs."
+            },
+            {
+                "question": "Does the bracelet have an extender?",
+                "answer": "Yes, it is designed with an adjustable extender chain to ensure a comfortable fit for various wrist sizes."
+            }
+        ],
+        "meta_title": "Gold Tone Black Clover Bracelet | Anti-Tarnish",
+        "meta_description": "Shop the sophisticated Gold Tone Black Clover Motif Bracelet. Featuring five bold black clovers on a delicate chain with a premium anti-tarnish finish."
+    },
+    {
+        "category_slug": "bracelets-bangles",
+        "name": "Gold Tone Chunky Oval Link Bracelet",
+        "slug": "gold-tone-chunky-oval-link-bracelet",
+        "description": "Add a touch of classic elegance to your wrist with this gold-tone chunky oval link bracelet. Featuring a polished, interlocking chain design and an anti-tarnish finish for enduring, everyday wear.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "BRAC-OVAL-001",
+                "price": 699.0,
+                "stock": 30,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-chunky-oval-link-bracelet/photo_2026-07-19_14-20-52.jpg",
+                "alt_text": "Gold Tone Chunky Oval Link Bracelet image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-chunky-oval-link-bracelet/photo_2026-07-19_14-20-53.jpg",
+                "alt_text": "Gold Tone Chunky Oval Link Bracelet image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-chunky-oval-link-bracelet/photo_2026-07-19_14-20-55.jpg",
+                "alt_text": "Gold Tone Chunky Oval Link Bracelet image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-chunky-oval-link-bracelet/photo_2026-07-19_14-20-59.jpg",
+                "alt_text": "Gold Tone Chunky Oval Link Bracelet image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this bracelet heavy?",
+                "answer": "Despite its chunky look, the links are designed to be comfortably lightweight for all-day wear."
+            },
+            {
+                "question": "Will the gold finish tarnish?",
+                "answer": "No, it is protected with a premium anti-tarnish finish to ensure it maintains its radiant shine."
+            }
+        ],
+        "meta_title": "Gold Tone Chunky Oval Link Bracelet | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Chunky Oval Link Bracelet. Featuring a polished interlocking chain design and a lasting anti-tarnish finish for everyday elegance."
+    },
+    {
+        "category_slug": "bracelets-bangles",
+        "name": "Gold Tone Chunky Starfish Charm Bracelet",
+        "slug": "gold-tone-chunky-starfish-charm-bracelet",
+        "description": "Make a splash with this statement gold-tone charm bracelet. Featuring a chunky, twisted chain adorned with beautifully detailed, textured starfish charms. Finished with a premium anti-tarnish coating for endless summer style.",
+        "secondary_categories": [
+            "charms"
+        ],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "BRAC-STAR-001",
+                "price": 799.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-chunky-starfish-charm-bracelet/photo_2026-07-19_16-32-59.jpg",
+                "alt_text": "Gold Tone Chunky Starfish Charm Bracelet image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-chunky-starfish-charm-bracelet/photo_2026-07-19_16-33-05.jpg",
+                "alt_text": "Gold Tone Chunky Starfish Charm Bracelet image 2",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this bracelet heavy?",
+                "answer": "It has a bold, chunky statement look but is carefully crafted to remain comfortable for everyday wear."
+            },
+            {
+                "question": "Can I wear this to the beach?",
+                "answer": "Yes, it features a durable anti-tarnish finish! However, we recommend rinsing it with fresh water after exposure to salt water to maintain its optimal shine."
+            }
+        ],
+        "meta_title": "Gold Tone Chunky Starfish Charm Bracelet | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Chunky Starfish Charm Bracelet. Featuring a bold twisted chain, textured coastal starfish charms, and a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "bracelets-bangles",
+        "name": "Gold Tone Evil Eye Charm Bracelet",
+        "slug": "gold-tone-evil-eye-charm-bracelet",
+        "description": "Protect your energy with this stunning gold-tone bracelet. Featuring a sleek snake chain adorned with textured bead spacers, striking blue crystal teardrops, and intricate evil eye charms. Crafted with a premium anti-tarnish finish.",
+        "secondary_categories": [
+            "charms"
+        ],
+        "status": "published",
+        "is_featured": true,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "BRAC-EYE-001",
+                "price": 649.0,
+                "stock": 30,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-evil-eye-charm-bracelet/photo_2026-07-19_16-15-21.jpg",
+                "alt_text": "Gold Tone Evil Eye Charm Bracelet image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-evil-eye-charm-bracelet/photo_2026-07-19_16-15-24.jpg",
+                "alt_text": "Gold Tone Evil Eye Charm Bracelet image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-evil-eye-charm-bracelet/photo_2026-07-19_16-15-25.jpg",
+                "alt_text": "Gold Tone Evil Eye Charm Bracelet image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is the size adjustable?",
+                "answer": "Yes, it features an extender chain with a secure lobster clasp for a customizable fit."
+            },
+            {
+                "question": "Will this bracelet tarnish?",
+                "answer": "No, it is treated with a high-quality anti-tarnish finish to ensure long-lasting wear and shine."
+            }
+        ],
+        "meta_title": "Gold Tone Evil Eye Charm Bracelet | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Evil Eye Charm Bracelet. Featuring blue crystal teardrops, detailed charms, and a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "bracelets-bangles",
+        "name": "Gold Tone Layered Chain Charm Bracelet",
+        "slug": "gold-tone-layered-chain-charm-bracelet",
+        "description": "Elevate your wrist stack effortlessly with this stylish gold-tone layered bracelet. Featuring two distinct chain styles\u2014a classic link chain and a delicate figaro chain\u2014accented with minimalist geometric cube and sphere charms. Crafted with a premium anti-tarnish finish for lasting everyday wear.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "BRAC-LAY-001",
+                "price": 699.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-chain-charm-bracelet/photo_2026-07-19_13-40-54.jpg",
+                "alt_text": "Gold Tone Layered Chain Charm Bracelet image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-chain-charm-bracelet/photo_2026-07-19_13-41-01.jpg",
+                "alt_text": "Gold Tone Layered Chain Charm Bracelet image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-chain-charm-bracelet/photo_2026-07-19_13-41-04.jpg",
+                "alt_text": "Gold Tone Layered Chain Charm Bracelet image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-chain-charm-bracelet/photo_2026-07-19_13-41-11.jpg",
+                "alt_text": "Gold Tone Layered Chain Charm Bracelet image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this one bracelet or two separate pieces?",
+                "answer": "This is a single bracelet designed with two attached chains to give you a perfectly styled, layered look without the hassle of tangling."
+            },
+            {
+                "question": "Will this bracelet tarnish easily?",
+                "answer": "No, it features a durable anti-tarnish finish designed to keep its radiant golden shine through regular daily wear."
+            }
+        ],
+        "meta_title": "Gold Tone Layered Charm Bracelet | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Layered Chain Charm Bracelet. Featuring a stylish double chain design with geometric charms and a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "bracelets-bangles",
+        "name": "Gold Tone Layered Heart Charm Bracelet",
+        "slug": "gold-tone-layered-heart-charm-bracelet",
+        "description": "Achieve a perfectly styled wrist stack with this gold-tone double-layered bracelet. Combining a trendy paperclip link chain with a delicate chain featuring spherical bead drops and a central polished puffed heart charm. Designed with an anti-tarnish finish.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "BRAC-LAY-HRT-002",
+                "price": 699.0,
+                "stock": 35,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-heart-charm-bracelet/photo_2026-07-19_16-13-40.jpg",
+                "alt_text": "Gold Tone Layered Heart Charm Bracelet image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-heart-charm-bracelet/photo_2026-07-19_16-13-41.jpg",
+                "alt_text": "Gold Tone Layered Heart Charm Bracelet image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-heart-charm-bracelet/photo_2026-07-19_16-14-38.jpg",
+                "alt_text": "Gold Tone Layered Heart Charm Bracelet image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-heart-charm-bracelet/photo_2026-07-19_16-14-40.jpg",
+                "alt_text": "Gold Tone Layered Heart Charm Bracelet image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this a single piece of jewelry?",
+                "answer": "Yes, this is a single bracelet designed with two integrated chains for an effortless layered look."
+            },
+            {
+                "question": "Can I wear this everyday?",
+                "answer": "Yes, it features a premium anti-tarnish finish making it highly durable for daily wear."
+            }
+        ],
+        "meta_title": "Gold Tone Layered Heart Charm Bracelet | Anti-Tarnish",
+        "meta_description": "Shop our Gold Tone Layered Heart Charm Bracelet. Featuring a trendy paperclip chain paired with a delicate heart charm chain and an anti-tarnish finish."
+    },
+    {
+        "category_slug": "bracelets-bangles",
+        "name": "Gold Tone Layered Snake Chain Beaded Bracelet",
+        "slug": "gold-tone-layered-snake-chain-beaded-bracelet",
+        "description": "Elevate your wrist stack effortlessly with this gold-tone layered bracelet. Showcasing a flat herringbone snake chain and a rounded snake chain accented with polished sphere beads. Crafted with a premium anti-tarnish finish for enduring, everyday elegance.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": true,
+        "variants": [
+            {
+                "sku": "BRAC-LAY-SNK-001",
+                "price": 749.0,
+                "stock": 35,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-snake-chain-beaded-bracelet/photo_2026-07-19_16-05-37.jpg",
+                "alt_text": "Gold Tone Layered Snake Chain Beaded Bracelet image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-snake-chain-beaded-bracelet/photo_2026-07-19_16-05-39.jpg",
+                "alt_text": "Gold Tone Layered Snake Chain Beaded Bracelet image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-layered-snake-chain-beaded-bracelet/photo_2026-07-19_16-05-41.jpg",
+                "alt_text": "Gold Tone Layered Snake Chain Beaded Bracelet image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these two separate bracelets?",
+                "answer": "No, this is a beautifully designed single bracelet featuring two attached chains for a perfect, tangle-free layered look."
+            },
+            {
+                "question": "Is this bracelet anti-tarnish?",
+                "answer": "Yes, it is protected with a high-quality anti-tarnish finish to preserve its radiant golden shine."
+            }
+        ],
+        "meta_title": "Gold Tone Layered Snake Chain Bracelet | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Layered Snake Chain Beaded Bracelet. Featuring a chic flat herringbone and rounded chain design with a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "bracelets-bangles",
+        "name": "Gold Tone Triple Heart Charm Bracelet",
+        "slug": "gold-tone-triple-heart-charm-bracelet",
+        "description": "Add a delicate, romantic touch to your jewelry collection with this gold-tone heart charm bracelet. Featuring three polished, puffed heart motifs spaced evenly along a fine chain. Includes an adjustable extender and is finished with an anti-tarnish coating for enduring shine.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "BRAC-HRT-003",
+                "price": 549.0,
+                "stock": 35,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-triple-heart-charm-bracelet/photo_2026-07-19_13-39-25.jpg",
+                "alt_text": "Gold Tone Triple Heart Charm Bracelet image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/gold-tone-triple-heart-charm-bracelet/photo_2026-07-19_13-39-27.jpg",
+                "alt_text": "Gold Tone Triple Heart Charm Bracelet image 2",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is the size of this bracelet adjustable?",
+                "answer": "Yes, it includes a built-in extender chain with a secure lobster clasp, allowing you to easily adjust the fit to your wrist size."
+            },
+            {
+                "question": "Can I wear this everyday?",
+                "answer": "Absolutely! It is crafted with a premium anti-tarnish finish, making it a beautiful and durable accessory for daily wear."
+            }
+        ],
+        "meta_title": "Gold Tone Triple Heart Bracelet | Anti-Tarnish Jewelry",
+        "meta_description": "Discover our delicate Gold Tone Triple Heart Charm Bracelet. Featuring polished puffed hearts, an adjustable chain, and a durable anti-tarnish finish."
+    },
+    {
+        "category_slug": "bracelets-bangles",
+        "name": "Silver Tone Crystal and Heart Bangle",
+        "slug": "silver-tone-crystal-and-heart-bangle",
+        "description": "Elevate your wristwear with this sleek silver-tone bangle bracelet. Featuring a polished finish adorned with alternating clear crystals and delicate hollow heart motifs. Designed with an anti-tarnish coating for enduring, everyday elegance.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "BANG-SLV-001",
+                "price": 799.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/silver-tone-crystal-and-heart-bangle/photo_2026-07-19_13-56-42.jpg",
+                "alt_text": "Silver Tone Crystal And Heart Bangle image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/silver-tone-crystal-and-heart-bangle/photo_2026-07-19_13-56-46.jpg",
+                "alt_text": "Silver Tone Crystal And Heart Bangle image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/silver-tone-crystal-and-heart-bangle/photo_2026-07-19_13-56-48.jpg",
+                "alt_text": "Silver Tone Crystal And Heart Bangle image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/bracelets-bangles/silver-tone-crystal-and-heart-bangle/photo_2026-07-19_13-56-51.jpg",
+                "alt_text": "Silver Tone Crystal And Heart Bangle image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this bangle easy to put on?",
+                "answer": "Yes, it features a smooth, structured design that slides comfortably over the wrist."
+            },
+            {
+                "question": "Will the silver finish fade or scratch easily?",
+                "answer": "This bangle is treated with an anti-tarnish finish to resist fading and maintain its brilliant silver-tone polish with regular use."
+            }
+        ],
+        "meta_title": "Silver Tone Crystal & Heart Bangle | Anti-Tarnish",
+        "meta_description": "Shop the elegant Silver Tone Crystal and Heart Bangle. Featuring alternating sparkling stones and heart cutouts with a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Chunky Spiral Stud Earrings",
+        "slug": "gold-tone-chunky-spiral-stud-earrings",
+        "description": "Make a bold statement with these gold-tone chunky spiral stud earrings. Crafted with a thick, rounded wire design swirling into a perfect spiral, complete with an anti-tarnish finish for long-lasting brilliance.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-SPIR-001",
+                "price": 549.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-chunky-spiral-stud-earrings/photo_2026-07-19_14-20-24.jpg",
+                "alt_text": "Gold Tone Chunky Spiral Stud Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-chunky-spiral-stud-earrings/photo_2026-07-19_14-20-29.jpg",
+                "alt_text": "Gold Tone Chunky Spiral Stud Earrings image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-chunky-spiral-stud-earrings/photo_2026-07-19_14-20-32.jpg",
+                "alt_text": "Gold Tone Chunky Spiral Stud Earrings image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Will these earrings fade easily?",
+                "answer": "No, they are treated with a durable anti-tarnish coating to resist fading and maintain their gold-tone brilliance."
+            }
+        ],
+        "meta_title": "Gold Tone Chunky Spiral Stud Earrings | Anti-Tarnish",
+        "meta_description": "Shop the bold Gold Tone Chunky Spiral Stud Earrings. Featuring a thick wire swirl design and a premium anti-tarnish finish."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Curved Heart Stud Earrings",
+        "slug": "gold-tone-curved-heart-stud-earrings",
+        "description": "Embrace modern romance with these gold-tone heart stud earrings. Featuring a unique curved, elongated heart design with a high-polish finish. Protected by an anti-tarnish coating for lasting shine.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": true,
+        "variants": [
+            {
+                "sku": "EARR-HRT-004",
+                "price": 499.0,
+                "stock": 40,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-curved-heart-stud-earrings/photo_2026-07-19_14-20-37.jpg",
+                "alt_text": "Gold Tone Curved Heart Stud Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-curved-heart-stud-earrings/photo_2026-07-19_14-20-39.jpg",
+                "alt_text": "Gold Tone Curved Heart Stud Earrings image 2",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these suitable for sensitive ears?",
+                "answer": "Yes, they are crafted with high-quality, skin-friendly materials and an anti-tarnish finish."
+            }
+        ],
+        "meta_title": "Gold Tone Curved Heart Stud Earrings | Anti-Tarnish",
+        "meta_description": "Discover our Gold Tone Curved Heart Stud Earrings. A modern, elongated heart design finished with a premium anti-tarnish coating for everyday wear."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Interlocking Double Oval Stud Earrings",
+        "slug": "gold-tone-interlocking-double-oval-stud-earrings",
+        "description": "Elevate your everyday style with these bold gold-tone stud earrings. Featuring a chic interlocking double oval design with a high-polish finish, these anti-tarnish earrings offer a modern statement look that ensures long-lasting wear and brilliant shine.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-OVAL-001",
+                "price": 549.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-interlocking-double-oval-stud-earrings/photo_2026-07-18_20-11-02.jpg",
+                "alt_text": "Gold Tone Interlocking Double Oval Stud Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-interlocking-double-oval-stud-earrings/photo_2026-07-18_20-11-04.jpg",
+                "alt_text": "Gold Tone Interlocking Double Oval Stud Earrings image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-interlocking-double-oval-stud-earrings/photo_2026-07-18_20-11-06.jpg",
+                "alt_text": "Gold Tone Interlocking Double Oval Stud Earrings image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-interlocking-double-oval-stud-earrings/photo_2026-07-18_20-11-10.jpg",
+                "alt_text": "Gold Tone Interlocking Double Oval Stud Earrings image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these earrings heavy for everyday wear?",
+                "answer": "Despite their bold appearance, these earrings are designed to be comfortable and lightweight for all-day wear."
+            },
+            {
+                "question": "Will the gold finish fade over time?",
+                "answer": "No, these earrings are crafted with a high-quality anti-tarnish finish designed to resist fading and maintain their radiant golden shine with regular use."
+            }
+        ],
+        "meta_title": "Gold Interlocking Oval Stud Earrings | Anti-Tarnish",
+        "meta_description": "Shop our Gold Tone Interlocking Double Oval Stud Earrings. Featuring a chic, high-polish design and an anti-tarnish finish for enduring, everyday elegance."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Liquid Metal Drop Earrings",
+        "slug": "gold-tone-liquid-metal-drop-earrings",
+        "description": "Embrace contemporary art with these avant-garde gold-tone liquid metal drop earrings. Featuring a high-polish, abstract melting drip design, these statement earrings are finished with a premium anti-tarnish coating for lasting brilliance and modern flair.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": true,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-LIQ-001",
+                "price": 899.0,
+                "stock": 20,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-liquid-metal-drop-earrings/photo_2026-07-19_13-54-22.jpg",
+                "alt_text": "Gold Tone Liquid Metal Drop Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-liquid-metal-drop-earrings/photo_2026-07-19_13-54-25.jpg",
+                "alt_text": "Gold Tone Liquid Metal Drop Earrings image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-liquid-metal-drop-earrings/photo_2026-07-19_13-54-34.jpg",
+                "alt_text": "Gold Tone Liquid Metal Drop Earrings image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-liquid-metal-drop-earrings/photo_2026-07-19_13-54-37.jpg",
+                "alt_text": "Gold Tone Liquid Metal Drop Earrings image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these statement earrings heavy?",
+                "answer": "Despite their bold length and design, they are thoughtfully crafted to remain comfortable for extended wear."
+            },
+            {
+                "question": "Is the jewelry anti-tarnish?",
+                "answer": "Yes, these earrings are protected by a high-quality anti-tarnish finish to preserve their high-polish golden shine."
+            }
+        ],
+        "meta_title": "Gold Tone Liquid Metal Drop Earrings | Anti-Tarnish",
+        "meta_description": "Make a bold statement with our Gold Tone Liquid Metal Drop Earrings. Featuring an abstract melting design and a premium anti-tarnish finish."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Melting Heart Statement Earrings",
+        "slug": "gold-tone-melting-heart-statement-earrings",
+        "description": "Embrace avant-garde style with these gold-tone melting heart earrings. Featuring a high-polish, contemporary drip design, these statement studs are finished with an anti-tarnish coating for lasting brilliance and modern flair.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": true,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-MELT-HRT-001",
+                "price": 699.0,
+                "stock": 20,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-melting-heart-statement-earrings/photo_2026-07-19_16-05-45.jpg",
+                "alt_text": "Gold Tone Melting Heart Statement Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-melting-heart-statement-earrings/photo_2026-07-19_16-05-47.jpg",
+                "alt_text": "Gold Tone Melting Heart Statement Earrings image 2",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these statement earrings comfortable?",
+                "answer": "Yes, they are designed as stud earrings to provide a secure and comfortable fit while offering a bold, elongated look."
+            }
+        ],
+        "meta_title": "Gold Tone Melting Heart Statement Earrings | Anti-Tarnish",
+        "meta_description": "Discover our Gold Tone Melting Heart Statement Earrings. A bold, contemporary liquid metal design finished with a premium anti-tarnish coating."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Minimalist Bow Stud Earrings",
+        "slug": "gold-tone-minimalist-bow-stud-earrings",
+        "description": "Add a delicate touch of femininity to your style with these gold-tone bow stud earrings. Featuring a sleek, minimalist wire design crafted in the shape of a tied ribbon, this anti-tarnish jewelry piece ensures long-lasting shine and comfortable everyday wear.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-BOW-001",
+                "price": 449.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-minimalist-bow-stud-earrings/photo_2026-07-18_20-03-11.jpg",
+                "alt_text": "Gold Tone Minimalist Bow Stud Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-minimalist-bow-stud-earrings/photo_2026-07-18_20-03-14.jpg",
+                "alt_text": "Gold Tone Minimalist Bow Stud Earrings image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-minimalist-bow-stud-earrings/photo_2026-07-18_20-03-17.jpg",
+                "alt_text": "Gold Tone Minimalist Bow Stud Earrings image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-minimalist-bow-stud-earrings/photo_2026-07-18_20-03-19.jpg",
+                "alt_text": "Gold Tone Minimalist Bow Stud Earrings image 4",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-minimalist-bow-stud-earrings/photo_2026-07-18_20-03-21.jpg",
+                "alt_text": "Gold Tone Minimalist Bow Stud Earrings image 5",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-minimalist-bow-stud-earrings/photo_2026-07-18_20-03-23.jpg",
+                "alt_text": "Gold Tone Minimalist Bow Stud Earrings image 6",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these earrings heavy?",
+                "answer": "No, these earrings feature a lightweight hollow wire design, making them incredibly comfortable for all-day wear."
+            },
+            {
+                "question": "Will these earrings tarnish?",
+                "answer": "They are crafted with a premium anti-tarnish finish to ensure they maintain their bright gold tone and resist fading over time."
+            }
+        ],
+        "meta_title": "Gold Tone Minimalist Bow Stud Earrings | Anti-Tarnish",
+        "meta_description": "Shop our elegant Gold Tone Minimalist Bow Stud Earrings. Designed with a delicate wire ribbon shape and an anti-tarnish finish for enduring everyday style."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Open Wire Heart Stud Earrings",
+        "slug": "gold-tone-open-wire-heart-stud-earrings",
+        "description": "Add a delicate touch of romance to your style with these gold-tone open wire heart stud earrings. Featuring a sleek, minimalist hollow heart silhouette and a premium anti-tarnish finish for enduring, everyday wear.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-WIRE-HRT-001",
+                "price": 449.0,
+                "stock": 50,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-open-wire-heart-stud-earrings/photo_2026-07-19_16-13-10.jpg",
+                "alt_text": "Gold Tone Open Wire Heart Stud Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-open-wire-heart-stud-earrings/photo_2026-07-19_16-13-12.jpg",
+                "alt_text": "Gold Tone Open Wire Heart Stud Earrings image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-open-wire-heart-stud-earrings/photo_2026-07-19_16-13-14.jpg",
+                "alt_text": "Gold Tone Open Wire Heart Stud Earrings image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these earrings comfortable for daily use?",
+                "answer": "Yes, the open wire design makes them incredibly lightweight and perfect for all-day comfort."
+            }
+        ],
+        "meta_title": "Gold Tone Open Wire Heart Stud Earrings | Anti-Tarnish",
+        "meta_description": "Discover our Gold Tone Open Wire Heart Stud Earrings. A minimalist, lightweight design finished with a durable anti-tarnish coating for everyday style."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Pave Crystal Huggie Hoop Earrings",
+        "slug": "gold-tone-pave-crystal-huggie-hoop-earrings",
+        "description": "Elevate your everyday style with these elegant gold-tone huggie hoop earrings. Measuring 1.2cm in height, these delicate hoops feature sparkling crystal detailing on the front. Crafted with an anti-tarnish finish for long-lasting wear and enduring shine.",
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-HUG-001",
+                "price": 499.0,
+                "stock": 30,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-pave-crystal-huggie-hoop-earrings/photo_2026-07-18_19-32-59.jpg",
+                "alt_text": "Gold Tone Pave Crystal Huggie Hoop Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-pave-crystal-huggie-hoop-earrings/photo_2026-07-18_19-33-02.jpg",
+                "alt_text": "Gold Tone Pave Crystal Huggie Hoop Earrings image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-pave-crystal-huggie-hoop-earrings/photo_2026-07-18_19-33-04.jpg",
+                "alt_text": "Gold Tone Pave Crystal Huggie Hoop Earrings image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-pave-crystal-huggie-hoop-earrings/photo_2026-07-18_19-33-06.jpg",
+                "alt_text": "Gold Tone Pave Crystal Huggie Hoop Earrings image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "What is the size of these hoop earrings?",
+                "answer": "These huggie hoop earrings have a height of 1.2cm, making them perfect for a subtle, everyday look."
+            },
+            {
+                "question": "Are these earrings resistant to tarnishing?",
+                "answer": "Yes, they are designed with a premium anti-tarnish finish to maintain their gold tone with regular use."
+            }
+        ],
+        "meta_title": "Gold Tone Crystal Huggie Hoop Earrings | Anti-Tarnish",
+        "meta_description": "Shop our 1.2cm Gold Tone Crystal Huggie Hoop Earrings. Featuring sparkling stones and an anti-tarnish finish, these small hoops are perfect for everyday wear."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Ribbed Triangle Stud Earrings",
+        "slug": "gold-tone-ribbed-triangle-stud-earrings",
+        "description": "Make a bold statement with these gold-tone ribbed triangle stud earrings. Featuring a chunky, textured knot design and a premium anti-tarnish finish, they add a touch of vintage-inspired glamour to any outfit.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-TRI-001",
+                "price": 699.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-ribbed-triangle-stud-earrings/photo_2026-07-19_13-57-33.jpg",
+                "alt_text": "Gold Tone Ribbed Triangle Stud Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-ribbed-triangle-stud-earrings/photo_2026-07-19_13-57-35.jpg",
+                "alt_text": "Gold Tone Ribbed Triangle Stud Earrings image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-ribbed-triangle-stud-earrings/photo_2026-07-19_13-57-38.jpg",
+                "alt_text": "Gold Tone Ribbed Triangle Stud Earrings image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these earrings heavy?",
+                "answer": "While they feature a bold, chunky design, they are crafted to be comfortably lightweight for all-day wear."
+            },
+            {
+                "question": "Will the gold finish fade?",
+                "answer": "No, these earrings are treated with a durable anti-tarnish finish to ensure they maintain their brilliant shine."
+            }
+        ],
+        "meta_title": "Gold Tone Ribbed Triangle Stud Earrings | Anti-Tarnish",
+        "meta_description": "Shop the bold Gold Tone Ribbed Triangle Stud Earrings. Featuring a vintage-inspired textured design and a lasting anti-tarnish finish for everyday glamour."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Textured Heart Statement Earrings",
+        "slug": "gold-tone-textured-heart-statement-earrings",
+        "description": "Elevate your evening look with these bold gold-tone statement earrings. Featuring a large heart shape with intricate, crumpled metal texturing and a premium anti-tarnish finish for a striking, vintage-inspired aesthetic.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": true,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-HRT-TXT-001",
+                "price": 799.0,
+                "stock": 20,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-textured-heart-statement-earrings/photo_2026-07-19_14-17-36.jpg",
+                "alt_text": "Gold Tone Textured Heart Statement Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-textured-heart-statement-earrings/photo_2026-07-19_14-17-38.jpg",
+                "alt_text": "Gold Tone Textured Heart Statement Earrings image 2",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these statement earrings heavy on the earlobes?",
+                "answer": "While they provide a bold oversized look, they are crafted to be hollowed or lightweight enough for comfortable evening wear."
+            },
+            {
+                "question": "Is the jewelry anti-tarnish?",
+                "answer": "Yes, these earrings are protected by a high-quality anti-tarnish finish to preserve their textured golden shine."
+            }
+        ],
+        "meta_title": "Gold Tone Textured Heart Statement Earrings | Anti-Tarnish",
+        "meta_description": "Make a statement with our Gold Tone Textured Heart Earrings. Featuring a vintage-inspired crumpled metal design and a premium anti-tarnish finish."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Textured Square Hoop Earrings",
+        "slug": "gold-tone-textured-square-hoop-earrings",
+        "description": "Make a sophisticated statement with these gold-tone square hoop earrings. Featuring a unique geometric shape with a hammered texture and a premium anti-tarnish finish for an elegant, everyday look.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-SQR-HOOP-001",
+                "price": 599.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-textured-square-hoop-earrings/photo_2026-07-19_16-05-51.jpg",
+                "alt_text": "Gold Tone Textured Square Hoop Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-textured-square-hoop-earrings/photo_2026-07-19_16-05-57.jpg",
+                "alt_text": "Gold Tone Textured Square Hoop Earrings image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-textured-square-hoop-earrings/photo_2026-07-19_16-05-59.jpg",
+                "alt_text": "Gold Tone Textured Square Hoop Earrings image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-textured-square-hoop-earrings/photo_2026-07-19_16-06-01.jpg",
+                "alt_text": "Gold Tone Textured Square Hoop Earrings image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are these hoops heavy?",
+                "answer": "Despite their bold geometric design, these earrings are crafted to be comfortably lightweight for all-day wear."
+            },
+            {
+                "question": "Will the gold finish fade over time?",
+                "answer": "No, they are treated with a durable anti-tarnish finish to ensure they maintain their brilliant shine."
+            }
+        ],
+        "meta_title": "Gold Tone Textured Square Hoop Earrings | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Textured Square Hoop Earrings. Featuring a vintage-inspired hammered texture, geometric design, and a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "earrings",
+        "name": "Gold Tone Textured Starfish Drop Earrings",
+        "slug": "gold-tone-textured-starfish-drop-earrings",
+        "description": "Channel coastal vibes with these elegant gold-tone drop earrings. Featuring detailed, textured starfish charms suspended from classic ball studs. Crafted with a high-quality anti-tarnish finish to ensure they maintain their brilliant shine.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "EARR-STAR-002",
+                "price": 549.0,
+                "stock": 30,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-textured-starfish-drop-earrings/photo_2026-07-19_16-13-05.jpg",
+                "alt_text": "Gold Tone Textured Starfish Drop Earrings image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-textured-starfish-drop-earrings/photo_2026-07-19_16-13-06.jpg",
+                "alt_text": "Gold Tone Textured Starfish Drop Earrings image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/earrings/gold-tone-textured-starfish-drop-earrings/photo_2026-07-19_16-13-08.jpg",
+                "alt_text": "Gold Tone Textured Starfish Drop Earrings image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "What type of closure do these earrings have?",
+                "answer": "They feature a secure push-back closure on a ball stud design."
+            },
+            {
+                "question": "Will these tarnish if worn near the beach?",
+                "answer": "While they feature a durable anti-tarnish finish, we recommend removing them before swimming in saltwater to prolong their lifespan."
+            }
+        ],
+        "meta_title": "Gold Tone Textured Starfish Drop Earrings | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Textured Starfish Drop Earrings. Coastal-inspired statement pieces featuring detailed charms and a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "jewelry-sets",
+        "name": "Gold Tone Heart Lariat Necklace and Bracelet Set",
+        "slug": "gold-tone-heart-lariat-necklace-and-bracelet-set",
+        "description": "Add a romantic touch to your jewelry collection with this matching gold-tone set. Featuring a delicate multi-heart lariat Y-necklace and a coordinating heart charm bracelet, both pieces are crafted with an anti-tarnish finish for enduring elegance.",
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "SET-HEART-001",
+                "price": 1299.0,
+                "stock": 15,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/jewelry-sets/gold-tone-heart-lariat-necklace-and-bracelet-set/photo_2026-07-19_12-52-29.jpg",
+                "alt_text": "Gold Tone Heart Lariat Necklace And Bracelet Set image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/jewelry-sets/gold-tone-heart-lariat-necklace-and-bracelet-set/photo_2026-07-19_12-52-32.jpg",
+                "alt_text": "Gold Tone Heart Lariat Necklace And Bracelet Set image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/jewelry-sets/gold-tone-heart-lariat-necklace-and-bracelet-set/photo_2026-07-19_12-52-34.jpg",
+                "alt_text": "Gold Tone Heart Lariat Necklace And Bracelet Set image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/jewelry-sets/gold-tone-heart-lariat-necklace-and-bracelet-set/photo_2026-07-19_12-52-49.jpg",
+                "alt_text": "Gold Tone Heart Lariat Necklace And Bracelet Set image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Does this set include both the necklace and bracelet?",
+                "answer": "Yes, this jewelry set includes both the heart lariat Y-necklace and the matching heart charm bracelet."
+            },
+            {
+                "question": "Are these pieces resistant to tarnishing?",
+                "answer": "Yes, both the necklace and bracelet feature a durable anti-tarnish finish to keep them looking pristine with regular wear."
+            }
+        ],
+        "meta_title": "Gold Tone Heart Necklace & Bracelet Set | Anti-Tarnish",
+        "meta_description": "Shop our Gold Tone Heart Lariat Necklace and Bracelet Set. This beautiful matching jewelry set features delicate heart charms and a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Black Square Pendant Necklace",
+        "slug": "gold-tone-black-square-pendant-necklace",
+        "description": "Make a bold yet minimalist statement with this gold-tone necklace. Featuring a striking black square pendant with softly rounded edges suspended on a delicate beaded satellite chain. Designed with an anti-tarnish finish for enduring, everyday elegance.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "NECK-SQR-BLK-001",
+                "price": 599.0,
+                "stock": 30,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-black-square-pendant-necklace/photo_2026-07-19_13-32-08.jpg",
+                "alt_text": "Gold Tone Black Square Pendant Necklace image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-black-square-pendant-necklace/photo_2026-07-19_13-32-10.jpg",
+                "alt_text": "Gold Tone Black Square Pendant Necklace image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-black-square-pendant-necklace/photo_2026-07-19_13-40-01.jpg",
+                "alt_text": "Gold Tone Black Square Pendant Necklace image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is the pendant heavy?",
+                "answer": "No, the pendant is lightweight and designed for comfortable, all-day wear."
+            },
+            {
+                "question": "Can I wear this everyday without it tarnishing?",
+                "answer": "Yes, this necklace features a durable anti-tarnish finish, making it highly resistant to fading and perfect for daily use."
+            }
+        ],
+        "meta_title": "Gold Tone Black Square Pendant Necklace | Anti-Tarnish",
+        "meta_description": "Discover the Gold Tone Black Square Pendant Necklace. A minimalist design featuring a striking black pendant on a beaded chain with an anti-tarnish finish."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Coastal Charm Necklace",
+        "slug": "gold-tone-coastal-charm-necklace",
+        "description": "Embrace beach-inspired elegance with this gold-tone coastal charm necklace. Featuring a delicate link chain embellished with a seashell, a faux pearl, a textured starfish, and a blue stone charm. Finished with an anti-tarnish coating for endless summer style.",
+        "secondary_categories": [
+            "charms"
+        ],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "NECK-CSTL-001",
+                "price": 799.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-coastal-charm-necklace/photo_2026-07-19_16-15-09.jpg",
+                "alt_text": "Gold Tone Coastal Charm Necklace image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-coastal-charm-necklace/photo_2026-07-19_16-15-14.jpg",
+                "alt_text": "Gold Tone Coastal Charm Necklace image 2",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Are the charms heavy?",
+                "answer": "No, the charms are designed to be lightweight and comfortable for everyday wear."
+            }
+        ],
+        "meta_title": "Gold Tone Coastal Charm Necklace | Anti-Tarnish",
+        "meta_description": "Discover the Gold Tone Coastal Charm Necklace. Featuring beach-inspired shell, pearl, and starfish charms with a premium anti-tarnish finish."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Double Snowflake Pendant Necklace",
+        "slug": "gold-tone-double-snowflake-pendant-necklace",
+        "description": "Add a delicate touch of winter whimsy to your look with this gold-tone double snowflake necklace. Featuring a fine chain adorned with a prominent primary snowflake pendant and a smaller accompanying snowflake charm, this anti-tarnish piece provides a brilliant, long-lasting shine perfect for everyday wear.",
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "NECK-SNOW-001",
+                "price": 699.0,
+                "stock": 15,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-double-snowflake-pendant-necklace/photo_2026-07-18_19-09-35.jpg",
+                "alt_text": "Gold Tone Double Snowflake Pendant Necklace image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-double-snowflake-pendant-necklace/photo_2026-07-18_19-09-37.jpg",
+                "alt_text": "Gold Tone Double Snowflake Pendant Necklace image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-double-snowflake-pendant-necklace/photo_2026-07-18_19-09-39.jpg",
+                "alt_text": "Gold Tone Double Snowflake Pendant Necklace image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Will the gold finish fade over time?",
+                "answer": "No, this necklace is crafted with a high-quality anti-tarnish finish designed to resist fading and maintain its radiant golden shine with regular use."
+            }
+        ],
+        "meta_title": "Gold Tone Double Snowflake Necklace | Anti-Tarnish Jewelry",
+        "meta_description": "Shop our Gold Tone Double Snowflake Necklace. Featuring two delicate winter-inspired pendants and an anti-tarnish finish, it's the perfect everyday accessory."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Four Leaf Clover Necklace",
+        "slug": "gold-tone-four-leaf-clover-necklace",
+        "description": "Bring a touch of luck and delicate beauty to your everyday look with this gold-tone four-leaf clover necklace. Featuring a polished clover pendant and a sparkling crystal accent on a delicate beaded satellite chain, complete with an anti-tarnish finish.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "NECK-CLOV-001",
+                "price": 549.0,
+                "stock": 40,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-four-leaf-clover-necklace/photo_2026-07-19_13-32-12.jpg",
+                "alt_text": "Gold Tone Four Leaf Clover Necklace image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-four-leaf-clover-necklace/photo_2026-07-19_13-32-14.jpg",
+                "alt_text": "Gold Tone Four Leaf Clover Necklace image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-four-leaf-clover-necklace/photo_2026-07-19_13-32-16.jpg",
+                "alt_text": "Gold Tone Four Leaf Clover Necklace image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "What type of chain does this necklace have?",
+                "answer": "This necklace features a delicate and elegant beaded satellite chain that beautifully complements the clover pendant."
+            },
+            {
+                "question": "Will the gold tone fade quickly?",
+                "answer": "No, it is treated with a premium anti-tarnish coating to ensure long-lasting shine and durability for daily wear."
+            }
+        ],
+        "meta_title": "Gold Tone Four Leaf Clover Necklace | Anti-Tarnish",
+        "meta_description": "Shop our Gold Tone Four Leaf Clover Necklace. Featuring a lucky clover pendant, a sparkling crystal charm, and an anti-tarnish finish on a beaded chain."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Minimalist Floral Pearl Necklace",
+        "slug": "gold-tone-minimalist-floral-pearl-necklace",
+        "description": "Add delicate sophistication to your neckline with this gold-tone necklace. Featuring a minimalist four-petal floral charm alongside a petite faux pearl on a fine chain. Crafted with a premium anti-tarnish finish.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "NECK-FLOR-PRL-001",
+                "price": 599.0,
+                "stock": 35,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-floral-pearl-necklace/photo_2026-07-19_14-20-06.jpg",
+                "alt_text": "Gold Tone Minimalist Floral Pearl Necklace image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-floral-pearl-necklace/photo_2026-07-19_14-20-08.jpg",
+                "alt_text": "Gold Tone Minimalist Floral Pearl Necklace image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-floral-pearl-necklace/photo_2026-07-19_14-20-10.jpg",
+                "alt_text": "Gold Tone Minimalist Floral Pearl Necklace image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is the pearl real?",
+                "answer": "The necklace features a high-quality faux pearl designed to offer an elegant look with everyday durability."
+            },
+            {
+                "question": "Can I wear this everyday?",
+                "answer": "Yes, it features a durable anti-tarnish finish, making it a beautiful and reliable accessory for daily wear."
+            }
+        ],
+        "meta_title": "Gold Tone Floral Pearl Necklace | Anti-Tarnish",
+        "meta_description": "Shop our Gold Tone Minimalist Floral Pearl Necklace. Featuring a delicate flower charm, a faux pearl, and a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Minimalist Lariat Necklace",
+        "slug": "gold-tone-minimalist-lariat-necklace",
+        "description": "Achieve effortless elegance with this gold-tone lariat necklace. Featuring a sleek snake chain that loops through an open irregular oval and finishes with a polished sphere drop, this anti-tarnish piece is perfect for modern, sophisticated styling.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "NECK-LAR-002",
+                "price": 699.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-lariat-necklace/photo_2026-07-19_13-32-33.jpg",
+                "alt_text": "Gold Tone Minimalist Lariat Necklace image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-lariat-necklace/photo_2026-07-19_13-32-36.jpg",
+                "alt_text": "Gold Tone Minimalist Lariat Necklace image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-lariat-necklace/photo_2026-07-19_13-32-38.jpg",
+                "alt_text": "Gold Tone Minimalist Lariat Necklace image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-lariat-necklace/photo_2026-07-19_13-32-40.jpg",
+                "alt_text": "Gold Tone Minimalist Lariat Necklace image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "How do you wear this necklace?",
+                "answer": "The necklace features a lariat design where the chain with the sphere drop is threaded through the open oval loop, allowing you to easily adjust the drop length to your preference."
+            },
+            {
+                "question": "Is the jewelry anti-tarnish?",
+                "answer": "Yes, this necklace is crafted with a high-quality anti-tarnish finish to ensure it maintains its radiant gold tone."
+            }
+        ],
+        "meta_title": "Gold Tone Minimalist Lariat Necklace | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Minimalist Lariat Necklace. Featuring a chic open loop and sphere drop on a sleek chain, crafted with an enduring anti-tarnish finish."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Minimalist Organic Hollow Pendant Necklace",
+        "slug": "gold-tone-minimalist-organic-hollow-pendant-necklac",
+        "description": "Add a touch of modern minimalism to your look with this elegant gold-tone necklace. Featuring a unique, organically shaped hollow pendant suspended on a delicate chain, this anti-tarnish piece offers a sleek and contemporary design perfect for everyday wear.",
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "NECK-ORG-001",
+                "price": 699.0,
+                "stock": 20,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-organic-hollow-pendant-necklac/photo_2026-07-18_19-00-18.jpg",
+                "alt_text": "Gold Tone Minimalist Organic Hollow Pendant Necklac image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-organic-hollow-pendant-necklac/photo_2026-07-18_19-01-01.jpg",
+                "alt_text": "Gold Tone Minimalist Organic Hollow Pendant Necklac image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-organic-hollow-pendant-necklac/photo_2026-07-18_19-01-05.jpg",
+                "alt_text": "Gold Tone Minimalist Organic Hollow Pendant Necklac image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-organic-hollow-pendant-necklac/photo_2026-07-18_19-01-07.jpg",
+                "alt_text": "Gold Tone Minimalist Organic Hollow Pendant Necklac image 4",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-organic-hollow-pendant-necklac/photo_2026-07-18_19-01-10.jpg",
+                "alt_text": "Gold Tone Minimalist Organic Hollow Pendant Necklac image 5",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this necklace suitable for daily wear?",
+                "answer": "Yes, this necklace features a durable anti-tarnish finish, making it perfect for everyday use while retaining its beautiful golden shine."
+            }
+        ],
+        "meta_title": "Gold Tone Organic Pendant Necklace | Anti-Tarnish Jewelry",
+        "meta_description": "Shop the Gold Tone Organic Pendant Necklace. Featuring a minimalist hollow design and a premium anti-tarnish finish, it is the perfect everyday accessory."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Minimalist Solitaire Necklace",
+        "slug": "gold-tone-minimalist-solitaire-necklace",
+        "description": "Add a touch of subtle brilliance to your look with this gold-tone minimalist necklace. Featuring a delicate chain and a single, sparkling round-cut clear crystal in a secure setting. Crafted with a premium anti-tarnish finish for enduring everyday elegance.",
+        "secondary_categories": [
+            "pendants"
+        ],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": true,
+        "variants": [
+            {
+                "sku": "NECK-SOL-002",
+                "price": 499.0,
+                "stock": 40,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-solitaire-necklace/photo_2026-07-19_16-14-52.jpg",
+                "alt_text": "Gold Tone Minimalist Solitaire Necklace image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-solitaire-necklace/photo_2026-07-19_16-14-54.jpg",
+                "alt_text": "Gold Tone Minimalist Solitaire Necklace image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-minimalist-solitaire-necklace/photo_2026-07-19_16-14-56.jpg",
+                "alt_text": "Gold Tone Minimalist Solitaire Necklace image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this necklace suitable for layering?",
+                "answer": "Yes, its delicate and minimalist design makes it the perfect piece to layer with other necklaces."
+            },
+            {
+                "question": "Will the gold tone fade quickly?",
+                "answer": "No, it is protected by a durable anti-tarnish coating to maintain its radiant shine."
+            }
+        ],
+        "meta_title": "Gold Tone Minimalist Solitaire Necklace | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Minimalist Solitaire Necklace. Featuring a delicate chain, a brilliant clear crystal pendant, and a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Multi-Heart Lariat Y-Necklace",
+        "slug": "gold-tone-multi-heart-lariat-y-necklace",
+        "description": "Add a romantic and modern touch to your neckline with this elegant gold-tone Y-necklace. Featuring a delicate chain accented with multiple polished, puffed heart charms and a graceful 4.5cm drop, this anti-tarnish piece offers a stunning, long-lasting shine perfect for layering or wearing solo.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "NECK-Y-HRT-001",
+                "price": 799.0,
+                "stock": 15,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-multi-heart-lariat-y-necklace/photo_2026-07-18_20-06-32.jpg",
+                "alt_text": "Gold Tone Multi Heart Lariat Y Necklace image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-multi-heart-lariat-y-necklace/photo_2026-07-18_20-06-35.jpg",
+                "alt_text": "Gold Tone Multi Heart Lariat Y Necklace image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-multi-heart-lariat-y-necklace/photo_2026-07-18_20-06-36.jpg",
+                "alt_text": "Gold Tone Multi Heart Lariat Y Necklace image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-multi-heart-lariat-y-necklace/photo_2026-07-18_20-06-37.jpg",
+                "alt_text": "Gold Tone Multi Heart Lariat Y Necklace image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "What is the length of this necklace?",
+                "answer": "The necklace features a 42cm chain with a 6cm adjustable extender, allowing for a comfortable and customizable fit. The central drop measures 4.5cm."
+            },
+            {
+                "question": "Are the heart charms large?",
+                "answer": "No, the heart charms are delicately sized at 1cm wide, offering a subtle and elegant look."
+            },
+            {
+                "question": "Will this necklace lose its gold tone?",
+                "answer": "This necklace is crafted with a high-quality anti-tarnish finish designed to resist fading and maintain its radiant golden shine with regular use."
+            }
+        ],
+        "meta_title": "Gold Tone Multi-Heart Y-Necklace | Anti-Tarnish",
+        "meta_description": "Shop the elegant Gold Tone Multi-Heart Lariat Y-Necklace. Featuring delicate puffed heart charms, an adjustable chain, and an anti-tarnish finish."
+    },
+    {
+        "category_slug": "necklaces",
+        "name": "Gold Tone Spiral Sunburst Pendant Necklace",
+        "slug": "gold-tone-spiral-sunburst-pendant-necklace",
+        "description": "Make a radiant statement with this bold gold-tone necklace. Featuring a large sunburst pendant with a unique spiral center on a sleek snake chain, this anti-tarnish piece ensures long-lasting shine and elevated everyday style.",
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "NECK-SUN-001",
+                "price": 899.0,
+                "stock": 20,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-spiral-sunburst-pendant-necklace/photo_2026-07-19_12-52-59.jpg",
+                "alt_text": "Gold Tone Spiral Sunburst Pendant Necklace image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-spiral-sunburst-pendant-necklace/photo_2026-07-19_12-53-06.jpg",
+                "alt_text": "Gold Tone Spiral Sunburst Pendant Necklace image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/necklaces/gold-tone-spiral-sunburst-pendant-necklace/photo_2026-07-19_12-53-10.jpg",
+                "alt_text": "Gold Tone Spiral Sunburst Pendant Necklace image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "What type of chain does this necklace have?",
+                "answer": "This necklace features a smooth, flexible snake chain that complements the bold sun pendant perfectly."
+            },
+            {
+                "question": "Is this necklace anti-tarnish?",
+                "answer": "Yes, it is crafted with a high-quality anti-tarnish finish to maintain its radiant golden shine."
+            }
+        ],
+        "meta_title": "Gold Tone Spiral Sun Pendant Necklace | Anti-Tarnish",
+        "meta_description": "Shop the Gold Tone Spiral Sunburst Pendant Necklace. Featuring a striking sun design on a sleek snake chain and a premium anti-tarnish finish."
+    },
+    {
+        "category_slug": "rings",
+        "name": "Gold Tone Double Band Knot Ring",
+        "slug": "gold-tone-double-band-knot-ring",
+        "description": "Add a touch of delicate sophistication to your look with this gold-tone double band knot ring. Featuring a beautifully intertwined smooth and beaded band design, this anti-tarnish ring offers an elegant and modern everyday style.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "RING-KNOT-002",
+                "price": 499.0,
+                "stock": 30,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-double-band-knot-ring/photo_2026-07-19_13-56-59.jpg",
+                "alt_text": "Gold Tone Double Band Knot Ring image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-double-band-knot-ring/photo_2026-07-19_13-57-01.jpg",
+                "alt_text": "Gold Tone Double Band Knot Ring image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-double-band-knot-ring/photo_2026-07-19_13-57-03.jpg",
+                "alt_text": "Gold Tone Double Band Knot Ring image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-double-band-knot-ring/photo_2026-07-19_13-57-05.jpg",
+                "alt_text": "Gold Tone Double Band Knot Ring image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Will this ring turn my finger green?",
+                "answer": "No, this ring is crafted with high-quality materials and a premium anti-tarnish finish to ensure safe and vibrant everyday wear."
+            }
+        ],
+        "meta_title": "Gold Tone Double Band Knot Ring | Anti-Tarnish",
+        "meta_description": "Shop the elegant Gold Tone Double Band Knot Ring. Featuring intertwined smooth and beaded bands with a durable anti-tarnish finish."
+    },
+    {
+        "category_slug": "rings",
+        "name": "Gold Tone Leaf Wrap Adjustable Ring",
+        "slug": "gold-tone-leaf-wrap",
+        "description": "Embrace nature-inspired elegance with this gold-tone leaf wrap ring. Featuring a beautifully detailed, adjustable double-branch design, this anti-tarnish piece offers a comfortable fit and a brilliant, enduring shine perfect for any occasion.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "RING-LEAF-001",
+                "price": 599.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-leaf-wrap/photo_2026-07-18_18-25-59.jpg",
+                "alt_text": "Gold Tone Leaf Wrap image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-leaf-wrap/photo_2026-07-19_13-55-18.jpg",
+                "alt_text": "Gold Tone Leaf Wrap image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-leaf-wrap/photo_2026-07-19_13-55-25.jpg",
+                "alt_text": "Gold Tone Leaf Wrap image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-leaf-wrap/photo_2026-07-19_13-55-29.jpg",
+                "alt_text": "Gold Tone Leaf Wrap image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this ring adjustable?",
+                "answer": "Yes, the open wrap design allows you to gently adjust the ring to comfortably fit most finger sizes."
+            },
+            {
+                "question": "Will this ring tarnish over time?",
+                "answer": "No, it is crafted with a high-quality anti-tarnish finish to ensure it maintains its radiant gold tone with regular wear."
+            }
+        ],
+        "meta_title": "Gold Tone Leaf Wrap Ring | Anti-Tarnish Jewelry",
+        "meta_description": "Shop our beautiful Gold Tone Leaf Wrap Ring. Featuring an adjustable branch design and an anti-tarnish finish, it is the perfect nature-inspired accessory."
+    },
+    {
+        "category_slug": "rings",
+        "name": "Gold Tone Textured Starfish Ring",
+        "slug": "gold-tone-textured-starfish-ring",
+        "description": "Channel coastal elegance with this striking gold-tone starfish ring. Featuring intricate textured detailing and a bold, statement-making design, this piece is crafted with an anti-tarnish finish for long-lasting, radiant wear.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "RING-STAR-001",
+                "price": 599.0,
+                "stock": 15,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-textured-starfish-ring/photo_2026-07-19_13-57-13.jpg",
+                "alt_text": "Gold Tone Textured Starfish Ring image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-textured-starfish-ring/photo_2026-07-19_13-57-16.jpg",
+                "alt_text": "Gold Tone Textured Starfish Ring image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-textured-starfish-ring/photo_2026-07-19_13-57-21.jpg",
+                "alt_text": "Gold Tone Textured Starfish Ring image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/gold-tone-textured-starfish-ring/photo_2026-07-19_13-57-24.jpg",
+                "alt_text": "Gold Tone Textured Starfish Ring image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this ring adjustable?",
+                "answer": "Please refer to our sizing guide to select the perfect fit, as this is a structured statement ring."
+            },
+            {
+                "question": "Can I wear this near water?",
+                "answer": "Yes, this ring features an anti-tarnish coating that helps protect its finish, though we recommend removing it before swimming for optimal longevity."
+            }
+        ],
+        "meta_title": "Gold Tone Textured Starfish Ring | Anti-Tarnish Jewelry",
+        "meta_description": "Discover our Gold Tone Textured Starfish Ring. A bold, coastal-inspired statement piece crafted with a premium anti-tarnish finish for enduring style."
+    },
+    {
+        "category_slug": "rings",
+        "name": "Silver Tone Crystal Chevron Adjustable Ring",
+        "slug": "silver-tone-crystal-chevron-adjustable-ring",
+        "description": "Enhance your jewelry collection with this elegant silver-tone chevron ring. Featuring a gentle V-shaped curve lined with sparkling clear crystals and an adjustable open band for a perfect fit. Crafted with a premium anti-tarnish finish for enduring shine and everyday wear.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "RING-CHEV-001",
+                "price": 599.0,
+                "stock": 20,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-crystal-chevron-adjustable-ring/photo_2026-07-18_19-42-55.jpg",
+                "alt_text": "Silver Tone Crystal Chevron Adjustable Ring image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-crystal-chevron-adjustable-ring/photo_2026-07-18_19-43-17.jpg",
+                "alt_text": "Silver Tone Crystal Chevron Adjustable Ring image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-crystal-chevron-adjustable-ring/photo_2026-07-18_19-43-19.jpg",
+                "alt_text": "Silver Tone Crystal Chevron Adjustable Ring image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-crystal-chevron-adjustable-ring/photo_2026-07-18_19-43-24.jpg",
+                "alt_text": "Silver Tone Crystal Chevron Adjustable Ring image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this ring adjustable?",
+                "answer": "Yes, it features an open band design at the back, allowing you to gently adjust the size for a comfortable fit."
+            },
+            {
+                "question": "Is the jewelry anti-tarnish?",
+                "answer": "Yes, this ring is crafted with an anti-tarnish finish to ensure it keeps its brilliant silver-tone shine with regular wear."
+            }
+        ],
+        "meta_title": "Silver Tone Crystal Chevron Ring | Adjustable Anti-Tarnish",
+        "meta_description": "Shop the Silver Tone Crystal Chevron Ring. Featuring a sparkling V-shaped design, an adjustable band, and an anti-tarnish finish for lasting elegance."
+    },
+    {
+        "category_slug": "rings",
+        "name": "Silver Tone Heart Crystal Adjustable Ring",
+        "slug": "silver-tone-heart-crystal-adjustable-ring",
+        "description": "Add a romantic touch to your style with this silver-tone adjustable ring. Showcasing a sparkling heart-shaped central crystal accented by delicate side stones on an open band. Finished with an anti-tarnish coating for long-lasting, everyday beauty.",
+        "secondary_categories": [],
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "RING-HRT-002",
+                "price": 699.0,
+                "stock": 30,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-heart-crystal-adjustable-ring/photo_2026-07-19_13-09-36.jpg",
+                "alt_text": "Silver Tone Heart Crystal Adjustable Ring image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-heart-crystal-adjustable-ring/photo_2026-07-19_13-09-50.jpg",
+                "alt_text": "Silver Tone Heart Crystal Adjustable Ring image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-heart-crystal-adjustable-ring/photo_2026-07-19_13-09-52.jpg",
+                "alt_text": "Silver Tone Heart Crystal Adjustable Ring image 3",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is the ring size adjustable?",
+                "answer": "Yes, the ring features an open back design that allows you to gently adjust it for a comfortable, custom fit."
+            },
+            {
+                "question": "Will the silver tone fade?",
+                "answer": "No, this ring is treated with a premium anti-tarnish finish to maintain its bright silver tone and resist fading over time."
+            }
+        ],
+        "meta_title": "Silver Tone Heart Crystal Ring | Adjustable Anti-Tarnish",
+        "meta_description": "Discover the Silver Tone Heart Crystal Adjustable Ring. Featuring a sparkling heart stone, delicate side accents, and a lasting anti-tarnish finish."
+    },
+    {
+        "category_slug": "rings",
+        "name": "Silver Tone Round Solitaire Ring",
+        "slug": "silver-tone-round-solitaire-ring",
+        "description": "Timeless and elegant, this silver-tone ring features a dazzling round-cut clear crystal in a classic 6-prong setting. Crafted with a premium anti-tarnish finish, this piece offers enduring brilliance perfect for special occasions or everyday wear.",
+        "status": "published",
+        "is_featured": false,
+        "is_most_sold": false,
+        "variants": [
+            {
+                "sku": "RING-SOL-001",
+                "price": 899.0,
+                "stock": 25,
+                "is_default": true
+            }
+        ],
+        "media": [
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-round-solitaire-ring/photo_2026-07-19_13-10-01.jpg",
+                "alt_text": "Silver Tone Round Solitaire Ring image 1",
+                "is_primary": true
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-round-solitaire-ring/photo_2026-07-19_13-10-04.jpg",
+                "alt_text": "Silver Tone Round Solitaire Ring image 2",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-round-solitaire-ring/photo_2026-07-19_13-10-07.jpg",
+                "alt_text": "Silver Tone Round Solitaire Ring image 3",
+                "is_primary": false
+            },
+            {
+                "url": "https://pub-403b8553d0524c02ac25450528bacd85.r2.dev/products/rings/silver-tone-round-solitaire-ring/photo_2026-07-19_13-10-10.jpg",
+                "alt_text": "Silver Tone Round Solitaire Ring image 4",
+                "is_primary": false
+            }
+        ],
+        "faqs": [
+            {
+                "question": "Is this ring suitable for daily wear?",
+                "answer": "Yes, it is crafted with a high-quality anti-tarnish finish to ensure long-lasting shine even with daily use."
+            },
+            {
+                "question": "What is the setting style?",
+                "answer": "The center stone is securely held by a classic 6-prong setting designed to maximize light reflection and brilliance."
+            }
+        ],
+        "meta_title": "Silver Tone Round Solitaire Ring | Anti-Tarnish",
+        "meta_description": "Shop the classic Silver Tone Round Solitaire Ring. Featuring a brilliant 6-prong clear stone and an anti-tarnish finish for lasting, everyday elegance."
+    }
+]

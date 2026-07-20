@@ -64,12 +64,12 @@ func (r *ProductRepository) Delete(ctx context.Context, id primitive.ObjectID) e
 func (r *ProductRepository) List(ctx context.Context, filter dto.FilterRequest, page, limit int) ([]domain.Product, int64, error) {
 	query := bson.M{}
 
-	// Build dynamic filtering criteria
+	// Dynamic filtering criteria
 	if filter.Status != "" {
 		query["status"] = filter.Status
 	}
 
-	// New Discovery Flag Filters
+	// Discovery Flag Filters
 	if filter.IsFeatured != nil {
 		query["is_featured"] = *filter.IsFeatured
 	}
@@ -77,13 +77,13 @@ func (r *ProductRepository) List(ctx context.Context, filter dto.FilterRequest, 
 		query["is_most_sold"] = *filter.IsMostSold
 	}
 
-	if filter.CategoryID != "" {
-		if catID, err := primitive.ObjectIDFromHex(filter.CategoryID); err == nil {
-			query["$or"] = bson.A{
-				bson.M{"primary_category_id": catID},
-			}
+	// 💡 Category Filter: Match either primary
+	if filter.CategorySlug != "" {
+		query["$or"] = bson.A{
+			bson.M{"category_slug": filter.CategorySlug},
 		}
 	}
+
 	if filter.Search != "" {
 		query["$text"] = bson.M{"$search": filter.Search}
 	}

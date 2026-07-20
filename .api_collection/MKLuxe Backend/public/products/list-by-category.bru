@@ -1,17 +1,17 @@
 meta {
-  name: list-by-categoryId
+  name: list-by-category
   type: http
   seq: 5
 }
 
 get {
-  url: {{BACKEND_URI}}/api/v1/products?category_id=bracelets-bangles&status=published
+  url: {{BACKEND_URI}}/api/v1/products?category=earrings&status=published
   body: none
   auth: inherit
 }
 
 params:query {
-  category_id: bracelets-bangles
+  category: earrings
   status: published
 }
 

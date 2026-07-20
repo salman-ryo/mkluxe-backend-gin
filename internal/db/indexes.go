@@ -27,11 +27,6 @@ func EnsureIndexes(db *mongo.Database) error {
 	// We don't want this operation hanging forever if MongoDB becomes
 	// unreachable or something goes wrong.
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
-
-	// Clean up the timeout context when the function exits.
-	//
-	// This stops the timer and releases resources associated
-	// with the context.
 	defer cancel()
 
 	// Create reusable index options.
@@ -54,9 +49,12 @@ func EnsureIndexes(db *mongo.Database) error {
 	// Create multiple indexes in a single operation.
 	_, err := productCol.Indexes().CreateMany(ctx, []mongo.IndexModel{
 
-		// Unique index on slug.
+		// --------------------------------------------------------
+		// Unique product slug
+		// --------------------------------------------------------
 		//
-		// Example:
+		// Used for product URLs such as:
+		//
 		// /products/iphone-15
 		//
 		// Every product must have a unique slug.
@@ -67,34 +65,43 @@ func EnsureIndexes(db *mongo.Database) error {
 			Options: uniqueOpt,
 		},
 
+		// --------------------------------------------------------
 		// Compound index:
-		// status + primary_category_id
+		// status + category_slug
+		// --------------------------------------------------------
 		//
-		// Useful for queries like:
+		// Optimizes queries such as:
 		//
 		// db.products.find({
 		//     status: "active",
-		//     primary_category_id: "electronics"
+		//     category_slug: "electronics"
 		// })
 		//
-		// MongoDB can use this index instead of scanning
-		// every product document.
+		// This is useful for category listing pages where only
+		// active products are displayed.
+		//
+		// In production, products reference the category by its
+		// unique slug rather than a category ID.
 		{
 			Keys: bson.D{
 				{Key: "status", Value: 1},
-				{Key: "primary_category_id", Value: 1},
+				{Key: "category_slug", Value: 1},
 			},
 		},
 
-		// Text index for full-text search.
+		// --------------------------------------------------------
+		// Text search index
+		// --------------------------------------------------------
 		//
-		// Allows queries like:
+		// Enables MongoDB full-text search.
+		//
+		// Example:
 		//
 		// db.products.find({
 		//     $text: { $search: "wireless headphones" }
 		// })
 		//
-		// MongoDB will search both name and description.
+		// MongoDB searches both the product name and description.
 		{
 			Keys: bson.D{
 				{Key: "name", Value: "text"},
@@ -103,7 +110,7 @@ func EnsureIndexes(db *mongo.Database) error {
 		},
 	})
 
-	// If index creation failed, stop immediately.
+	// Stop immediately if product index creation failed.
 	if err != nil {
 		return err
 	}
@@ -115,15 +122,16 @@ func EnsureIndexes(db *mongo.Database) error {
 	// Get the categories collection.
 	categoryCol := db.Collection("categories")
 
-	// Create a unique index on slug.
+	// Unique category slug.
 	//
-	// Example:
+	// Examples:
 	//
 	// electronics
-	// phones
 	// laptops
+	// smartphones
 	//
-	// No duplicate category slugs allowed.
+	// Products reference categories using this slug, so it must
+	// remain unique across the collection.
 	_, err = categoryCol.Indexes().CreateOne(ctx, mongo.IndexModel{
 		Keys: bson.D{
 			{Key: "slug", Value: 1},
@@ -142,14 +150,14 @@ func EnsureIndexes(db *mongo.Database) error {
 	// Get the users collection.
 	userCol := db.Collection("users")
 
-	// Create a unique index on email.
+	// Unique email address.
 	//
-	// This prevents duplicate accounts:
+	// Prevents duplicate user accounts:
 	//
 	// john@example.com
 	// john@example.com  <- rejected
 	//
-	// MongoDB itself enforces this rule.
+	// MongoDB enforces this uniqueness automatically.
 	_, err = userCol.Indexes().CreateOne(ctx, mongo.IndexModel{
 		Keys: bson.D{
 			{Key: "email", Value: 1},
@@ -161,10 +169,8 @@ func EnsureIndexes(db *mongo.Database) error {
 		return err
 	}
 
-	// If we reach this point, all indexes were created
-	// successfully (or already existed).
+	// All indexes now exist (either newly created or already present).
 	log.Println("MongoDB indexes verified successfully.")
 
-	// nil means no error occurred.
 	return nil
 }

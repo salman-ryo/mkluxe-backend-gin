@@ -27,20 +27,16 @@ func (s *ProductService) CreateProduct(ctx context.Context, categoryIdentifier s
 		return nil, err
 	}
 
-	var primaryCatID primitive.ObjectID
-
 	if id, err := primitive.ObjectIDFromHex(categoryIdentifier); err == nil {
 		cat, getErr := s.categoryRepo.GetByID(ctx, id)
 		if getErr != nil || cat == nil {
 			return nil, errors.New("provided primary category ID does not exist")
 		}
-		primaryCatID = cat.ID
 	} else {
 		cat, getErr := s.categoryRepo.GetBySlug(ctx, categoryIdentifier)
 		if getErr != nil || cat == nil {
 			return nil, errors.New("provided primary category slug does not exist")
 		}
-		primaryCatID = cat.ID
 	}
 
 	slug := req.Slug
@@ -56,18 +52,18 @@ func (s *ProductService) CreateProduct(ctx context.Context, categoryIdentifier s
 	}
 
 	product := &domain.Product{
-		Name:              utils.CleanString(req.Name),
-		Slug:              slug,
-		Description:       utils.CleanString(req.Description),
-		PrimaryCategoryID: primaryCatID,
-		Status:            req.Status,
-		IsFeatured:        req.IsFeatured,
-		IsMostSold:        req.IsMostSold,
-		Variants:          req.Variants,
-		Media:             req.Media,
-		FAQs:              req.FAQs,
-		MetaTitle:         req.MetaTitle,
-		MetaDescription:   req.MetaDescription,
+		Name:            utils.CleanString(req.Name),
+		Slug:            slug,
+		Description:     utils.CleanString(req.Description),
+		CategorySlug:    categoryIdentifier, // Store the slug for easier querying
+		Status:          req.Status,
+		IsFeatured:      req.IsFeatured,
+		IsMostSold:      req.IsMostSold,
+		Variants:        req.Variants,
+		Media:           req.Media,
+		FAQs:            req.FAQs,
+		MetaTitle:       req.MetaTitle,
+		MetaDescription: req.MetaDescription,
 	}
 
 	if err := s.productRepo.Create(ctx, product); err != nil {

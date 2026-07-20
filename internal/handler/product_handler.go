@@ -63,12 +63,18 @@ func (h *ProductHandler) List(c *gin.Context) {
 		isMostSold = &val
 	}
 
+	category := c.Query("category_id")
+	if category == "" {
+		category = c.Query("category")
+	}
+	println("Category filter:", category)
+
 	filter := dto.FilterRequest{
-		Search:     c.Query("search"),
-		CategoryID: c.Query("category_id"),
-		Status:     c.Query("status"),
-		IsFeatured: isFeatured,
-		IsMostSold: isMostSold,
+		Search:       c.Query("search"),
+		CategorySlug: category,
+		Status:       c.Query("status"),
+		IsFeatured:   isFeatured,
+		IsMostSold:   isMostSold,
 	}
 
 	products, total, err := h.productService.ListProducts(c.Request.Context(), filter, page, limit)

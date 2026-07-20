@@ -72,7 +72,7 @@ func (c *Config) GetRefreshCookieConfig() *CookieConfig {
 	return &CookieConfig{
 		Name:     "refresh_token",
 		MaxAge:   604800,
-		Path:     "/api/v1/auth/refresh",
+		Path:     "/",
 		Domain:   "", // 💡 Always empty.
 		Secure:   c.IsProduction,
 		HttpOnly: true,

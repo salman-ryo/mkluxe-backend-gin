@@ -3,13 +3,38 @@ import json
 import boto3
 from botocore.config import Config
 from pymongo import MongoClient
+from dotenv import load_dotenv
 
+# --- 0. LOAD ENVIRONMENT VARIABLES FROM .env FILE ---
+load_dotenv()
 
+# --- 1. CONFIGURATION ---
+# Cloudflare R2 Config
+ACCOUNT_ID = os.getenv('R2_ACCOUNT_ID')
+ACCESS_KEY = os.getenv('R2_ACCESS_KEY')
+SECRET_KEY = os.getenv('R2_SECRET_KEY')
+BUCKET_NAME = os.getenv('R2_BUCKET_NAME')
+R2_PUBLIC_BASE_URL = os.getenv('R2_PUBLIC_BASE_URL')
+
+# MongoDB Config
+MONGO_URI = os.getenv('MONGO_URI')  # Change this to your MongoDB connection string if needed
+DB_NAME = os.getenv('DB_NAME')  # Change this to your database name if needed
+COLLECTION_NAME = 'products'
 
 # Local Filepaths
-SEED_DIRECTORY = 'C:/Users/salma/Development/Jiyu/Golang/Projects/mkluxe-backend/internal/seed/products'
-# Updated path to place master_seed.json inside the seed folder alongside admin_seed.go
-OUTPUT_JSON_FILE = 'C:/Users/salma/Development/Jiyu/Golang/Projects/mkluxe-backend/internal/seed/master_seed.json'
+SEED_DIRECTORY = os.getenv('SEED_DIRECTORY', 'C:/Users/salma/Development/Jiyu/Golang/Projects/mkluxe-backend/internal/seed/products')
+OUTPUT_JSON_FILE = os.getenv('OUTPUT_JSON_FILE', 'C:/Users/salma/Development/Jiyu/Golang/Projects/mkluxe-backend/internal/seed/master_seed.json')
+
+# --- VALIDATION ---
+def validate_config():
+    """Check that all required environment variables are set"""
+    required_vars = ['R2_ACCOUNT_ID', 'R2_ACCESS_KEY', 'R2_SECRET_KEY', 'R2_BUCKET_NAME', 'R2_PUBLIC_BASE_URL', 'MONGO_URI', 'DB_NAME']
+    missing_vars = [var for var in required_vars if not os.getenv(var)]
+    
+    if missing_vars:
+        print(f"❌ Error: Missing required environment variables: {', '.join(missing_vars)}")
+        print("Please ensure your .env file contains all required variables.")
+        exit(1)
 
 # --- 2. INITIALIZE S3 CLIENT ---
 s3_client = boto3.client(
@@ -169,6 +194,9 @@ if __name__ == "__main__":
     print("========================================")
     print("      MK Luxe Super Seed Script")
     print("========================================\n")
+    
+    # Validate configuration before proceeding
+    validate_config()
     
     # 1. Ask for Test Mode
     test_mode_input = ""

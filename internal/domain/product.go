@@ -8,12 +8,11 @@ import (
 
 // Product is the primary aggregate root for the jewelry catalog
 type Product struct {
-	ID                  primitive.ObjectID   `bson:"_id,omitempty" json:"id"`
-	Slug                string               `bson:"slug" json:"slug"`
-	Name                string               `bson:"name" json:"name"`
-	Description         string               `bson:"description" json:"description"`
-	PrimaryCategoryID   primitive.ObjectID   `bson:"primary_category_id" json:"primary_category_id"`
-	SecondaryCategories []primitive.ObjectID `bson:"secondary_categories,omitempty" json:"secondary_categories,omitempty"`
+	ID                primitive.ObjectID `bson:"_id,omitempty" json:"id"`
+	Slug              string             `bson:"slug" json:"slug"`
+	Name              string             `bson:"name" json:"name"`
+	Description       string             `bson:"description" json:"description"`
+	PrimaryCategoryID primitive.ObjectID `bson:"primary_category_id" json:"primary_category_id"`
 
 	Status string `bson:"status" json:"status"` // draft, published, archived
 

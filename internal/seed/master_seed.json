@@ -4,7 +4,7 @@
         "name": "Gold Tone Black Clover Motif Bracelet",
         "slug": "gold-tone-black-clover-motif-bracelet",
         "description": "Make a chic and lucky statement with this elegant gold-tone bracelet. Showcasing five iconic clover motifs with striking black centers connected by a delicate chain. Finished with a premium anti-tarnish coating, ensuring this sophisticated piece remains radiant through everyday wear.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": true,
@@ -56,7 +56,7 @@
         "name": "Gold Tone Chunky Oval Link Bracelet",
         "slug": "gold-tone-chunky-oval-link-bracelet",
         "description": "Add a touch of classic elegance to your wrist with this gold-tone chunky oval link bracelet. Featuring a polished, interlocking chain design and an anti-tarnish finish for enduring, everyday wear.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -108,9 +108,6 @@
         "name": "Gold Tone Chunky Starfish Charm Bracelet",
         "slug": "gold-tone-chunky-starfish-charm-bracelet",
         "description": "Make a splash with this statement gold-tone charm bracelet. Featuring a chunky, twisted chain adorned with beautifully detailed, textured starfish charms. Finished with a premium anti-tarnish coating for endless summer style.",
-        "secondary_categories": [
-            "charms"
-        ],
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -152,9 +149,6 @@
         "name": "Gold Tone Evil Eye Charm Bracelet",
         "slug": "gold-tone-evil-eye-charm-bracelet",
         "description": "Protect your energy with this stunning gold-tone bracelet. Featuring a sleek snake chain adorned with textured bead spacers, striking blue crystal teardrops, and intricate evil eye charms. Crafted with a premium anti-tarnish finish.",
-        "secondary_categories": [
-            "charms"
-        ],
         "status": "published",
         "is_featured": true,
         "is_most_sold": false,
@@ -201,7 +195,7 @@
         "name": "Gold Tone Layered Chain Charm Bracelet",
         "slug": "gold-tone-layered-chain-charm-bracelet",
         "description": "Elevate your wrist stack effortlessly with this stylish gold-tone layered bracelet. Featuring two distinct chain styles\u2014a classic link chain and a delicate figaro chain\u2014accented with minimalist geometric cube and sphere charms. Crafted with a premium anti-tarnish finish for lasting everyday wear.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -253,7 +247,7 @@
         "name": "Gold Tone Layered Heart Charm Bracelet",
         "slug": "gold-tone-layered-heart-charm-bracelet",
         "description": "Achieve a perfectly styled wrist stack with this gold-tone double-layered bracelet. Combining a trendy paperclip link chain with a delicate chain featuring spherical bead drops and a central polished puffed heart charm. Designed with an anti-tarnish finish.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -305,7 +299,7 @@
         "name": "Gold Tone Layered Snake Chain Beaded Bracelet",
         "slug": "gold-tone-layered-snake-chain-beaded-bracelet",
         "description": "Elevate your wrist stack effortlessly with this gold-tone layered bracelet. Showcasing a flat herringbone snake chain and a rounded snake chain accented with polished sphere beads. Crafted with a premium anti-tarnish finish for enduring, everyday elegance.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": true,
@@ -352,7 +346,7 @@
         "name": "Gold Tone Triple Heart Charm Bracelet",
         "slug": "gold-tone-triple-heart-charm-bracelet",
         "description": "Add a delicate, romantic touch to your jewelry collection with this gold-tone heart charm bracelet. Featuring three polished, puffed heart motifs spaced evenly along a fine chain. Includes an adjustable extender and is finished with an anti-tarnish coating for enduring shine.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -394,7 +388,7 @@
         "name": "Silver Tone Crystal and Heart Bangle",
         "slug": "silver-tone-crystal-and-heart-bangle",
         "description": "Elevate your wristwear with this sleek silver-tone bangle bracelet. Featuring a polished finish adorned with alternating clear crystals and delicate hollow heart motifs. Designed with an anti-tarnish coating for enduring, everyday elegance.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -446,7 +440,7 @@
         "name": "Gold Tone Chunky Spiral Stud Earrings",
         "slug": "gold-tone-chunky-spiral-stud-earrings",
         "description": "Make a bold statement with these gold-tone chunky spiral stud earrings. Crafted with a thick, rounded wire design swirling into a perfect spiral, complete with an anti-tarnish finish for long-lasting brilliance.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -489,7 +483,7 @@
         "name": "Gold Tone Curved Heart Stud Earrings",
         "slug": "gold-tone-curved-heart-stud-earrings",
         "description": "Embrace modern romance with these gold-tone heart stud earrings. Featuring a unique curved, elongated heart design with a high-polish finish. Protected by an anti-tarnish coating for lasting shine.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": true,
@@ -527,7 +521,7 @@
         "name": "Gold Tone Interlocking Double Oval Stud Earrings",
         "slug": "gold-tone-interlocking-double-oval-stud-earrings",
         "description": "Elevate your everyday style with these bold gold-tone stud earrings. Featuring a chic interlocking double oval design with a high-polish finish, these anti-tarnish earrings offer a modern statement look that ensures long-lasting wear and brilliant shine.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -579,7 +573,7 @@
         "name": "Gold Tone Liquid Metal Drop Earrings",
         "slug": "gold-tone-liquid-metal-drop-earrings",
         "description": "Embrace contemporary art with these avant-garde gold-tone liquid metal drop earrings. Featuring a high-polish, abstract melting drip design, these statement earrings are finished with a premium anti-tarnish coating for lasting brilliance and modern flair.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": true,
         "is_most_sold": false,
@@ -631,7 +625,7 @@
         "name": "Gold Tone Melting Heart Statement Earrings",
         "slug": "gold-tone-melting-heart-statement-earrings",
         "description": "Embrace avant-garde style with these gold-tone melting heart earrings. Featuring a high-polish, contemporary drip design, these statement studs are finished with an anti-tarnish coating for lasting brilliance and modern flair.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": true,
         "is_most_sold": false,
@@ -669,7 +663,7 @@
         "name": "Gold Tone Minimalist Bow Stud Earrings",
         "slug": "gold-tone-minimalist-bow-stud-earrings",
         "description": "Add a delicate touch of femininity to your style with these gold-tone bow stud earrings. Featuring a sleek, minimalist wire design crafted in the shape of a tied ribbon, this anti-tarnish jewelry piece ensures long-lasting shine and comfortable everyday wear.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -731,7 +725,7 @@
         "name": "Gold Tone Open Wire Heart Stud Earrings",
         "slug": "gold-tone-open-wire-heart-stud-earrings",
         "description": "Add a delicate touch of romance to your style with these gold-tone open wire heart stud earrings. Featuring a sleek, minimalist hollow heart silhouette and a premium anti-tarnish finish for enduring, everyday wear.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -825,7 +819,7 @@
         "name": "Gold Tone Ribbed Triangle Stud Earrings",
         "slug": "gold-tone-ribbed-triangle-stud-earrings",
         "description": "Make a bold statement with these gold-tone ribbed triangle stud earrings. Featuring a chunky, textured knot design and a premium anti-tarnish finish, they add a touch of vintage-inspired glamour to any outfit.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -872,7 +866,7 @@
         "name": "Gold Tone Textured Heart Statement Earrings",
         "slug": "gold-tone-textured-heart-statement-earrings",
         "description": "Elevate your evening look with these bold gold-tone statement earrings. Featuring a large heart shape with intricate, crumpled metal texturing and a premium anti-tarnish finish for a striking, vintage-inspired aesthetic.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": true,
         "is_most_sold": false,
@@ -914,7 +908,7 @@
         "name": "Gold Tone Textured Square Hoop Earrings",
         "slug": "gold-tone-textured-square-hoop-earrings",
         "description": "Make a sophisticated statement with these gold-tone square hoop earrings. Featuring a unique geometric shape with a hammered texture and a premium anti-tarnish finish for an elegant, everyday look.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -966,7 +960,7 @@
         "name": "Gold Tone Textured Starfish Drop Earrings",
         "slug": "gold-tone-textured-starfish-drop-earrings",
         "description": "Channel coastal vibes with these elegant gold-tone drop earrings. Featuring detailed, textured starfish charms suspended from classic ball studs. Crafted with a high-quality anti-tarnish finish to ensure they maintain their brilliant shine.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1064,7 +1058,7 @@
         "name": "Gold Tone Black Square Pendant Necklace",
         "slug": "gold-tone-black-square-pendant-necklace",
         "description": "Make a bold yet minimalist statement with this gold-tone necklace. Featuring a striking black square pendant with softly rounded edges suspended on a delicate beaded satellite chain. Designed with an anti-tarnish finish for enduring, everyday elegance.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1111,9 +1105,6 @@
         "name": "Gold Tone Coastal Charm Necklace",
         "slug": "gold-tone-coastal-charm-necklace",
         "description": "Embrace beach-inspired elegance with this gold-tone coastal charm necklace. Featuring a delicate link chain embellished with a seashell, a faux pearl, a textured starfish, and a blue stone charm. Finished with an anti-tarnish coating for endless summer style.",
-        "secondary_categories": [
-            "charms"
-        ],
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1193,7 +1184,7 @@
         "name": "Gold Tone Four Leaf Clover Necklace",
         "slug": "gold-tone-four-leaf-clover-necklace",
         "description": "Bring a touch of luck and delicate beauty to your everyday look with this gold-tone four-leaf clover necklace. Featuring a polished clover pendant and a sparkling crystal accent on a delicate beaded satellite chain, complete with an anti-tarnish finish.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1240,7 +1231,7 @@
         "name": "Gold Tone Minimalist Floral Pearl Necklace",
         "slug": "gold-tone-minimalist-floral-pearl-necklace",
         "description": "Add delicate sophistication to your neckline with this gold-tone necklace. Featuring a minimalist four-petal floral charm alongside a petite faux pearl on a fine chain. Crafted with a premium anti-tarnish finish.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1287,7 +1278,7 @@
         "name": "Gold Tone Minimalist Lariat Necklace",
         "slug": "gold-tone-minimalist-lariat-necklace",
         "description": "Achieve effortless elegance with this gold-tone lariat necklace. Featuring a sleek snake chain that loops through an open irregular oval and finishes with a polished sphere drop, this anti-tarnish piece is perfect for modern, sophisticated styling.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1391,9 +1382,6 @@
         "name": "Gold Tone Minimalist Solitaire Necklace",
         "slug": "gold-tone-minimalist-solitaire-necklace",
         "description": "Add a touch of subtle brilliance to your look with this gold-tone minimalist necklace. Featuring a delicate chain and a single, sparkling round-cut clear crystal in a secure setting. Crafted with a premium anti-tarnish finish for enduring everyday elegance.",
-        "secondary_categories": [
-            "pendants"
-        ],
         "status": "published",
         "is_featured": false,
         "is_most_sold": true,
@@ -1440,7 +1428,7 @@
         "name": "Gold Tone Multi-Heart Lariat Y-Necklace",
         "slug": "gold-tone-multi-heart-lariat-y-necklace",
         "description": "Add a romantic and modern touch to your neckline with this elegant gold-tone Y-necklace. Featuring a delicate chain accented with multiple polished, puffed heart charms and a graceful 4.5cm drop, this anti-tarnish piece offers a stunning, long-lasting shine perfect for layering or wearing solo.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1542,7 +1530,7 @@
         "name": "Gold Tone Double Band Knot Ring",
         "slug": "gold-tone-double-band-knot-ring",
         "description": "Add a touch of delicate sophistication to your look with this gold-tone double band knot ring. Featuring a beautifully intertwined smooth and beaded band design, this anti-tarnish ring offers an elegant and modern everyday style.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1590,7 +1578,7 @@
         "name": "Gold Tone Leaf Wrap Adjustable Ring",
         "slug": "gold-tone-leaf-wrap",
         "description": "Embrace nature-inspired elegance with this gold-tone leaf wrap ring. Featuring a beautifully detailed, adjustable double-branch design, this anti-tarnish piece offers a comfortable fit and a brilliant, enduring shine perfect for any occasion.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1642,7 +1630,7 @@
         "name": "Gold Tone Textured Starfish Ring",
         "slug": "gold-tone-textured-starfish-ring",
         "description": "Channel coastal elegance with this striking gold-tone starfish ring. Featuring intricate textured detailing and a bold, statement-making design, this piece is crafted with an anti-tarnish finish for long-lasting, radiant wear.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1694,7 +1682,7 @@
         "name": "Silver Tone Crystal Chevron Adjustable Ring",
         "slug": "silver-tone-crystal-chevron-adjustable-ring",
         "description": "Enhance your jewelry collection with this elegant silver-tone chevron ring. Featuring a gentle V-shaped curve lined with sparkling clear crystals and an adjustable open band for a perfect fit. Crafted with a premium anti-tarnish finish for enduring shine and everyday wear.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,
@@ -1746,7 +1734,7 @@
         "name": "Silver Tone Heart Crystal Adjustable Ring",
         "slug": "silver-tone-heart-crystal-adjustable-ring",
         "description": "Add a romantic touch to your style with this silver-tone adjustable ring. Showcasing a sparkling heart-shaped central crystal accented by delicate side stones on an open band. Finished with an anti-tarnish coating for long-lasting, everyday beauty.",
-        "secondary_categories": [],
+        
         "status": "published",
         "is_featured": false,
         "is_most_sold": false,

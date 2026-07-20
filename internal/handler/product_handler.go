@@ -73,7 +73,8 @@ func (h *ProductHandler) List(c *gin.Context) {
 
 	products, total, err := h.productService.ListProducts(c.Request.Context(), filter, page, limit)
 	if err != nil {
-		response.InternalServerError(c, "Failed to fetch products")
+		// Appending the actual error so you can see why the database or service failed
+		response.InternalServerError(c, "Failed to fetch products: "+err.Error())
 		return
 	}
 

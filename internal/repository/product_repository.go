@@ -81,7 +81,6 @@ func (r *ProductRepository) List(ctx context.Context, filter dto.FilterRequest, 
 		if catID, err := primitive.ObjectIDFromHex(filter.CategoryID); err == nil {
 			query["$or"] = bson.A{
 				bson.M{"primary_category_id": catID},
-				bson.M{"secondary_categories": catID},
 			}
 		}
 	}

@@ -4,21 +4,12 @@ import (
 	"errors"
 	"fmt"
 	"mkluxe-backend/internal/dto"
-
-	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 func ValidateProductPayload(req *dto.CreateProductRequest) error {
 	// 💡 REMOVED the Primary Category ID format check.
 	// Since you are passing the category_slug now, req.PrimaryCategoryID is
 	// empty at this stage. The Service layer will populate it later.
-
-	// 1. Check Secondary Category IDs (if any are provided)
-	for _, catID := range req.SecondaryCategories {
-		if _, err := primitive.ObjectIDFromHex(catID); err != nil {
-			return fmt.Errorf("invalid secondary category ID format: %s", catID)
-		}
-	}
 
 	// 2. Variant business logic
 	if len(req.Variants) == 0 {

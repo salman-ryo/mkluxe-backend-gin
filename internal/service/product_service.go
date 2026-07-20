@@ -55,27 +55,19 @@ func (s *ProductService) CreateProduct(ctx context.Context, categoryIdentifier s
 		return nil, errors.New("a product with this slug already exists")
 	}
 
-	var secCatIDs []primitive.ObjectID
-	for _, idStr := range req.SecondaryCategories {
-		if id, err := primitive.ObjectIDFromHex(idStr); err == nil {
-			secCatIDs = append(secCatIDs, id)
-		}
-	}
-
 	product := &domain.Product{
-		Name:                utils.CleanString(req.Name),
-		Slug:                slug,
-		Description:         utils.CleanString(req.Description),
-		PrimaryCategoryID:   primaryCatID,
-		SecondaryCategories: secCatIDs,
-		Status:              req.Status,
-		IsFeatured:          req.IsFeatured,
-		IsMostSold:          req.IsMostSold,
-		Variants:            req.Variants,
-		Media:               req.Media,
-		FAQs:                req.FAQs,
-		MetaTitle:           req.MetaTitle,
-		MetaDescription:     req.MetaDescription,
+		Name:              utils.CleanString(req.Name),
+		Slug:              slug,
+		Description:       utils.CleanString(req.Description),
+		PrimaryCategoryID: primaryCatID,
+		Status:            req.Status,
+		IsFeatured:        req.IsFeatured,
+		IsMostSold:        req.IsMostSold,
+		Variants:          req.Variants,
+		Media:             req.Media,
+		FAQs:              req.FAQs,
+		MetaTitle:         req.MetaTitle,
+		MetaDescription:   req.MetaDescription,
 	}
 
 	if err := s.productRepo.Create(ctx, product); err != nil {

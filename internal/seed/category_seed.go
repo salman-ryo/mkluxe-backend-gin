@@ -101,7 +101,26 @@ func SeedCategories(db *mongo.Database) error {
 		// Check if category already exists to prevent duplicates on multiple runs
 		existing, _ := categoryRepo.GetBySlug(ctx, slug)
 		if existing != nil {
-			log.Printf("Category '%s' already exists, skipping.", catData.Name)
+			// If it exists, let's update it to ensure the database has the image_url field initialized.
+			// This is especially important for existing documents that were created before the image_url field was added.
+			updated := false
+			if existing.ImageUrl == "" {
+				existing.ImageUrl = ""
+				updated = true
+			}
+			if existing.Description != catData.Description {
+				existing.Description = catData.Description
+				updated = true
+			}
+			if updated {
+				if err := categoryRepo.Update(ctx, existing); err != nil {
+					log.Printf("Error updating existing category '%s': %v", catData.Name, err)
+					return err
+				}
+				log.Printf("Successfully updated existing category: %s", catData.Name)
+			} else {
+				log.Printf("Category '%s' already exists, skipping.", catData.Name)
+			}
 			continue
 		}
 
@@ -110,6 +129,7 @@ func SeedCategories(db *mongo.Database) error {
 			Slug:        slug,
 			IsActive:    true,
 			Description: catData.Description,
+			ImageUrl:    "",
 		}
 
 		if err := categoryRepo.Create(ctx, newCategory); err != nil {

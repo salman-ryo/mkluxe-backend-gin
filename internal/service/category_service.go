@@ -19,8 +19,8 @@ func NewCategoryService(repo *repository.CategoryRepository) *CategoryService {
 	return &CategoryService{repo: repo}
 }
 
-// 💡 Added isFeatured parameter
-func (s *CategoryService) CreateCategory(ctx context.Context, name, description string, sortOrder int, isFeatured bool) (*domain.Category, error) {
+// 💡 Added isFeatured and imageUrl parameters
+func (s *CategoryService) CreateCategory(ctx context.Context, name, description string, sortOrder int, isFeatured bool, imageUrl string) (*domain.Category, error) {
 	if name == "" {
 		return nil, errors.New("category name is required")
 	}
@@ -35,6 +35,7 @@ func (s *CategoryService) CreateCategory(ctx context.Context, name, description 
 		Name:        utils.ToTitleCase(name),
 		Slug:        slug,
 		Description: utils.CleanString(description),
+		ImageUrl:    utils.CleanString(imageUrl),
 		IsActive:    true,
 		IsFeatured:  isFeatured, // 💡 Assigned here
 		SortOrder:   sortOrder,
@@ -58,8 +59,8 @@ func (s *CategoryService) GetCategory(ctx context.Context, identifier string) (*
 	return s.repo.GetBySlug(ctx, identifier)
 }
 
-// 💡 Added isFeatured parameter as a pointer
-func (s *CategoryService) UpdateCategory(ctx context.Context, id string, name, description *string, sortOrder *int, isActive, isFeatured *bool) (*domain.Category, error) {
+// 💡 Added isFeatured and imageUrl parameters as pointers
+func (s *CategoryService) UpdateCategory(ctx context.Context, id string, name, description *string, sortOrder *int, isActive, isFeatured *bool, imageUrl *string) (*domain.Category, error) {
 	objID, err := primitive.ObjectIDFromHex(id)
 	if err != nil {
 		return nil, errors.New("invalid category ID format")
@@ -76,6 +77,9 @@ func (s *CategoryService) UpdateCategory(ctx context.Context, id string, name, d
 	}
 	if description != nil {
 		cat.Description = utils.CleanString(*description)
+	}
+	if imageUrl != nil {
+		cat.ImageUrl = utils.CleanString(*imageUrl)
 	}
 	if sortOrder != nil {
 		cat.SortOrder = *sortOrder

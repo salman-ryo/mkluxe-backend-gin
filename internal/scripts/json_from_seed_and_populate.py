@@ -23,7 +23,7 @@ COLLECTION_NAME = 'products'
 
 # Local Filepaths
 SEED_DIRECTORY = os.getenv('SEED_DIRECTORY', 'C:/Users/salma/Development/Jiyu/Golang/Projects/mkluxe-backend/internal/seed/products')
-OUTPUT_JSON_FILE = os.getenv('OUTPUT_JSON_FILE', 'C:/Users/salma/Development/Jiyu/Golang/Projects/mkluxe-backend/internal/seed/master_seed.json')
+OUTPUT_JSON_FILE = os.getenv('OUTPUT_JSON_FILE', 'C:/Users/salma/Development/Jiyu/Golang/Projects/mkluxe-backend/internal/seed/products/master_seed.json')
 
 # --- VALIDATION ---
 def validate_config():

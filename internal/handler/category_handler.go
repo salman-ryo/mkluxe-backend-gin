@@ -21,6 +21,7 @@ func (h *CategoryHandler) Create(c *gin.Context) {
 		Description string `json:"description"`
 		SortOrder   int    `json:"sort_order"`
 		IsFeatured  bool   `json:"is_featured"` // 💡 Added here
+		ImageURL    string `json:"image_url"`
 	}
 
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -28,7 +29,7 @@ func (h *CategoryHandler) Create(c *gin.Context) {
 		return
 	}
 
-	cat, err := h.categoryService.CreateCategory(c.Request.Context(), req.Name, req.Description, req.SortOrder, req.IsFeatured)
+	cat, err := h.categoryService.CreateCategory(c.Request.Context(), req.Name, req.Description, req.SortOrder, req.IsFeatured, req.ImageURL)
 	if err != nil {
 		response.BadRequest(c, err.Error(), nil)
 		return
@@ -75,6 +76,7 @@ func (h *CategoryHandler) Update(c *gin.Context) {
 		SortOrder   *int    `json:"sort_order"`
 		IsActive    *bool   `json:"is_active"`
 		IsFeatured  *bool   `json:"is_featured"` // 💡 Added here
+		ImageURL    *string `json:"image_url"`
 	}
 
 	if err := c.ShouldBindJSON(&req); err != nil {
@@ -82,7 +84,7 @@ func (h *CategoryHandler) Update(c *gin.Context) {
 		return
 	}
 
-	cat, err := h.categoryService.UpdateCategory(c.Request.Context(), id, req.Name, req.Description, req.SortOrder, req.IsActive, req.IsFeatured)
+	cat, err := h.categoryService.UpdateCategory(c.Request.Context(), id, req.Name, req.Description, req.SortOrder, req.IsActive, req.IsFeatured, req.ImageURL)
 	if err != nil {
 		response.BadRequest(c, err.Error(), nil)
 		return

@@ -7,9 +7,9 @@
 *.test
 
 # Built binary (your app)
-main
-app
-server
+/main
+/app
+/server
 
 # Go build output
 bin/

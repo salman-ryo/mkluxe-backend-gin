@@ -14,6 +14,7 @@ type AppHandlers struct {
 	Product  *handler.ProductHandler
 	Inquiry  *handler.InquiryHandler
 	Upload   *handler.UploadHandler
+	Stats    *handler.StatsHandler
 }
 
 // SetupRouter initializes Gin and mounts all routes
@@ -65,6 +66,9 @@ func SetupRouter(handlers AppHandlers, cfg *config.Config) *gin.Engine {
 
 		// Uploads
 		adminGroup.POST("/uploads/presign", handlers.Upload.GetPresignedURL)
+
+		// Dashboard Stats
+		adminGroup.GET("/stats", handlers.Stats.GetStats)
 
 		// Products
 		adminGroup.POST("/products", handlers.Product.Create) // 💡 Updated to /products

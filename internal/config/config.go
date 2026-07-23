@@ -14,6 +14,11 @@ type Config struct {
 	JWTRefreshSecret string
 	FrontendURLs     []string // 👈 List of allowed frontend origins
 	IsProduction     bool
+	R2AccountID      string
+	R2AccessKey      string
+	R2SecretKey      string
+	R2BucketName     string
+	R2PublicBaseURL  string
 }
 
 // CookieConfig holds individual configuration flags for SetCookie
@@ -52,6 +57,11 @@ func Load() *Config {
 		JWTRefreshSecret: utils.GetEnv("JWT_REFRESH_SECRET", "default_refresh_secret_change_me"),
 		FrontendURLs:     frontendURLs,
 		IsProduction:     mode == "release",
+		R2AccountID:      utils.GetEnv("R2_ACCOUNT_ID", ""),
+		R2AccessKey:      utils.GetEnv("R2_ACCESS_KEY", ""),
+		R2SecretKey:      utils.GetEnv("R2_SECRET_KEY", ""),
+		R2BucketName:     utils.GetEnv("R2_BUCKET_NAME", ""),
+		R2PublicBaseURL:  utils.GetEnv("R2_PUBLIC_BASE_URL", ""),
 	}
 }
 

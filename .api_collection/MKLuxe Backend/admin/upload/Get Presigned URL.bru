@@ -1,0 +1,27 @@
+meta {
+  name: Get Presigned URL
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{BACKEND_URI}}/api/v1/admin/uploads/presign
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "file_name": "profile-picture.jpg",
+    "content_type": "image/jpeg"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

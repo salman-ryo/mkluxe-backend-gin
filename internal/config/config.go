@@ -67,11 +67,15 @@ func Load() *Config {
 
 // GetAccessCookieConfig returns standard secure configurations for short-lived access tokens
 func (c *Config) GetAccessCookieConfig() *CookieConfig {
+	domain := ""
+	if c.IsProduction {
+		domain = ".mk-luxe-divine.in"
+	}
 	return &CookieConfig{
 		Name:     "access_token",
 		MaxAge:   900,
 		Path:     "/",
-		Domain:   "", // 💡 Always empty. Let the browser bind it to the API domain automatically.
+		Domain:   domain,
 		Secure:   c.IsProduction,
 		HttpOnly: true,
 	}
@@ -79,11 +83,15 @@ func (c *Config) GetAccessCookieConfig() *CookieConfig {
 
 // GetRefreshCookieConfig returns standard secure configurations for long-lived refresh tokens
 func (c *Config) GetRefreshCookieConfig() *CookieConfig {
+	domain := ""
+	if c.IsProduction {
+		domain = ".mk-luxe-divine.in"
+	}
 	return &CookieConfig{
 		Name:     "refresh_token",
 		MaxAge:   604800,
 		Path:     "/",
-		Domain:   "", // 💡 Always empty.
+		Domain:   domain,
 		Secure:   c.IsProduction,
 		HttpOnly: true,
 	}

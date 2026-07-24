@@ -43,8 +43,8 @@ func (h *AuthHandler) Login(c *gin.Context) {
 	refreshCfg := h.cfg.GetRefreshCookieConfig()
 
 	// Write token values securely down to HttpOnly storage
-	setSecureCookie(c, accessCfg.Name, authRes.AccessToken, accessCfg.MaxAge, accessCfg.Path, accessCfg.HttpOnly)
-	setSecureCookie(c, refreshCfg.Name, authRes.RefreshToken, refreshCfg.MaxAge, refreshCfg.Path, refreshCfg.HttpOnly)
+	setSecureCookie(c, accessCfg.Name, authRes.AccessToken, accessCfg.MaxAge, accessCfg.Path, accessCfg.Domain, accessCfg.HttpOnly)
+	setSecureCookie(c, refreshCfg.Name, authRes.RefreshToken, refreshCfg.MaxAge, refreshCfg.Path, refreshCfg.Domain, refreshCfg.HttpOnly)
 
 	// Return response (tokens are safely ignored in JSON due to json:"-" tags)
 	response.OK(c, "Login successful", authRes)
@@ -69,8 +69,8 @@ func (h *AuthHandler) Refresh(c *gin.Context) {
 	newRefreshCfg := h.cfg.GetRefreshCookieConfig()
 
 	// Re-apply refreshed keys directly to browser context
-	setSecureCookie(c, accessCfg.Name, authRes.AccessToken, accessCfg.MaxAge, accessCfg.Path, accessCfg.HttpOnly)
-	setSecureCookie(c, newRefreshCfg.Name, authRes.RefreshToken, newRefreshCfg.MaxAge, newRefreshCfg.Path, newRefreshCfg.HttpOnly)
+	setSecureCookie(c, accessCfg.Name, authRes.AccessToken, accessCfg.MaxAge, accessCfg.Path, accessCfg.Domain, accessCfg.HttpOnly)
+	setSecureCookie(c, newRefreshCfg.Name, authRes.RefreshToken, newRefreshCfg.MaxAge, newRefreshCfg.Path, newRefreshCfg.Domain, newRefreshCfg.HttpOnly)
 
 	response.OK(c, "Token refreshed successfully", nil)
 }
@@ -80,8 +80,8 @@ func (h *AuthHandler) Logout(c *gin.Context) {
 	refreshCfg := h.cfg.GetRefreshCookieConfig()
 
 	// Expire existing tracking keys inside client browsers completely by resetting MaxAge to -1
-	setSecureCookie(c, accessCfg.Name, "", -1, accessCfg.Path, accessCfg.HttpOnly)
-	setSecureCookie(c, refreshCfg.Name, "", -1, refreshCfg.Path, refreshCfg.HttpOnly)
+	setSecureCookie(c, accessCfg.Name, "", -1, accessCfg.Path, accessCfg.Domain, accessCfg.HttpOnly)
+	setSecureCookie(c, refreshCfg.Name, "", -1, refreshCfg.Path, refreshCfg.Domain, refreshCfg.HttpOnly)
 
 	response.OK(c, "Logged out successfully", nil)
 }
@@ -106,13 +106,13 @@ func (h *AuthHandler) CurrentUser(c *gin.Context) {
 	response.OK(c, "Current user fetched successfully", userRes)
 }
 
-func setSecureCookie(c *gin.Context, name, value string, maxAge int, path string, httpOnly bool) {
+func setSecureCookie(c *gin.Context, name, value string, maxAge int, path, domain string, httpOnly bool) {
 	http.SetCookie(c.Writer, &http.Cookie{
 		Name:     name,
 		Value:    value,
 		MaxAge:   maxAge,
 		Path:     path,
-		Domain:   "", // 💡 Stop setting the domain to allow browser/cross-site default binding
+		Domain:   domain,
 		Secure:   true,
 		HttpOnly: httpOnly,
 		SameSite: http.SameSiteNoneMode,

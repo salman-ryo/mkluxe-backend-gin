@@ -61,7 +61,7 @@ func AuthMiddleware(cfg *config.Config) gin.HandlerFunc {
 			}
 
 			// 4. Set the new access token as an HTTP-only cookie using parameters from config
-			setSecureCookie(c, accessCfg.Name, newAccessToken, accessCfg.MaxAge, accessCfg.Path, accessCfg.Domain, accessCfg.HttpOnly)
+			setSecureCookie(c, accessCfg.Name, newAccessToken, accessCfg.MaxAge, accessCfg.Path, accessCfg.HttpOnly)
 
 			// 5. Assign the validated claims from the refresh token to the current request
 			claims = refreshClaims
@@ -75,13 +75,13 @@ func AuthMiddleware(cfg *config.Config) gin.HandlerFunc {
 	}
 }
 
-func setSecureCookie(c *gin.Context, name, value string, maxAge int, path, domain string, httpOnly bool) {
+func setSecureCookie(c *gin.Context, name, value string, maxAge int, path string, httpOnly bool) {
 	http.SetCookie(c.Writer, &http.Cookie{
 		Name:     name,
 		Value:    value,
 		MaxAge:   maxAge,
 		Path:     path,
-		Domain:   domain,
+		Domain:   "", // 💡 Stop setting the domain to allow browser/cross-site default binding
 		Secure:   true,
 		HttpOnly: httpOnly,
 		SameSite: http.SameSiteNoneMode,

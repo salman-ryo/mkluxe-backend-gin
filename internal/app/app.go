@@ -22,7 +22,7 @@ func BuildApp(db *mongo.Database, cfg *config.Config) *gin.Engine {
 	statsRepo := repository.NewStatsRepository(db)
 
 	// 2. Services
-	authSvc := service.NewAuthService(userRepo)
+	authSvc := service.NewAuthService(userRepo, cfg)
 	catSvc := service.NewCategoryService(catRepo)
 	prodSvc := service.NewProductService(prodRepo, catRepo)
 	inqSvc := service.NewInquiryService(inqRepo, prodRepo)

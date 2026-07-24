@@ -6,6 +6,7 @@ import (
 	"log"
 	"time"
 
+	"mkluxe-backend/internal/config"
 	"mkluxe-backend/internal/dto"
 	"mkluxe-backend/internal/repository"
 	"mkluxe-backend/internal/utils"
@@ -15,10 +16,14 @@ import (
 
 type AuthService struct {
 	userRepo *repository.UserRepository
+	cfg      *config.Config
 }
 
-func NewAuthService(userRepo *repository.UserRepository) *AuthService {
-	return &AuthService{userRepo: userRepo}
+func NewAuthService(userRepo *repository.UserRepository, cfg *config.Config) *AuthService {
+	return &AuthService{
+		userRepo: userRepo,
+		cfg:      cfg,
+	}
 }
 
 // Login authenticates credentials and drops a clean AuthResponse with fresh tokens
@@ -43,7 +48,7 @@ func (s *AuthService) Login(ctx context.Context, req *dto.LoginRequest) (*dto.Au
 		return nil, errors.New("invalid credentials")
 	}
 
-	accessToken, refreshToken, err := utils.GenerateTokens(user.ID.Hex(), user.Role)
+	accessToken, refreshToken, err := utils.GenerateTokens(user.ID.Hex(), user.Role, s.cfg.JWTAccessSecret, s.cfg.JWTRefreshSecret)
 	if err != nil {
 		return nil, err
 	}
@@ -67,12 +72,12 @@ func (s *AuthService) Login(ctx context.Context, req *dto.LoginRequest) (*dto.Au
 
 // RefreshToken issues a new token pair using a validated string token
 func (s *AuthService) RefreshToken(ctx context.Context, tokenStr string) (*dto.AuthResponse, error) {
-	claims, err := utils.ValidateToken(tokenStr)
+	claims, err := utils.ValidateToken(tokenStr, s.cfg.JWTRefreshSecret)
 	if err != nil {
 		return nil, errors.New("invalid or expired refresh token")
 	}
 
-	accessToken, refreshToken, err := utils.GenerateTokens(claims.UserID, claims.Role)
+	accessToken, refreshToken, err := utils.GenerateTokens(claims.UserID, claims.Role, s.cfg.JWTAccessSecret, s.cfg.JWTRefreshSecret)
 	if err != nil {
 		return nil, err
 	}

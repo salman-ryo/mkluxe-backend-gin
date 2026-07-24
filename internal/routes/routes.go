@@ -50,14 +50,14 @@ func SetupRouter(handlers AppHandlers, cfg *config.Config) *gin.Engine {
 		authGroup.POST("/login", handlers.Auth.Login)
 		authGroup.POST("/refresh", handlers.Auth.Refresh)
 		authGroup.POST("/logout", handlers.Auth.Logout)
-		authGroup.GET("/me", middleware.AuthMiddleware(), handlers.Auth.CurrentUser)
+		authGroup.GET("/me", middleware.AuthMiddleware(cfg), handlers.Auth.CurrentUser)
 	}
 
 	// ==========================================
 	// ADMIN ROUTES (Requires JWT Cookie)
 	// ==========================================
 	adminGroup := api.Group("/admin")
-	adminGroup.Use(middleware.AuthMiddleware())
+	adminGroup.Use(middleware.AuthMiddleware(cfg))
 	{
 		// Categories
 		adminGroup.POST("/categories", handlers.Category.Create)

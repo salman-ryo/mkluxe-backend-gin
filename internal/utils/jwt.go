@@ -2,7 +2,6 @@ package utils
 
 import (
 	"errors"
-	"os"
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
@@ -24,27 +23,10 @@ type JWTClaims struct {
 	jwt.RegisteredClaims
 }
 
-// getJWTSecret reads the secret key used to sign JWT tokens.
-func getJWTSecret() []byte {
-	// Read secret from environment variable (recommended for production)
-	secret := os.Getenv("JWT_SECRET")
-
-	// Fallback secret for local development only (NEVER use in production)
-	if secret == "" {
-		secret = "local_dev_secret_key_only"
-	}
-
-	// JWT library expects secret as raw bytes, not string
-	return []byte(secret)
-}
-
 // GenerateTokens creates both access and refresh tokens for a user.
 // Access token = short-lived (15 min)
 // Refresh token = long-lived (7 days)
-func GenerateTokens(userID, role string) (string, string, error) {
-
-	// Get signing key used for HMAC SHA256 signing
-	secret := getJWTSecret()
+func GenerateTokens(userID, role string, accessSecret, refreshSecret string) (string, string, error) {
 
 	// Current timestamp used for issuing tokens
 	now := time.Now()
@@ -69,7 +51,7 @@ func GenerateTokens(userID, role string) (string, string, error) {
 	// Create JWT object and sign it using HS256 algorithm + secret key
 	accessToken, err := jwt.
 		NewWithClaims(jwt.SigningMethodHS256, accessClaims).
-		SignedString(secret)
+		SignedString([]byte(accessSecret))
 
 	// If signing fails, return error immediately
 	if err != nil {
@@ -95,7 +77,7 @@ func GenerateTokens(userID, role string) (string, string, error) {
 	// Sign refresh token using same algorithm and secret
 	refreshToken, err := jwt.
 		NewWithClaims(jwt.SigningMethodHS256, refreshClaims).
-		SignedString(secret)
+		SignedString([]byte(refreshSecret))
 
 	// Handle signing failure
 	if err != nil {
@@ -107,7 +89,7 @@ func GenerateTokens(userID, role string) (string, string, error) {
 }
 
 // ValidateToken verifies a JWT string and extracts claims if valid
-func ValidateToken(tokenString string) (*JWTClaims, error) {
+func ValidateToken(tokenString string, secret string) (*JWTClaims, error) {
 
 	// Parse token and attach expected claim structure (JWTClaims)
 	token, err := jwt.ParseWithClaims(
@@ -121,7 +103,7 @@ func ValidateToken(tokenString string) (*JWTClaims, error) {
 			}
 
 			// Provide secret key for signature verification
-			return getJWTSecret(), nil
+			return []byte(secret), nil
 		},
 	)
 

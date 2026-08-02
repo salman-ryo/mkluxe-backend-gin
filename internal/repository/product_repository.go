@@ -22,8 +22,9 @@ func NewProductRepository(db *mongo.Database) *ProductRepository {
 }
 
 func (r *ProductRepository) Create(ctx context.Context, prod *domain.Product) error {
-	prod.CreatedAt = time.Now()
-	prod.UpdatedAt = time.Now()
+	now := time.Now()
+	prod.CreatedAt = now
+	prod.UpdatedAt = &now
 	res, err := r.collection.InsertOne(ctx, prod)
 	if err != nil {
 		return err
@@ -51,7 +52,8 @@ func (r *ProductRepository) GetBySlug(ctx context.Context, slug string) (*domain
 }
 
 func (r *ProductRepository) Update(ctx context.Context, prod *domain.Product) error {
-	prod.UpdatedAt = time.Now()
+	now := time.Now()
+	prod.UpdatedAt = &now
 	_, err := r.collection.ReplaceOne(ctx, bson.M{"_id": prod.ID}, prod)
 	return err
 }

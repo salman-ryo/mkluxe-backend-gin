@@ -28,6 +28,6 @@ type Product struct {
 	MetaTitle       string `bson:"meta_title,omitempty" json:"meta_title,omitempty"`
 	MetaDescription string `bson:"meta_description,omitempty" json:"meta_description,omitempty"`
 
-	CreatedAt time.Time `bson:"created_at" json:"created_at"`
-	UpdatedAt time.Time `bson:"updated_at" json:"updated_at"`
+	CreatedAt time.Time  `bson:"created_at" json:"created_at"`
+	UpdatedAt *time.Time `bson:"updated_at,omitempty" json:"updated_at"`
 }

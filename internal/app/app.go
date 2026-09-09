@@ -24,13 +24,13 @@ func BuildApp(db *mongo.Database, cfg *config.Config) *gin.Engine {
 	// 2. Services
 	authSvc := service.NewAuthService(userRepo, cfg)
 	catSvc := service.NewCategoryService(catRepo)
-	prodSvc := service.NewProductService(prodRepo, catRepo)
-	inqSvc := service.NewInquiryService(inqRepo, prodRepo)
-	statsSvc := service.NewStatsService(statsRepo, catRepo, inqRepo, prodRepo)
 	r2Svc, err := service.NewR2Service(cfg)
 	if err != nil {
 		panic("failed to initialize R2 service: " + err.Error())
 	}
+	prodSvc := service.NewProductService(prodRepo, catRepo, r2Svc)
+	inqSvc := service.NewInquiryService(inqRepo, prodRepo)
+	statsSvc := service.NewStatsService(statsRepo, catRepo, inqRepo, prodRepo)
 
 	// 3. Handlers
 	handlers := routes.AppHandlers{

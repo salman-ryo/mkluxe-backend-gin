@@ -4,6 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"log"
+	"time"
 
 	"mkluxe-backend/internal/domain"
 	"mkluxe-backend/internal/dto"
@@ -17,10 +19,15 @@ import (
 type ProductService struct {
 	productRepo  *repository.ProductRepository
 	categoryRepo *repository.CategoryRepository
+	r2Service    *R2Service
 }
 
-func NewProductService(pRepo *repository.ProductRepository, cRepo *repository.CategoryRepository) *ProductService {
-	return &ProductService{productRepo: pRepo, categoryRepo: cRepo}
+func NewProductService(pRepo *repository.ProductRepository, cRepo *repository.CategoryRepository, r2Svc *R2Service) *ProductService {
+	return &ProductService{
+		productRepo:  pRepo,
+		categoryRepo: cRepo,
+		r2Service:    r2Svc,
+	}
 }
 
 // ValidateProduct checks business rules, category existence, and slug uniqueness without creating the product
@@ -145,6 +152,9 @@ func (s *ProductService) UpdateProduct(ctx context.Context, id string, req *dto.
 	if req.Description != "" {
 		product.Description = utils.CleanString(req.Description)
 	}
+	if req.CategorySlug != "" {
+		product.CategorySlug = req.CategorySlug
+	}
 	if req.Status != "" {
 		product.Status = req.Status
 	}
@@ -157,12 +167,53 @@ func (s *ProductService) UpdateProduct(ctx context.Context, id string, req *dto.
 	if len(req.Variants) > 0 {
 		product.Variants = req.Variants
 	}
-	if len(req.Media) > 0 {
+
+	var removedMediaURLs []string
+	if req.Media != nil {
+		newURLSet := make(map[string]struct{}, len(req.Media))
+		for i := range req.Media {
+			if req.Media[i].AltText == "" && req.Media[i].Alt != "" {
+				req.Media[i].AltText = req.Media[i].Alt
+			}
+			if req.Media[i].URL != "" {
+				newURLSet[req.Media[i].URL] = struct{}{}
+			}
+		}
+
+		for _, m := range product.Media {
+			if m.URL != "" {
+				if _, exists := newURLSet[m.URL]; !exists {
+					removedMediaURLs = append(removedMediaURLs, m.URL)
+				}
+			}
+		}
+
 		product.Media = req.Media
+	}
+
+	if req.FAQs != nil {
+		product.FAQs = req.FAQs
+	}
+	if req.MetaTitle != "" {
+		product.MetaTitle = req.MetaTitle
+	}
+	if req.MetaDescription != "" {
+		product.MetaDescription = req.MetaDescription
 	}
 
 	if err := s.productRepo.Update(ctx, product); err != nil {
 		return nil, err
+	}
+
+	// Asynchronously delete removed images from R2
+	if s.r2Service != nil && len(removedMediaURLs) > 0 {
+		go func(urls []string) {
+			bgCtx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
+			defer cancel()
+			if err := s.r2Service.DeleteMediaByURLs(bgCtx, urls); err != nil {
+				log.Printf("[ProductService] Warning: failed to delete removed R2 media on product update (%s): %v", id, err)
+			}
+		}(removedMediaURLs)
 	}
 
 	return product, nil
@@ -173,5 +224,36 @@ func (s *ProductService) DeleteProduct(ctx context.Context, id string) error {
 	if err != nil {
 		return errors.New("invalid product ID format")
 	}
-	return s.productRepo.Delete(ctx, objID)
+
+	// 1. Fetch product to get media URLs before deleting
+	product, err := s.productRepo.GetByID(ctx, objID)
+	if err != nil || product == nil {
+		return errors.New("product not found")
+	}
+
+	// 2. Collect media URLs to delete
+	var mediaURLs []string
+	for _, m := range product.Media {
+		if m.URL != "" {
+			mediaURLs = append(mediaURLs, m.URL)
+		}
+	}
+
+	// 3. Delete from database
+	if err := s.productRepo.Delete(ctx, objID); err != nil {
+		return err
+	}
+
+	// 4. Asynchronously delete R2 media files
+	if s.r2Service != nil && len(mediaURLs) > 0 {
+		go func(urls []string) {
+			bgCtx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
+			defer cancel()
+			if err := s.r2Service.DeleteMediaByURLs(bgCtx, urls); err != nil {
+				log.Printf("[ProductService] Warning: failed to delete R2 media on product deletion (%s): %v", id, err)
+			}
+		}(mediaURLs)
+	}
+
+	return nil
 }

@@ -13,6 +13,7 @@ import (
 	s3config "github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/credentials"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
+	"github.com/aws/aws-sdk-go-v2/service/s3/types"
 )
 
 type R2Service struct {
@@ -95,3 +96,133 @@ func (s *R2Service) GetPresignedUploadURL(
 
 	return presignedReq.URL, publicURL, objectKey, nil
 }
+
+// ExtractObjectKey parses a media URL and extracts the R2 object key if it belongs to this R2 storage.
+// Returns an empty string if the URL is external or does not match our R2 uploads pattern.
+func (s *R2Service) ExtractObjectKey(rawURL string) string {
+	rawURL = strings.TrimSpace(rawURL)
+	if rawURL == "" {
+		return ""
+	}
+
+	var candidateKey string
+
+	// 1. Direct match with configured publicBaseURL
+	if s.publicBaseURL != "" && strings.HasPrefix(rawURL, s.publicBaseURL+"/") {
+		candidateKey = strings.TrimPrefix(rawURL, s.publicBaseURL+"/")
+	} else if strings.Contains(rawURL, "r2.cloudflarestorage.com") || strings.Contains(rawURL, "r2.dev") {
+		// 2. Generic R2 endpoint format, e.g. https://<subdomain>.r2.dev/uploads/...
+		idx := strings.Index(rawURL, "/uploads/")
+		if idx != -1 {
+			candidateKey = rawURL[idx+1:]
+		}
+	} else if strings.HasPrefix(rawURL, "/uploads/") {
+		// 3. Relative path starting with /uploads/
+		candidateKey = strings.TrimPrefix(rawURL, "/")
+	} else if strings.HasPrefix(rawURL, "uploads/") {
+		candidateKey = rawURL
+	}
+
+	// Remove any query parameters or fragments if present
+	if qIdx := strings.Index(candidateKey, "?"); qIdx != -1 {
+		candidateKey = candidateKey[:qIdx]
+	}
+	if fIdx := strings.Index(candidateKey, "#"); fIdx != -1 {
+		candidateKey = candidateKey[:fIdx]
+	}
+
+	// Safety check: candidate key MUST start with "uploads/" and not contain path traversal ".."
+	if strings.HasPrefix(candidateKey, "uploads/") && !strings.Contains(candidateKey, "..") && len(candidateKey) > len("uploads/") {
+		return candidateKey
+	}
+
+	return ""
+}
+
+// DeleteObjects deletes multiple objects by their keys from the R2 bucket in batches of up to 1000.
+func (s *R2Service) DeleteObjects(ctx context.Context, keys []string) error {
+	if len(keys) == 0 {
+		return nil
+	}
+
+	// Deduplicate keys
+	uniqueKeysMap := make(map[string]struct{}, len(keys))
+	var uniqueKeys []types.ObjectIdentifier
+	for _, k := range keys {
+		k = strings.TrimSpace(k)
+		if k == "" {
+			continue
+		}
+		if _, exists := uniqueKeysMap[k]; !exists {
+			uniqueKeysMap[k] = struct{}{}
+			uniqueKeys = append(uniqueKeys, types.ObjectIdentifier{
+				Key: aws.String(k),
+			})
+		}
+	}
+
+	if len(uniqueKeys) == 0 {
+		return nil
+	}
+
+	const batchSize = 1000
+	for i := 0; i < len(uniqueKeys); i += batchSize {
+		end := i + batchSize
+		if end > len(uniqueKeys) {
+			end = len(uniqueKeys)
+		}
+
+		batch := uniqueKeys[i:end]
+		input := &s3.DeleteObjectsInput{
+			Bucket: aws.String(s.bucketName),
+			Delete: &types.Delete{
+				Objects: batch,
+				Quiet:   aws.Bool(true),
+			},
+		}
+
+		output, err := s.s3Client.DeleteObjects(ctx, input)
+		if err != nil {
+			return fmt.Errorf("failed to delete objects batch from R2: %w", err)
+		}
+		if len(output.Errors) > 0 {
+			var errMsgs []string
+			for _, objErr := range output.Errors {
+				keyStr := ""
+				if objErr.Key != nil {
+					keyStr = *objErr.Key
+				}
+				codeStr := ""
+				if objErr.Code != nil {
+					codeStr = *objErr.Code
+				}
+				errMsgs = append(errMsgs, fmt.Sprintf("%s: %s", keyStr, codeStr))
+			}
+			return fmt.Errorf("R2 deletion errors: %s", strings.Join(errMsgs, "; "))
+		}
+	}
+
+	return nil
+}
+
+// DeleteMediaByURLs extracts valid R2 object keys from URLs and deletes them from R2.
+func (s *R2Service) DeleteMediaByURLs(ctx context.Context, urls []string) error {
+	if len(urls) == 0 {
+		return nil
+	}
+
+	var keys []string
+	for _, u := range urls {
+		key := s.ExtractObjectKey(u)
+		if key != "" {
+			keys = append(keys, key)
+		}
+	}
+
+	if len(keys) == 0 {
+		return nil
+	}
+
+	return s.DeleteObjects(ctx, keys)
+}
+

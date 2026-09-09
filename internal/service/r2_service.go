@@ -98,7 +98,7 @@ func (s *R2Service) GetPresignedUploadURL(
 }
 
 // ExtractObjectKey parses a media URL and extracts the R2 object key if it belongs to this R2 storage.
-// Returns an empty string if the URL is external or does not match our R2 uploads pattern.
+// Returns an empty string if the URL is external or does not match our R2 storage patterns.
 func (s *R2Service) ExtractObjectKey(rawURL string) string {
 	rawURL = strings.TrimSpace(rawURL)
 	if rawURL == "" {
@@ -106,21 +106,31 @@ func (s *R2Service) ExtractObjectKey(rawURL string) string {
 	}
 
 	var candidateKey string
+	allowedPrefixes := []string{"uploads/", "products/", "categories/"}
 
 	// 1. Direct match with configured publicBaseURL
 	if s.publicBaseURL != "" && strings.HasPrefix(rawURL, s.publicBaseURL+"/") {
 		candidateKey = strings.TrimPrefix(rawURL, s.publicBaseURL+"/")
 	} else if strings.Contains(rawURL, "r2.cloudflarestorage.com") || strings.Contains(rawURL, "r2.dev") {
-		// 2. Generic R2 endpoint format, e.g. https://<subdomain>.r2.dev/uploads/...
-		idx := strings.Index(rawURL, "/uploads/")
-		if idx != -1 {
-			candidateKey = rawURL[idx+1:]
+		// 2. Generic R2 endpoint format, e.g. https://<subdomain>.r2.dev/products/...
+		for _, prefix := range allowedPrefixes {
+			idx := strings.Index(rawURL, "/"+prefix)
+			if idx != -1 {
+				candidateKey = rawURL[idx+1:]
+				break
+			}
 		}
-	} else if strings.HasPrefix(rawURL, "/uploads/") {
-		// 3. Relative path starting with /uploads/
-		candidateKey = strings.TrimPrefix(rawURL, "/")
-	} else if strings.HasPrefix(rawURL, "uploads/") {
-		candidateKey = rawURL
+	} else {
+		// 3. Relative path or clean key
+		for _, prefix := range allowedPrefixes {
+			if strings.HasPrefix(rawURL, "/"+prefix) {
+				candidateKey = strings.TrimPrefix(rawURL, "/")
+				break
+			} else if strings.HasPrefix(rawURL, prefix) {
+				candidateKey = rawURL
+				break
+			}
+		}
 	}
 
 	// Remove any query parameters or fragments if present
@@ -131,9 +141,13 @@ func (s *R2Service) ExtractObjectKey(rawURL string) string {
 		candidateKey = candidateKey[:fIdx]
 	}
 
-	// Safety check: candidate key MUST start with "uploads/" and not contain path traversal ".."
-	if strings.HasPrefix(candidateKey, "uploads/") && !strings.Contains(candidateKey, "..") && len(candidateKey) > len("uploads/") {
-		return candidateKey
+	// Safety check: candidate key MUST start with an allowed prefix and not contain path traversal ".."
+	if !strings.Contains(candidateKey, "..") {
+		for _, prefix := range allowedPrefixes {
+			if strings.HasPrefix(candidateKey, prefix) && len(candidateKey) > len(prefix) {
+				return candidateKey
+			}
+		}
 	}
 
 	return ""

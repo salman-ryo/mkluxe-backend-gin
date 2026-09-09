@@ -69,6 +69,31 @@ func TestExtractObjectKey(t *testing.T) {
 			input:    "https://pub-abcdef123456.r2.dev/uploads/",
 			expected: "",
 		},
+		{
+			name:     "hierarchical products path",
+			input:    "https://pub-abcdef123456.r2.dev/products/rings/diamond-solitaire/1725893000000_1_front.webp",
+			expected: "products/rings/diamond-solitaire/1725893000000_1_front.webp",
+		},
+		{
+			name:     "hierarchical products path with query params",
+			input:    "https://pub-abcdef123456.r2.dev/products/necklaces/gold-chain/1725893000000_2_detail.jpg?width=600",
+			expected: "products/necklaces/gold-chain/1725893000000_2_detail.jpg",
+		},
+		{
+			name:     "category path",
+			input:    "https://pub-abcdef123456.r2.dev/categories/rings.webp",
+			expected: "categories/rings.webp",
+		},
+		{
+			name:     "generic r2 products endpoint",
+			input:    "https://my-bucket.r2.dev/products/bracelets/silver-cuff/123_main.png",
+			expected: "products/bracelets/silver-cuff/123_main.png",
+		},
+		{
+			name:     "relative products path",
+			input:    "/products/rings/vintage-band/456.webp",
+			expected: "products/rings/vintage-band/456.webp",
+		},
 	}
 
 	for _, tc := range tests {

@@ -19,6 +19,33 @@ func NewProductHandler(svc *service.ProductService) *ProductHandler {
 	return &ProductHandler{productService: svc}
 }
 
+func (h *ProductHandler) Validate(c *gin.Context) {
+	var req dto.CreateProductRequest
+
+	if err := c.ShouldBindJSON(&req); err != nil {
+		response.BadRequest(c, "Invalid request payload: "+err.Error(), nil)
+		return
+	}
+
+	categoryIdentifier := req.CategorySlug
+	if categoryIdentifier == "" {
+		response.BadRequest(c, "Category identifier is required", nil)
+		return
+	}
+
+	excludeProductID := c.Query("exclude_id")
+
+	slug, err := h.productService.ValidateProduct(c.Request.Context(), categoryIdentifier, &req, excludeProductID)
+	if err != nil {
+		response.BadRequest(c, err.Error(), nil)
+		return
+	}
+
+	response.OK(c, "Product payload is valid", gin.H{
+		"slug": slug,
+	})
+}
+
 func (h *ProductHandler) Create(c *gin.Context) {
 	var req dto.CreateProductRequest
 

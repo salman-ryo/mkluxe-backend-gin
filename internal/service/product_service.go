@@ -3,6 +3,7 @@ package service
 import (
 	"context"
 	"errors"
+	"fmt"
 
 	"mkluxe-backend/internal/domain"
 	"mkluxe-backend/internal/dto"
@@ -22,20 +23,28 @@ func NewProductService(pRepo *repository.ProductRepository, cRepo *repository.Ca
 	return &ProductService{productRepo: pRepo, categoryRepo: cRepo}
 }
 
-func (s *ProductService) CreateProduct(ctx context.Context, categoryIdentifier string, req *dto.CreateProductRequest) (*domain.Product, error) {
+// ValidateProduct checks business rules, category existence, and slug uniqueness without creating the product
+func (s *ProductService) ValidateProduct(ctx context.Context, categoryIdentifier string, req *dto.CreateProductRequest, excludeProductID string) (string, error) {
 	if err := validation.ValidateProductPayload(req); err != nil {
-		return nil, err
+		return "", err
+	}
+
+	if categoryIdentifier == "" {
+		categoryIdentifier = req.CategorySlug
+	}
+	if categoryIdentifier == "" {
+		return "", errors.New("category identifier is required")
 	}
 
 	if id, err := primitive.ObjectIDFromHex(categoryIdentifier); err == nil {
 		cat, getErr := s.categoryRepo.GetByID(ctx, id)
 		if getErr != nil || cat == nil {
-			return nil, errors.New("provided primary category ID does not exist")
+			return "", errors.New("provided primary category ID does not exist")
 		}
 	} else {
 		cat, getErr := s.categoryRepo.GetBySlug(ctx, categoryIdentifier)
 		if getErr != nil || cat == nil {
-			return nil, errors.New("provided primary category slug does not exist")
+			return "", errors.New("provided primary category slug does not exist")
 		}
 	}
 
@@ -48,7 +57,38 @@ func (s *ProductService) CreateProduct(ctx context.Context, categoryIdentifier s
 
 	existing, _ := s.productRepo.GetBySlug(ctx, slug)
 	if existing != nil {
-		return nil, errors.New("a product with this slug already exists")
+		if excludeProductID == "" || existing.ID.Hex() != excludeProductID {
+			return "", errors.New("a product with this slug already exists")
+		}
+	}
+
+	return slug, nil
+}
+
+func (s *ProductService) CreateProduct(ctx context.Context, categoryIdentifier string, req *dto.CreateProductRequest) (*domain.Product, error) {
+	slug, err := s.ValidateProduct(ctx, categoryIdentifier, req, "")
+	if err != nil {
+		return nil, err
+	}
+
+	metaTitle := req.MetaTitle
+	if metaTitle == "" {
+		metaTitle = fmt.Sprintf("%s | MK Luxe Divine", utils.CleanString(req.Name))
+	}
+
+	metaDescription := req.MetaDescription
+	if metaDescription == "" {
+		metaDescription = utils.CleanString(req.Description)
+		if len(metaDescription) > 155 {
+			metaDescription = metaDescription[:152] + "..."
+		}
+	}
+
+	// Normalize media alt_text if alt was provided
+	for i := range req.Media {
+		if req.Media[i].AltText == "" && req.Media[i].Alt != "" {
+			req.Media[i].AltText = req.Media[i].Alt
+		}
 	}
 
 	product := &domain.Product{
@@ -62,8 +102,8 @@ func (s *ProductService) CreateProduct(ctx context.Context, categoryIdentifier s
 		Variants:        req.Variants,
 		Media:           req.Media,
 		FAQs:            req.FAQs,
-		MetaTitle:       req.MetaTitle,
-		MetaDescription: req.MetaDescription,
+		MetaTitle:       metaTitle,
+		MetaDescription: metaDescription,
 	}
 
 	if err := s.productRepo.Create(ctx, product); err != nil {

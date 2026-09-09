@@ -4,6 +4,7 @@ package domain
 type Media struct {
 	URL       string `bson:"url" json:"url"`
 	AltText   string `bson:"alt_text" json:"alt_text"`
+	Alt       string `bson:"alt,omitempty" json:"alt,omitempty"`
 	IsPrimary bool   `bson:"is_primary" json:"is_primary"`
 	SortOrder int    `bson:"sort_order" json:"sort_order"`
 }

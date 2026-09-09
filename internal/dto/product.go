@@ -12,7 +12,7 @@ type CreateProductRequest struct {
 	IsFeatured      bool             `json:"is_featured"`
 	IsMostSold      bool             `json:"is_most_sold"`
 	Variants        []domain.Variant `json:"variants" binding:"required,dive"`
-	Media           []domain.Media   `json:"media" binding:"required,dive"`
+	Media           []domain.Media   `json:"media" binding:"dive"`
 	FAQs            []domain.FAQ     `json:"faqs"`
 	MetaTitle       string           `json:"meta_title"`
 	MetaDescription string           `json:"meta_description"`

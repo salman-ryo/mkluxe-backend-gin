@@ -4,6 +4,7 @@ package domain
 
 type Variant struct {
 	SKU            string            `bson:"sku" json:"sku"`
+	Name           string            `bson:"name,omitempty" json:"name,omitempty"`
 	Price          float64           `bson:"price" json:"price"`
 	CompareAtPrice float64           `bson:"compare_at_price,omitempty" json:"compare_at_price,omitempty"`
 	Stock          int               `bson:"stock" json:"stock"`

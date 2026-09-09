@@ -16,9 +16,23 @@ func ValidateProductPayload(req *dto.CreateProductRequest) error {
 		return errors.New("product must include at least one variant")
 	}
 
+	// Auto-default if no default is explicitly marked
 	defaultCount := 0
-	skuSet := make(map[string]bool)
+	for _, v := range req.Variants {
+		if v.IsDefault {
+			defaultCount++
+		}
+	}
+	if defaultCount == 0 {
+		// Automatically mark the first variant as default
+		req.Variants[0].IsDefault = true
+		defaultCount = 1
+	}
+	if defaultCount > 1 {
+		return errors.New("multiple variants marked as default; only one allowed")
+	}
 
+	skuSet := make(map[string]bool)
 	for i, v := range req.Variants {
 		if v.SKU == "" {
 			return fmt.Errorf("variant at index %d is missing a SKU", i)
@@ -29,18 +43,8 @@ func ValidateProductPayload(req *dto.CreateProductRequest) error {
 		skuSet[v.SKU] = true
 
 		if v.Price <= 0 {
-			return fmt.Errorf("variant %s has an invalid price", v.SKU)
+			return fmt.Errorf("variant %s has an invalid price (must be greater than 0)", v.SKU)
 		}
-		if v.IsDefault {
-			defaultCount++
-		}
-	}
-
-	if defaultCount == 0 {
-		return errors.New("exactly one variant must be marked as default (is_default: true)")
-	}
-	if defaultCount > 1 {
-		return errors.New("multiple variants marked as default; only one allowed")
 	}
 
 	// 3. Media primary image check
@@ -55,7 +59,8 @@ func ValidateProductPayload(req *dto.CreateProductRequest) error {
 			}
 		}
 		if primaryCount == 0 {
-			return errors.New("at least one media image must be marked as primary (is_primary: true)")
+			// Automatically mark the first media item as primary
+			req.Media[0].IsPrimary = true
 		}
 	}
 
